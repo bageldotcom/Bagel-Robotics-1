@@ -3,7 +3,6 @@
 <p align="center"><strong>Data-efficient adaptive pruning for compact world-action models</strong></p>
 
 <p align="center">
-  <b>English</b><br>
   <a href="#quick-start">🚀 Quick start</a> ·
   <a href="#training">🔥 Training</a> ·
   <a href="#evaluation-and-deployment">🦾 Evaluation &amp; deployment</a> ·
