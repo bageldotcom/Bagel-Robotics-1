@@ -1,115 +1,158 @@
-<div align="center">
+<h1 align="center">Bagel-Robotics-1</h1>
 
-# Bagel-Robotics-1
+<p align="center"><strong>Data-efficient adaptive pruning for compact world-action models</strong></p>
 
-### Data-efficient adaptive pruning for compact world-action models
+<p align="center">
+  <b>English</b><br>
+  <a href="#quick-start">🚀 Quick start</a> ·
+  <a href="#training">🔥 Training</a> ·
+  <a href="#evaluation-and-deployment">🦾 Evaluation &amp; deployment</a> ·
+  <a href="docs/MODELS.md">📦 Models</a>
+</p>
 
-[Checkpoint](https://huggingface.co/bageldotcom/Bagel-Robotics-1) · [RoboDojo submission](https://github.com/XPolicyLab/XPolicyLab/pull/234) · [Detailed results](experiments/robodojo/policy/Bagel_Robotics_1/EVALUATION_RESULTS.md)
+<p align="center">
+  <a href="#overview"><b>🌐 Project overview</b></a> ·
+  <b>📄 Paper / arXiv</b> (coming soon) ·
+  <a href="https://huggingface.co/bageldotcom/Bagel-Robotics-1"><b>🤗 Hugging Face</b></a>
+</p>
 
-</div>
+<p align="center">
+  <img src="assets/readme/approach.svg" alt="Bagel-Robotics-1: select informative demonstration segments, learn adaptive masks, physically prune the video expert, and apply recovery training." width="100%">
+</p>
 
-Bagel-Robotics-1 studies adaptive pruning of a world-action model's video expert. We select informative segments from demonstrations, learn which parameters to retain, physically remove the selected channels, and recover action-prediction quality through further training. VPP2 serves as the base model for evaluating this approach.
+<a name="overview"></a>
 
-**Private release preparation.** The requested training scope is dataset selection, mask learning without K/V-matching loss, physical pruning, and recovery without K/V-matching loss. Recovery begins at checkpoint 55. The technical report is prepared separately.
+## ✨ Overview
 
-## Contents
+**Bagel-Robotics-1** combines data selection, adaptive pruning and recovery training to build a compact world-action model. VPP2 serves as the base model for evaluating the approach.
 
-- [Repository layout](#repository-layout)
-- [Environment](#environment)
-- [Model assets and checkpoints](#model-assets-and-checkpoints)
-- [Data preparation](#data-preparation)
-- [Training](#training)
-- [RoboDojo evaluation](#robodojo-evaluation)
-- [Results](#results)
-- [Acknowledgements and licenses](#acknowledgements-and-licenses)
+- 🗂️ **Focused training data.** Select informative segments across robot demonstrations, balancing task coverage and data quality.
+- ✂️ **Adaptive structured pruning.** Learn which video-expert features, FFN units and cross-attention heads to retain, then export physically smaller tensors. The evaluated video expert has **12.47B parameters — 23.95% fewer** than the base video expert.
+- 🔄 **Recovery and action prediction.** Train the compact video expert to recover action quality while keeping the action expert fixed. Inference predicts 32 actions, executes 16 before replanning, and blends successive predictions 90/10.
 
-## Repository layout
+This repository provides data preparation, mask learning, physical pruning, recovery training and RoboDojo evaluation. The [Models guide](docs/MODELS.md) identifies the evaluated checkpoint and its training history.
 
-```text
-Bagel-Robotics-1/
-├── configs/                  Stage configurations and artifact pins
-├── scripts/                  Preparation, training and installation commands
-├── experiments/robodojo/      Submitted XPolicyLab policy and evaluation records
-├── src/                      Release utilities and implementation entry point
-├── code/                     Preserved implementations for each training stage
-├── data/                     Selected windows, normalization and text conditioning
-├── assets/                   Small mask initialization artifacts
-├── docs/                     Data, training, evaluation and release instructions
-├── tests/                    Packaging and data-contract checks
-├── reproduction/             Exact stage sources, configurations and receipts
-└── verification/             Recorded checks and release validation results
+<a name="quick-start"></a>
+
+## 🚀 Quick start
+
+### 1. Get the code
+
+Use Linux and Python 3.10. Cloning this private repository requires Bagel repository access; the checkpoint is public.
+
+```bash
+git clone https://github.com/bageldotcom/Bagel-Robotics-1.git
+cd Bagel-Robotics-1
+python3.10 run.py verify-source
 ```
 
-The organization follows [InternW0](https://github.com/InternRobotics/InternW0). Model code, configurations and checkpoint identities remain specific to Bagel-Robotics-1.
+The source check runs on CPU. Training and inference use separate environments:
 
-## Environment
-
-Use Linux and Python 3.10. Training and inference retain separate environments because their recorded PyTorch versions differ.
-
-| Use | PyTorch / torchvision | CUDA wheels | Instructions |
+| Workflow | PyTorch / torchvision | CUDA wheels | Setup |
 | --- | --- | --- | --- |
-| Mask learning and recovery | 2.10.0 / 0.25.0 | 12.8 | [Training](docs/TRAINING.md) |
-| Submitted policy inference | 2.11.0 / 0.26.0 | 13.0 | [Evaluation](docs/EVALUATION.md) |
+| Mask learning and recovery | 2.10.0 / 0.25.0 | 12.8 | [Training guide](docs/TRAINING.md) |
+| Policy inference | 2.11.0 / 0.26.0 | 13.0 | Installer below |
 
-Basic package checks do not need a GPU:
+### 2. Install the policy and download the model
 
-```bash
-python run.py verify-source
-python -m unittest discover -s tests -v
-python scripts/train.py --help
-python scripts/prepare_data.py --help
-```
-
-## Model assets and checkpoints
-
-The evaluated checkpoint is public at **`bageldotcom/Bagel-Robotics-1`**, pinned to **`2651631c5d08819088475e8778676f5cf6d9afcf`**. Its six-file bundle contains the video/action weights, compact architecture, normalization and verification records. The adapter verifies sizes and SHA-256 hashes before loading tensors.
+Prepare the RoboDojo workspace using the [installation guide](https://robodojo-benchmark.com/doc/usage/install-and-download/), including `env_cfg/` alongside XPolicyLab. Choose a **new XPolicyLab checkout** in that workspace. Run these commands from the Bagel-Robotics-1 repository root, replacing the example path:
 
 ```bash
-python experiments/robodojo/policy/Bagel_Robotics_1/download_checkpoint.py --help
+BAGEL_XPL_ROOT=/absolute/path/to/RoboDojo/XPolicyLab
+git clone https://github.com/XPolicyLab/XPolicyLab.git "$BAGEL_XPL_ROOT"
+git -C "$BAGEL_XPL_ROOT" checkout --detach 6baccd57ff958570d0db1588370289ee36c8bb70
+python3.10 scripts/install_adapter.py --xpolicylab "$BAGEL_XPL_ROOT"
+
+BAGEL_POLICY_DIR="$BAGEL_XPL_ROOT/policy/Bagel_Robotics_1"
+BAGEL_POLICY_ENV="$BAGEL_POLICY_DIR/.venv"
+PYTHON_BIN=python3.10 bash "$BAGEL_POLICY_DIR/install.sh" "$BAGEL_POLICY_ENV"
+PYTHON_BIN="$BAGEL_POLICY_ENV/bin/python" bash "$BAGEL_POLICY_DIR/download_checkpoint.sh"
 ```
 
-See [checkpoint identity and training provenance](docs/CHECKPOINT_IDENTITY.md). Large model weights, optimizer states and demonstration videos are stored outside Git. The training-input manifest identifies the required resumable checkpoint-55 state; an inference-only checkpoint cannot substitute for it.
+Keep these variables in the same shell. The installer creates the policy environment; the downloader fetches the pinned checkpoint and required encoders and checks their hashes. Allow approximately **45.7 GB** for model assets, plus installation and cache space. No Hugging Face token is required. See [Models](docs/MODELS.md) to reuse existing files.
 
-## Data preparation
+### 3. Check inference
 
-The data workflow retains native 25 Hz RGB observations and absolute dual-arm EE16 actions. The pinned panel contains **30,000 fitting windows**, **1,119 monitoring windows**, and a separate audit partition across 35 training tasks. A window contains consecutive frames; it is not a complete demonstration episode.
+After downloading, run both observation transports with the real model. These checks use generated observations, without starting the simulator. The qualified setup used a **96 GB RTX PRO 6000 Blackwell**, 128 GiB host RAM and eight CPUs.
 
 ```bash
-python scripts/prepare_data.py --output /path/to/new/native-data --dry-run
+# Dedicated workstation: choose an available GPU.
+# Under a scheduler, use the allocated GPU and preserve its visibility settings.
+BAGEL_GPU_ID=0
+cd "$BAGEL_POLICY_DIR"
+for BAGEL_RGB_ENCODED in 0 1; do
+  EVAL_ENV_TYPE=debug DEBUG_OBS_ENCODED="$BAGEL_RGB_ENCODED" \
+    DEBUG_EVAL_EPISODES=1 bash eval.sh \
+    RoboDojo stack_blocks cp1000 arx_x5 ee 1 \
+    "$BAGEL_GPU_ID" "$BAGEL_GPU_ID" "$BAGEL_POLICY_ENV" "$BAGEL_POLICY_ENV"
+done
 ```
 
-[Data instructions](docs/DATA.md) cover the public dataset, exact conversion, selection manifest, split checks and a small conversion test. Data hashes are checked before the reconstructed dataset is marked complete.
+Each check should finish with `[TestEnv] Episode finished` and `[MAIN] eval finished`. Continue with [RoboDojo evaluation](docs/EVALUATION.md) for simulator episodes and complete suites.
 
-## Training
+<a name="training"></a>
 
-The requested release has four components:
+## 🔥 Training
 
-| Component | Implementation |
+Run preparation commands from this repository root. Follow the [training guide](docs/TRAINING.md) to build the environment, configure an isolated workspace and verify its inputs before GPU training.
+
+| Stage | Entry point / configuration | Guide |
+| --- | --- | --- |
+| Select demonstration segments | [`scripts/select_data.py`](scripts/select_data.py), [`data/selected-panel.json`](data/selected-panel.json) | [Data preparation](docs/DATA.md) |
+| Learn adaptive masks | `mask-no-kv`, [`mask_no_kv.json`](configs/stages/mask_no_kv.json) | [Mask learning](docs/TRAINING.md#2-mask-learning-without-kv-matching) |
+| Export the compact model | `select` → `prune` → `verify-export` | [Physical pruning](docs/TRAINING.md#3-physical-pruning) |
+| Recover from checkpoint 55 | `recovery-55-to-250` → `recovery-250-to-1000` | [Recovery](docs/TRAINING.md#4-recovery-without-kv-matching-starting-at-55) |
+
+Both exposed training workflows disable the auxiliary K/V-matching loss; video features remain available to the action expert. The separate no-K/V mask-learning experiment and the evaluated checkpoint have distinct histories, recorded in [checkpoint provenance](docs/CHECKPOINT_IDENTITY.md). Recovery initialization requirements and current GPU qualification status are in the training guide.
+
+<a name="evaluation-and-deployment"></a>
+
+## 🦾 Evaluation and deployment
+
+Use the installed policy with RoboDojo's unified XPolicyLab interface:
+
+| Guide | Use |
 | --- | --- |
-| Select informative training segments | `full_mask/curation_v3*.py` and the pinned selected panel |
-| Learn adaptive masks without K/V matching | `code/mask-no-kv/src/vpp2/flexible_mask/` |
-| Physically export compact tensors | `flexible_mask/export.py` and `verify_export.py` |
-| Recovery without K/V matching, starting at 55 | `code/recovery-pilot/` and `code/recovery/` |
+| [RoboDojo setup and settings](docs/EVALUATION.md) | Environment setup, model settings and benchmark revisions |
+| [Task, suite and three-seed commands](experiments/robodojo/policy/Bagel_Robotics_1/REEVALUATION.md) | Run native evaluations and generate the official summary |
+| [Adapter validation](experiments/robodojo/policy/Bagel_Robotics_1/VALIDATION.md) | Recorded model-loading, action-comparison and simulator checks |
 
-“No K/V matching” means the auxiliary K/V comparison loss is disabled. The action model still consumes video K/V features. Inference preserves that conditioning.
+The fixed inference settings are **BF16, 10 denoising steps, 32 predicted / 16 executed actions, and 90% new / 10% previous prediction blending**. Observation history is maintained and reset for each episode. The RoboDojo submission is [PR #234](https://github.com/XPolicyLab/XPolicyLab/pull/234).
 
-The no-K/V mask-learning experiment and the evaluated checkpoint have separate histories. The source record in [CHECKPOINT_IDENTITY.md](docs/CHECKPOINT_IDENTITY.md) prevents accidentally treating the former as the origin of the latter. See [training instructions](docs/TRAINING.md) for stage commands and required inputs.
+<a name="data-and-tools"></a>
 
-## RoboDojo evaluation
+## 🗂️ Data and tools
 
-Install the preserved adapter into a separate XPolicyLab checkout:
+The selected panel contains **30,000 training windows** and **1,119 monitoring windows** across 35 tasks, with separate episode splits. [Data preparation](docs/DATA.md) covers the public dataset, conversion and selection checks.
 
-```bash
-python scripts/install_adapter.py --xpolicylab /path/to/XPolicyLab --dry-run
-python scripts/install_adapter.py --xpolicylab /path/to/XPolicyLab
-```
+| Path | Contents |
+| --- | --- |
+| `scripts/`, `configs/` | Preparation and training commands, stage settings and artifact pins |
+| `code/`, `src/` | Stage implementations and package utilities |
+| `experiments/robodojo/` | XPolicyLab adapter and evaluation records |
+| `data/`, `assets/` | Selection metadata, normalization and small initialization files |
+| `reproduction/`, `verification/` | Preserved source snapshots and validation evidence |
 
-Then use its standard install, checkpoint-download and evaluation scripts. [Evaluation instructions](docs/EVALUATION.md) give the full sequence. The fixed serving settings are: BF16, 32 predicted actions, 16 executed actions, 10 denoising steps, and 90% new / 10% previous prediction blending.
+<a name="observation-and-action-format"></a>
 
-## Results
+## 📐 Observation and action format
 
-The evaluated checkpoint's local three-seed, five-suite result is **31.59 ± 0.33% success** and **38.36 ± 0.46 partial score /100**, with equal weighting of the five suites. The complete suite/task tables, original generated summaries and scene replacement appendix remain together in the [Detailed results](experiments/robodojo/policy/Bagel_Robotics_1/EVALUATION_RESULTS.md) document. These scores belong to checkpoint 1000, not to the separate no-K/V mask-learning run.
+The RoboDojo pipeline uses native **25 Hz** observations with three-camera RGB composition at **240 × 416**. Actions and robot state use **16 values**: position, quaternion and gripper for each arm, `[xyz, qwxyz, gripper] × 2`, with absolute end-effector targets. Use the supplied normalization and adapter to preserve these conventions.
 
-## Acknowledgements and licenses
+<a name="results"></a>
 
-We thank the VPP2, Wan, RoboDojo and XPolicyLab authors for their released models, components and evaluation infrastructure. InternW0 is the reference for this repository's presentation. Existing third-party code headers and licenses are preserved. See [LICENSE](LICENSE) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md); checkpoints, datasets and simulator assets retain their own terms.
+## 📊 Results
+
+Checkpoint 1000's local three-seed results are **31.59 ± 0.33% success** and **38.36 ± 0.46 partial score /100**, with equal weighting of five suites. The [Detailed results](experiments/robodojo/policy/Bagel_Robotics_1/EVALUATION_RESULTS.md) contains all suite/task tables, native summaries and the replacement/repair appendix. These scores refer to the evaluated checkpoint.
+
+<a name="citation"></a>
+
+## 📚 Citation
+
+**Paper / arXiv: coming soon.** The technical report and citation will be added when available.
+
+<a name="license"></a>
+
+## 📜 License and acknowledgements
+
+See [LICENSE](LICENSE), [NOTICE](NOTICE) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Model weights and datasets retain their own terms. We thank the VPP2, Wan, RoboDojo and XPolicyLab authors. The README organization follows [InternW0-Delta](https://github.com/InternRobotics/InternW0-Delta).

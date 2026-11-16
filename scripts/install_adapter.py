@@ -13,8 +13,10 @@ def main():
     p.add_argument('--dry-run',action='store_true')
     a=p.parse_args()
     checkout=Path(a.xpolicylab).expanduser().resolve()
-    if not (checkout/'model_server/server_policy.py').is_file():
-        p.error('Expected an XPolicyLab checkout with model_server/server_policy.py')
+    required = ('XPolicyLab.py', 'pyproject.toml', 'client_server/ws/model_server.py')
+    missing = [name for name in required if not (checkout/name).is_file()]
+    if missing:
+        p.error('Expected an XPolicyLab checkout; missing: ' + ', '.join(missing))
     source=ROOT/'experiments/robodojo/policy/Bagel_Robotics_1'
     destination=checkout/'policy/Bagel_Robotics_1'
     if destination.exists():
