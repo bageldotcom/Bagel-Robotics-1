@@ -1,0 +1,20 @@
+{
+  "identity": "72f7387ca10b6e2b2c08bcab5ad77ec8f9d7afea8ed69777a93a16a8f4ddd6da",
+  "executed_identity": "c6588ad732105d09e5c6fd7a90971ac56c471bf2d1d1268a7e3edf1a7b8eb92d",
+  "job_id": "50026",
+  "source_manifest": "/data3/praveen/experiments/vpp2-flexible-mask-recovery-20261031-micro2/checks/execution_revision1/source_manifest.json",
+  "source_manifest_sha256": "8e60937cf2ec8804798d17675e450311497174bdb34dc0ffc8434599f3ec7ade",
+  "files": {
+    "rank0.json": "52ca6d4c70ff3b05bf61534a8037be8c754c748142b2a722adb9f33a3d037c4a",
+    "rank4.json": "995df7cd87894a5391d4148cb20e70eeeefc0f863ef72635e5f7c1e67c146223",
+    "rank7.json": "2fa9f0405521eae5bae61f5a5f245a6816b66cdea2d372ec70cfe6f07a5c7d10",
+    "rank3.json": "bd529f428a0a6ceeb3528c9fe66a9f2b3b42417f02a0431bbf60b615c6112afe",
+    "rank5.json": "eee8d5df66e5497bec548adeaf9f8e8b18bda2c9ce326bcb609182071538be96",
+    "rank2.json": "fd70d3e44deaf80c9a8bb6e93291e08e105998b2770a1b5df10f7ff950c36528",
+    "rank6.json": "60e05b847f6c0deb939a3c5713ca630ae553bbe16a63420813ed4bc897ca0526",
+    "rank1.json": "0a4c00c2a5440b9c0ceefb7be42e7017331f492cbf1958b96fe0c1381f4f24e2",
+    "metrics.json": "d9f3d26dd45e175851b3f224ed9e12e0382e82e73d00fac7a4c853717aee27b0",
+    "comparison_tensors.pt": "dfee4507392a98866f5e8ba6b4ebb11415f8731ab5ff1ffc103ad9ef4e797cd4"
+  },
+  "justification": "Preserved completed baseline. Model, loss, optimizer and batch-one arithmetic unchanged; new preparation encodes cache misses singly and batches only verified prepared inputs. Candidate compared against actual baseline outputs/gradients/state, not inferred parity."
+}

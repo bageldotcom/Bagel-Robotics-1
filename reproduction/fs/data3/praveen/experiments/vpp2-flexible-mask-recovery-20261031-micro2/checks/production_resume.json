@@ -1,0 +1,64 @@
+{
+  "identity": "72f7387ca10b6e2b2c08bcab5ad77ec8f9d7afea8ed69777a93a16a8f4ddd6da",
+  "utc": "2026-10-31T18:24:45.736645+00:00",
+  "job_id": "50028",
+  "parent_update": 31,
+  "latest_update": 34,
+  "production_updates": [
+    {
+      "update": 32,
+      "seconds_per_update": 92.3099309829995,
+      "gt_action": 0.013667552420429274,
+      "video_gradient_norm": 0.23596375388492682,
+      "max_allocated_gib": 50.39324998855591
+    },
+    {
+      "update": 33,
+      "seconds_per_update": 76.12087405472994,
+      "gt_action": 0.015657398155099145,
+      "video_gradient_norm": 0.2614068744700198,
+      "max_allocated_gib": 50.39324998855591
+    },
+    {
+      "update": 34,
+      "seconds_per_update": 77.82270392263308,
+      "gt_action": 0.0122071194189175,
+      "video_gradient_norm": 0.19878412080836957,
+      "max_allocated_gib": 50.39324998855591
+    }
+  ],
+  "matched_benchmark_objectives_and_video_gradient_norm_exact": true,
+  "comparison": {
+    "32": {
+      "gt_action": 0.0,
+      "teacher_video_raw": 0.0,
+      "teacher_video_gated": 0.0,
+      "late_kv_raw": 0.0,
+      "late_kv_gated": 0.0,
+      "reliability": 0.0,
+      "total": 0.0,
+      "video_gradient_norm": 0.0
+    },
+    "33": {
+      "gt_action": 0.0,
+      "teacher_video_raw": 0.0,
+      "teacher_video_gated": 0.0,
+      "late_kv_raw": 0.0,
+      "late_kv_gated": 0.0,
+      "reliability": 0.0,
+      "total": 0.0,
+      "video_gradient_norm": 0.0
+    },
+    "34": {
+      "gt_action": 0.0,
+      "teacher_video_raw": 0.0,
+      "teacher_video_gated": 0.0,
+      "late_kv_raw": 0.0,
+      "late_kv_gated": 0.0,
+      "reliability": 0.0,
+      "total": 0.0,
+      "video_gradient_norm": 0.0
+    }
+  },
+  "warm_mean_seconds": 76.97178898868151
+}

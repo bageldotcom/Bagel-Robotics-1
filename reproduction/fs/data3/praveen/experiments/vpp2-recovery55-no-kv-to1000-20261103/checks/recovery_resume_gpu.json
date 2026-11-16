@@ -1,0 +1,13 @@
+{
+  "adam_restored_exactly": true,
+  "bf16": true,
+  "data_cursor_preserved": true,
+  "identity": "790bffc9464fa7a026aa43b217aec2033d186895cad643166daa0bcc01914d5c",
+  "model_restored_exactly": true,
+  "next_update_bitwise_equal": true,
+  "passed": true,
+  "rng_restored_exactly": true,
+  "scope": "Small model with actual distributed checkpoint I/O; real checkpoint250 predictions verified separately",
+  "world_size": 8,
+  "zero_stage": 3
+}

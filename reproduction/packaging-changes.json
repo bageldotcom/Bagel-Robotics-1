@@ -1,0 +1,18 @@
+{
+  "original_archive_sha256": "ccbf7c1f5cb37a55339bf3f9c79701835663ecde68b04225cc4f7f62b077974c",
+  "changed_original_entries": {
+    "reproduction/runs.json": {
+      "before": {
+        "sha256": "9432d56072bb02d77d54fe94c18a86b54f87878e8c6e77ba896bcadb0b5f4497",
+        "bytes": 1852
+      },
+      "after": {
+        "bytes": 2464,
+        "sha256": "688ef80bb9f69b83f828fb2db42898132614dcc4183420439d9eff27c05c28ae"
+      },
+      "reason": "Register recovered microbatch stage and requested no-K/V mask experiment; scientific source snapshots unchanged"
+    }
+  },
+  "added_sources_manifest": "additional_files.json",
+  "runtime_or_training_tensor_operations_changed": false
+}

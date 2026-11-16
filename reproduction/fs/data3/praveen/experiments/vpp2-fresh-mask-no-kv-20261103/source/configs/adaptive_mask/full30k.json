@@ -1,0 +1,250 @@
+{
+  "teacher_bundle": "/data1/praveen/experiments/vpp2-joint-feature-cache-20261013/assets/model/checkpoints/joint2b_s100000",
+  "wan_root": "/data1/praveen/experiments/vpp2-joint-feature-cache-20261013/assets/model/checkpoints/Wan2.1-I2V-14B-480P",
+  "demonstrations": "/data1/praveen/experiments/vpp2-online-distill-20261015/demonstrations_native_text",
+  "reference_split": "/data1/praveen/experiments/vpp2-online-distill-20261015/prepared_split",
+  "panel_file": "/data3/praveen/experiments/vpp2-critical-calibration-20261029/revisions/3ca392bfb574898f/panel.json",
+  "curation": {
+    "audit_episodes_per_task": 8,
+    "audit_locked": true,
+    "auto_expand": false,
+    "base_windows_per_episode": 4,
+    "candidate_stride": 8,
+    "max_windows_per_episode": 16,
+    "min_selection_episodes_per_task": 83,
+    "monitor_episodes_per_task": 8,
+    "monitor_windows_per_task": 32,
+    "output": "/data3/praveen/experiments/vpp2-critical-calibration-20261029/revisions/3ca392bfb574898f",
+    "previous_panel": "/data3/praveen/experiments/vpp2-full-robodojo-mask-calibration-20261028/data/curated-v2/panel.json",
+    "quality": {
+      "action_latent": 32,
+      "check_every": 200,
+      "learning_rate": 0.001,
+      "max_updates": 2400,
+      "method": "deminf_inspired_episode_tiebreaker",
+      "minimum_rank_correlation": 0.8,
+      "neighbors": [
+        5,
+        6,
+        7
+      ],
+      "obs_latent": 64,
+      "patience": 4,
+      "repeats": 4
+    },
+    "random_fraction": 0.2,
+    "require_model_probe": true,
+    "require_visual_review": true,
+    "schema": "robodojo-curated-calibration-v3",
+    "seed": 100008,
+    "target_total": 30000,
+    "target_windows_per_task": null,
+    "vision": {
+      "batch_size": 32,
+      "sha256": "983f1562536e84ff750a1576fb08e54de751dbf2e17c0d8a4a13704341fdcd3d",
+      "weights": "/home/praveen/.cache/torch/hub/checkpoints/convnext_tiny-983f1562.pth"
+    },
+    "visual_backend": "frozen_convnext_spatial_history_v1",
+    "visual_descriptor_scope": "frozen pretrained spatial image features with nine native history slots; not verified contact or memory-cue labels"
+  },
+  "curation_artifacts": "/data3/praveen/experiments/vpp2-full-robodojo-mask-calibration-20261028/data/curated-v3",
+  "native_inference": {
+    "history_stride": 25,
+    "horizon": 32,
+    "rand_device": "cpu",
+    "replan": 24,
+    "seed": 1,
+    "shift": 1.0,
+    "steps": 10
+  },
+  "critical_annotations_file": "/data3/praveen/experiments/vpp2-full30k-mask-search-20261030/checks/verified_monitor_annotations.json",
+  "critical_annotations_sha256": "de82a8311d0070292db5ac05cf4003fc1ef5e6e3b8d0e892f6ae71142efef361",
+  "visual_review_config": "/data3/praveen/experiments/vpp2-critical-calibration-20261029/revisions/3ca392bfb574898f/config.json",
+  "visual_review_config_sha256": "1c5f535155d1c0b536432557823924f6130d6f76e76547db473357274f8a910b",
+  "schema": "adaptive-vpp2-hard-mask-search-v4",
+  "root": "/data3/praveen/experiments/vpp2-adaptive-latekv-mask-search-20261030",
+  "seed": 100008,
+  "original_video_parameters": 16394878784,
+  "geometry": {
+    "hidden": 5120,
+    "ffn": 13824,
+    "layers": 40,
+    "heads": 40,
+    "head_dim": 128,
+    "pack": 128,
+    "hidden_floor": 4480,
+    "ffn_floor": 4096,
+    "head_floor": 8
+  },
+  "train": {
+    "action_gt_weight": 1.0,
+    "teacher_action_weight": 0.0,
+    "teacher_video_weight": 0.05,
+    "kv_weight": 0.05,
+    "kv_layers": [
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "budget_weight": 0.0,
+    "entropy_weight": 0.0,
+    "discreteness_weight": 0.0,
+    "teacher_ramp_updates": 100,
+    "learning_rate": 0.01,
+    "warmup_updates": 50,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "weight_decay": 0.0,
+    "gradient_clip": 1.0,
+    "global_batch": 256,
+    "micro_batch": 1,
+    "information_updates": 70,
+    "checkpoint_every": 70,
+    "monitor_every": 70,
+    "native_windows_per_task": 4,
+    "max_attempted_updates": 2240,
+    "frozen_video": true,
+    "frozen_action": true,
+    "planned_updates": 1960,
+    "max_full_checks_excluding_initial": 6
+  },
+  "reliability": {
+    "method": "clipped_relative_gt_flow_error",
+    "formula": "clamp(1 - teacher_gt_error / max(zero_flow_gt_error, 1e-8), 0, 1)",
+    "calibration_passes": 0,
+    "action_noise_strata": 4,
+    "student_veto": true,
+    "zero_flow_veto": true,
+    "component_veto": true,
+    "margin_fraction": 0.01,
+    "margin_floor": 1e-08,
+    "calibrated_probability": false
+  },
+  "budget": {
+    "target_parameters": 10000000000,
+    "protect_hidden": true,
+    "milestones": [
+      [
+        560,
+        14000000000
+      ],
+      [
+        1120,
+        12000000000
+      ],
+      [
+        1680,
+        10000000000
+      ]
+    ],
+    "stability_updates": 280,
+    "extra_updates": 280,
+    "early_full_update": 280,
+    "final_stability_checks": 5,
+    "final_stability_span": 280,
+    "target_is_not_a_mandatory_size": true,
+    "temperature": 1.0,
+    "selection": "mean sigmoid pack probability; stable ties; exact parameter-cost feasibility",
+    "schedule_interpretation": "Maximum reduction pace; advance only through fitting-authorized segments. Settle after attempt 1680 even if larger than 10B.",
+    "uncertainty": "Hold capacity; do not classify uncertain bounds as confirmed damage."
+  },
+  "quality": {
+    "task_margin": 0.05,
+    "suite_margin": 0.02,
+    "absolute_floor": 1e-08,
+    "alpha": 0.05
+  },
+  "validation": {
+    "binary_export_relative_rmse_max": 0.01,
+    "fp32_relative_tolerance": 2e-05
+  },
+  "runtime_conditioning_cache": "/data3/praveen/experiments/vpp2-adaptive-latekv-mask-search-20261030/native_conditioning",
+  "wandb": {
+    "entity": "bakery_ismail-bagel-network",
+    "project": "vpp2-thaw-robodojo",
+    "group": "adaptive-latekv-frozen-masks-20261030",
+    "name": "GT1-video005-lateKV005-fitting-controller"
+  },
+  "launch_policy": {
+    "native_preflight_required": true,
+    "distributed_preflight_required": true,
+    "training_starts_from_scratch": true,
+    "existing_jobs_modified": false,
+    "simulation_automatic": false,
+    "compact_recovery_automatic": false,
+    "gpu_allocation": "Required Slurm shard policy; one distinct GPU per worker; verify at least 68 GiB free before load.",
+    "initial_afterany_job": 49612,
+    "initial_dependency_reason": "Leave current job 48309 and its already queued full30k chain unchanged; start new readiness checks after that chain terminates."
+  },
+  "artifacts": {
+    "panel_sha256": "bc6df13b64b5f96bbe17c64244240cc44a40d704babb70893f79c0f30d389680",
+    "normalization": {
+      "path": "/data1/praveen/experiments/vpp2-online-distill-20261015/demonstrations_native_text/dataset_stats.json",
+      "sha256": "2649d4e3ff3d6d400c9953b7c20c79541474f9c38a8a9916b9caacecd8578f16"
+    },
+    "source_manifest": {
+      "path": "/data1/praveen/experiments/vpp2-online-distill-20261015/demonstrations_native_text/manifest.json",
+      "sha256": "fbbeae4b8ccf12ac9bd843f51147f78045a1789ad765b9f0e3c24a37b6b2e01f"
+    },
+    "visual_review": {
+      "path": "/data3/praveen/experiments/vpp2-critical-calibration-20261029/revisions/3ca392bfb574898f/visual_review_receipt.json",
+      "sha256": "9cbb622356fd0538f8e071d3feba6df7ea7efd2a0ccc18c1414cc634dc2d1e2f"
+    },
+    "data_cpu_receipt": {
+      "path": "/data3/praveen/experiments/vpp2-full30k-mask-search-20261030/checks/cpu_checks.json",
+      "sha256": "45b5a6ce431e1c5ac15d601180be16a337970d52ef96f141a7505434512cf876"
+    },
+    "audit_manifest": {
+      "path": "/data3/praveen/experiments/vpp2-adaptive-latekv-mask-search-20261030/audit/manifest.json",
+      "sha256": "160d6bfd909032fdc907dc58f30ff7504b35ebe91cd2674ef0ec913e8fe3930e"
+    }
+  },
+  "python_deps": "/data3/praveen/experiments/vpp2-adaptive-latekv-mask-search-20261030/python-deps",
+  "mask_priority": {
+    "checks": 5,
+    "stable_scale": 0.1,
+    "boundary_fraction": 0.05,
+    "probability_range": 0.02,
+    "rank_range": 0.02
+  },
+  "capacity_feedback": {
+    "every": 70,
+    "source": "fitting_only",
+    "minimum_episodes_per_task_stratum": 8,
+    "max_ffn_churn": 0.05,
+    "max_cross_head_churn": 0.25,
+    "noise_strata": 4,
+    "allow_shrink_only_when": "all_tasks_and_suites_pass_all_noise_strata_and_turnover_is_bounded",
+    "reliability_filtered": false,
+    "extra_policy_forwards": 0,
+    "diagnostic_tasks": "rotate_within_each_suite"
+  },
+  "audit": {
+    "episodes_per_task": 8,
+    "windows_per_episode": 4,
+    "native_windows_per_episode": 1,
+    "role": "final_only_no_selection_feedback",
+    "simulation": false,
+    "automatic_after_final_selection": true,
+    "prior_cross_experiment_independence_verified": false
+  }
+}

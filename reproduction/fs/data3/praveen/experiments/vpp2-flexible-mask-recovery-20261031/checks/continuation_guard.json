@@ -1,0 +1,41 @@
+{
+  "identity": "bb5e8ca6a5827d9c7ef58fe542ce9583da1480d7672af1c42407596f8e927151",
+  "passed": true,
+  "script": "/data3/praveen/experiments/vpp2-flexible-mask-recovery-20261031/slurm/continue_train.sbatch",
+  "sha256": "0a8eb4277de1c5012c8e827a9d995ac3b6e35a4ac338e1f7fe40a4f63763cc9a",
+  "cases": [
+    {
+      "case": "complete_interruption",
+      "passed": true
+    },
+    {
+      "case": "stable_selection",
+      "passed": true
+    },
+    {
+      "case": "ceiling_reached",
+      "passed": true
+    },
+    {
+      "case": "calibration_unresolved",
+      "passed": true
+    },
+    {
+      "case": "mismatched_checkpoint",
+      "passed": true
+    },
+    {
+      "case": "stale_identity",
+      "passed": true
+    },
+    {
+      "case": "missing_checkpoint",
+      "passed": true
+    }
+  ],
+  "jobs_submitted": true,
+  "job_ids": [
+    "50024",
+    "50025"
+  ]
+}

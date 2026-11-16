@@ -1,0 +1,239 @@
+{
+  "timestamp_utc": "2026-11-01T03:39:59.250170+00:00",
+  "job_id": 50039,
+  "latest_update": 540,
+  "recent_20_seconds_per_update": 51.47643134898972,
+  "native_panel_windows": 140,
+  "flow_panel_windows": 1119,
+  "simulation": false,
+  "native": {
+    "0": {
+      "suites": {
+        "suite/DLC_auxiliary": {
+          "student_error": 0.42479225248098373,
+          "teacher_error": 0.00010069859490613453
+        },
+        "suite/generalization": {
+          "student_error": 0.8452563481405377,
+          "teacher_error": 0.00034869938932994654
+        },
+        "suite/long-horizon": {
+          "student_error": 0.6602798313833773,
+          "teacher_error": 0.0004205108877499697
+        },
+        "suite/memory": {
+          "student_error": 0.7549037098263701,
+          "teacher_error": 6.175885415397413e-05
+        },
+        "suite/precision": {
+          "student_error": 0.8720607538707554,
+          "teacher_error": 0.00015722701579079512
+        }
+      },
+      "task_macro_student": 0.7816004391759634,
+      "task_macro_teacher": 0.0002650727891461559
+    },
+    "250": {
+      "suites": {
+        "suite/DLC_auxiliary": {
+          "student_error": 0.4224679619073868,
+          "teacher_error": 0.00010069859490613453
+        },
+        "suite/generalization": {
+          "student_error": 0.5928808422759175,
+          "teacher_error": 0.00034869938932994654
+        },
+        "suite/long-horizon": {
+          "student_error": 0.47607242316007614,
+          "teacher_error": 0.0004205108877499697
+        },
+        "suite/memory": {
+          "student_error": 0.5786489428331455,
+          "teacher_error": 6.175885415397413e-05
+        },
+        "suite/precision": {
+          "student_error": 0.6563364653848112,
+          "teacher_error": 0.00015722701579079512
+        }
+      },
+      "task_macro_student": 0.5733772238450391,
+      "task_macro_teacher": 0.0002650727891461559
+    },
+    "500": {
+      "suites": {
+        "suite/DLC_auxiliary": {
+          "student_error": 0.42605825513601303,
+          "teacher_error": 0.00010069859490613453
+        },
+        "suite/generalization": {
+          "student_error": 0.5926390355452895,
+          "teacher_error": 0.00034869938932994654
+        },
+        "suite/long-horizon": {
+          "student_error": 0.476764309220016,
+          "teacher_error": 0.0004205108877499697
+        },
+        "suite/memory": {
+          "student_error": 0.5812385094662508,
+          "teacher_error": 6.175885415397413e-05
+        },
+        "suite/precision": {
+          "student_error": 0.6554143014363945,
+          "teacher_error": 0.00015722701579079512
+        }
+      },
+      "task_macro_student": 0.5737881892493792,
+      "task_macro_teacher": 0.0002650727891461559
+    }
+  },
+  "flow": {
+    "binary": {
+      "suites": {
+        "suite/DLC_auxiliary": {
+          "student_error": 1.1246283119544387,
+          "teacher_error": 0.004663558604534046
+        },
+        "suite/generalization": {
+          "student_error": 1.6060358275814604,
+          "teacher_error": 0.001898089601695574
+        },
+        "suite/long-horizon": {
+          "student_error": 1.406833842745982,
+          "teacher_error": 0.009890696955125122
+        },
+        "suite/memory": {
+          "student_error": 1.3686375419298809,
+          "teacher_error": 0.002418292123024912
+        },
+        "suite/precision": {
+          "student_error": 2.0776242080610245,
+          "teacher_error": 0.001879943579052312
+        }
+      },
+      "task_macro_student": 1.6138442257419228,
+      "task_macro_teacher": 0.0038890145953271392
+    },
+    "soft": {
+      "suites": {
+        "suite/DLC_auxiliary": {
+          "student_error": 0.006314651568118279,
+          "teacher_error": 0.004663558604534046
+        },
+        "suite/generalization": {
+          "student_error": 0.004839303308491101,
+          "teacher_error": 0.001898089601695574
+        },
+        "suite/long-horizon": {
+          "student_error": 0.013833914252472823,
+          "teacher_error": 0.009890696955125122
+        },
+        "suite/memory": {
+          "student_error": 0.003585166464328419,
+          "teacher_error": 0.002418292123024912
+        },
+        "suite/precision": {
+          "student_error": 0.003959895618282321,
+          "teacher_error": 0.001879943579052312
+        }
+      },
+      "task_macro_student": 0.006521364829200662,
+      "task_macro_teacher": 0.0038890145953271392
+    }
+  },
+  "selection": {
+    "250": {
+      "parameters": 13745482176,
+      "readiness": {
+        "ceiling_reached": false,
+        "reasons": [
+          "minimum_2000_updates",
+          "not_every_fitting_window_seen_twice",
+          "need_five_checks_spanning_1000_updates"
+        ],
+        "status": "selection_not_converged",
+        "update": 250
+      },
+      "saturation": {
+        "cross": {
+          "above_point_nine": 0.08333333333333333,
+          "below_point_one": 0.003205128205128205,
+          "near_boundary": 0.07692307692307693
+        },
+        "ffn": {
+          "above_point_nine": 0.006527110042735043,
+          "below_point_one": 2.9677113010446345e-05,
+          "near_boundary": 0.030435734211775877
+        },
+        "hidden": {
+          "above_point_nine": 0.121484375,
+          "below_point_one": 0.000390625,
+          "near_boundary": 0.02265625
+        }
+      },
+      "gradient_active": true
+    },
+    "500": {
+      "parameters": 12473740096,
+      "readiness": {
+        "ceiling_reached": false,
+        "reasons": [
+          "minimum_2000_updates",
+          "need_five_checks_spanning_1000_updates"
+        ],
+        "status": "selection_not_converged",
+        "update": 500
+      },
+      "saturation": {
+        "cross": {
+          "above_point_nine": 0.01282051282051282,
+          "below_point_one": 0.038461538461538464,
+          "near_boundary": 0.18269230769230768
+        },
+        "ffn": {
+          "above_point_nine": 0.008797409188034188,
+          "below_point_one": 5.5644586894586896e-05,
+          "near_boundary": 0.07174627552231719
+        },
+        "hidden": {
+          "above_point_nine": 0.066796875,
+          "below_point_one": 0.000390625,
+          "near_boundary": 0.0142578125
+        }
+      },
+      "gradient_active": true
+    }
+  },
+  "training_modified": false,
+  "binary_to_soft_flow_error_ratio": 247.47031764204107,
+  "native_250_to_500_change_percent": 0.07167452546932296,
+  "potential_optimizations": [
+    {
+      "candidate": "Selective activation checkpointing",
+      "basis": "All 40 video blocks currently recomputed in backward. Test fewer recomputed blocks with identical losses.",
+      "status": "unbenchmarked"
+    },
+    {
+      "candidate": "BF16 gradient communication with FP32 accumulation",
+      "basis": "Current ZeRO communication is explicitly FP32; lower precision supported by installed Stage 3.",
+      "status": "unbenchmarked; requires numerical comparison"
+    },
+    {
+      "candidate": "ZeRO gather/prefetch and allocator tuning",
+      "basis": "Both teacher/student are sharded and allocator flushes logged; throughput profile needed.",
+      "status": "unbenchmarked"
+    },
+    {
+      "candidate": "Batch safety-check reductions and test FP32 rotary arithmetic",
+      "basis": "Python scalar checks synchronize GPU; rotary implementation explicitly uses FP64.",
+      "status": "unbenchmarked"
+    }
+  ],
+  "limits": [
+    "Soft and binary errors are offline demonstration metrics, not rollout success.",
+    "No new GPU profiler or benchmark interrupted production.",
+    "Sharpening begins after update 500 and reaches full strength at update 1000.",
+    "Parameter count is a candidate count, not an already physically pruned training model."
+  ],
+  "hours_to_2000_excluding_overhead": 20.87655271375694,
+  "hours_to_3000_excluding_overhead": 35.17556142180964
+}

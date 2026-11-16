@@ -1,0 +1,17 @@
+{
+  "utc": "2026-11-01T14:03:01.226706+00:00",
+  "passed": true,
+  "cpu_tests_passed": 165,
+  "elapsed_seconds": 9.39,
+  "reason": "Startup gradient verifier called a nonexistent fraction method; now uses the same SoftCost.loss method as training",
+  "test_change": "Startup fixture now instantiates the real SoftCost, ParameterInventory, and Masks classes",
+  "test_command": "python -m pytest -q -p no:cacheprovider tests/flexible_mask tests/adaptive_mask/test_equivalence.py tests/adaptive_mask/test_physical.py tests/adaptive_mask/test_execution.py",
+  "executed_source": "/home/praveen/experiment_launchers/vpp2-size-pressure-continuation-20261101/source",
+  "published_source": "/data3/praveen/experiments/vpp2-flexible-mask-pressure2x-20261101/source",
+  "changed_files": {
+    "src/vpp2/flexible_mask/pressure.py": "6cf74edcf3625fce9eec689d70841c6c1481f7c1abd87e5bf70bb38eb34632a2",
+    "tests/flexible_mask/test_pressure_continuation.py": "af6f766ee98cb2834db22cadfc5007ecd5084f189b32cb68bce297dcc17abe70"
+  },
+  "current_training_changed": false,
+  "gpu_check_still_pending": true
+}

@@ -1,0 +1,8 @@
+{
+  "gpu_verified": false,
+  "identity": "bb5e8ca6a5827d9c7ef58fe542ce9583da1480d7672af1c42407596f8e927151",
+  "jobs_submitted": false,
+  "passed": true,
+  "pytest_log": "/data3/praveen/experiments/vpp2-flexible-mask-recovery-20261031/checks/pytest.txt",
+  "pytest_sha256": "a6a1e77064f74fd1008aa6ccfd7a7cdfb4b46d77e6fece16fb5912efe697ad6e"
+}

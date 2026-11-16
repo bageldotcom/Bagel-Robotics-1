@@ -1,0 +1,111 @@
+VPP2 ADAPTIVE MASK SEARCH, REVISION 5 — CONDITIONAL HIDDEN WIDTH
+
+Authoritative run configuration:
+/data3/praveen/experiments/vpp2-adaptive-hidden-latekv-mask-search-20261030/config.json
+The earlier protected-hidden run remains archived under its original path.
+
+SCOPE
+One seed (100008), 30,000 fitting windows, 1,119 development windows, 35 task
+ groups. Balanced per-task sampling without replacement within each task.
+All pretrained video, action and encoder weights remain frozen. Train 5,120 shared
+hidden scores, 539,136 layer-specific FFN scores and 1,560 layer-specific conditioning
+attention head scores: 545,816 scores total. No video-token or action-expert pruning.
+All 40 self-attention K/V slots retain the original 40 x 128 output geometry.
+
+MASK FORWARD / BACKWARD
+Predictions use binary selections throughout. A fixed-temperature sigmoid straight-
+through estimator supplies approximate gradients. This is not an exact derivative of
+the discrete architecture decision. Disabled channels remain present and can regrow.
+Mask-aware normalization excludes removed coordinates, matching physical slicing.
+Only final export deletes tensors. Dense mask search itself is not a compact forward.
+FFNs have per-layer floors of 4,096 and retain packs of 128 ranked coordinates;
+conditioning attention retains at least eight complete heads per eligible layer.
+Layer indices 0–38 have local masks. Layer 39 retains its full internal FFN/head
+counts, but shared hidden-width selection applies throughout the residual pathway.
+
+SUPERVISION
+GT action flow = 1.0, with native valid-step and time weighting.
+Teacher future-video flow = 0.05 x reliability x ramp, planes 3 and 4 only.
+Teacher K/V = 0.05 x reliability x ramp, layer indices 20–39 only.
+Teacher action imitation, soft-budget, entropy and discreteness losses = 0.
+All three active objectives update mask scores, including hidden scores. A larger
+scalar coefficient does not guarantee a larger gradient contribution.
+Teacher and candidate have matched observations, instruction, robot state and noise.
+The original and masked passes share immutable weights, not intermediate states.
+Gradients flow through the frozen action expert to candidate masks.
+Reliability = clip(1 - teacher_GT_flow_error / max(zero_flow_error,1e-8),0,1),
+with detached student/zero/component vetoes. The same weight gates both auxiliaries.
+No reliability calibration pass. Rejected examples still have GT action supervision
+and remain in all quality measurements. This proxy does not certify video correctness
+or rollout success. The teacher-loss ramp spans 100 actually-pruned updates.
+
+CONDITIONAL HIDDEN SEARCH
+Widths: 5,120 -> 4,992 -> 4,864, with no mandatory removal. Shared channel identities
+are learned; the quality controller controls the count. The 5% floor is a search
+bound, not a claim of safety. No independent hidden selections across layers.
+Start a trial only after a complete accepted development check (at or after update
+280, no later than 1,120), complete passing fitting feedback, bounded channel churn,
+active score gradients, and three monitoring observations with >=99.5% overlap of
+the proposed retained hidden identities (adjacent and first-to-last).
+At most two transitions, in the same run. During a trial hold the global cap and
+exact FFN/head selections unchanged; all scores can still learn. Re-rank hidden
+identities each update. Smaller hidden width must strictly reduce actual parameters.
+Use paired original and accepted-parent errors. A confirmed routine/development or
+fitting regression restores the full pre-trial state: scores, optimizer, sample cursor,
+coverage, RNG and priority. Block further hidden reduction after rejection.
+An uncertain result receives up to 280 updates at that width. At 280 trial updates,
+run full development and native-action checks; accept only passing evidence and
+<=0.5% hidden identity churn. Otherwise restore; uncertainty is reported separately
+from confirmed harm. The two trials add at most two full checks, no additional
+optimizer-update budget or independent model training runs.
+After acceptance, FFN/head allocation can reuse capacity under the unchanged cap.
+No physical deletion occurs before finalization.
+
+CAPACITY AND STOPPING
+Score AdamW LR .01, 50-update warm-up, betas .9/.999, zero decay, gradient clip 1.
+Batch 256 = eight distinct GPU workers x microbatch one x 32 accumulation steps.
+First 70 updates keep everything. Nominal reduction knots: 14B at schedule 560,
+12B at 1,120 and 10B at 1,680. This is a maximum reduction pace, not mandatory sizes.
+Every 70 attempted updates fitting-only paired task/noise feedback authorizes at
+most the next 70 reduction updates. Require eight episodes per task/noise stratum,
+passing all task/suite comparisons and bounded FFN/head/hidden turnover.
+Hidden trials, harm and uncertainty hold the size clock; no forced catch-up.
+Stop size reduction at attempted update 1,680, even above 10B.
+Target finish 1,960; extend once to 2,240 if necessary. Finalization needs five checks
+spanning >=280 retained-lineage updates at fixed capacity, hidden identity overlap
+>=99.5%, every FFN overlap >=99%, unchanged head identities, active finite gradients,
+passing full quality, no unresolved trial, and every fitting window seen >=twice.
+Unmet conditions at the limit mean NOT FINALIZED, no automatic compact export.
+General quality rescue restores the parent even if count is unchanged but identities
+have become harmful. Retained-lineage coverage excludes discarded updates.
+
+QUALITY AND DATA ROLES
+Routine monitor: 140 windows every 70 updates. Scheduled full checks: 0,280,560,
+1120,1680,1960 and, if needed,2240, plus up to two hidden-trial deadline checks.
+Full checks use 1,119 development windows and 140 native ten-step action windows.
+Inspect aggregate action error plus position, quaternion-coordinate and gripper
+errors separately, for both flow and sampled actions. Also inspect GT future-video
+error. Preserve paired original/parent comparisons. Task/suite margins are 5%/2%
+relative offline error, not percentage-point success margins. Component family and
+reference comparisons have adjusted alpha; repeated adaptive development checks
+are screening rules, not an unbiased final statistical guarantee.
+The 1,120-window/280-episode audit is opened only after final selection is locked.
+Audit metrics do not steer masks and are not an export-selection gate. Its prior use
+in unrelated experiments is unverified. Simulation and compact recovery are separate.
+
+VERIFICATION AND OPERATIONS
+CPU tests: exact structural parameter accounting; all-one native parity; noncontiguous
+2.5% and 5% hidden masks versus physical slicing; regrowth and frozen weights;
+component regression protection; fitting-only feedback; bounded trials; rollback;
+optimizer/RNG/sampler/priority resume; exact weighted-loss partition behavior.
+Native GPU gate: unchanged original outputs, no future-target leakage, real GT action
+gradients to all score families and disabled units, immutable model hashes, native
+BF16 masked/sliced K/V-video-action parity. Distributed gate: all tasks, both narrower
+widths, eight-rank score agreement and exact resume. GPU checks must finish before
+training; CPU success alone is not a claim of native GPU readiness.
+Frozen source/config/teacher/data identities bind every readiness receipt and export.
+New run starts from scratch. Replace only the superseded pending adaptive-mask chain;
+leave running job 48309 and its earlier queued full30k chain unchanged.
+W&B and local plots show raw/applied losses, reliability, layer K/V errors, all score
+family priorities, hidden identities/width, layer allocations, task/component/noise
+errors, trial decisions, coverage, memory and throughput.

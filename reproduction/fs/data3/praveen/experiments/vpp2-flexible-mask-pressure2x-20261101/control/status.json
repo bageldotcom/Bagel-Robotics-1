@@ -1,0 +1,9 @@
+{
+  "current_jobs_modified": false,
+  "first_possible_stable_check": 2750,
+  "identity": "e00de20e9f535866e0961ce83780def98f3b451d700fd64d4a8a004918456b6a",
+  "jobs_submitted": false,
+  "parent_update": 1251,
+  "ramp_end": 1501,
+  "status": "bound_awaiting_gpu_startup_check"
+}

@@ -1,0 +1,62 @@
+{
+  "actual_parent_update": "bind the latest COMPLETE checkpoint; never rewind",
+  "automatic_second_increase": false,
+  "base_coefficient": 0.011596363996894921,
+  "binding_command": "CUDA_VISIBLE_DEVICES= PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/data3/praveen/experiments/vpp2-flexible-mask-pressure2x-20261101/source/src:/data3/praveen/experiments/vpp2-adaptive-latekv-mask-search-20261030/python-deps /data1/praveen/experiments/internw0-vpp2-distill-20261020/env/bin/python /data3/praveen/experiments/vpp2-flexible-mask-pressure2x-20261101/control/bind_checkpoint.py --parent-update ACTUAL_COMPLETE_UPDATE",
+  "changed_source_files": [
+    "src/vpp2/flexible_mask/config.py",
+    "src/vpp2/flexible_mask/continuation.py",
+    "src/vpp2/flexible_mask/pressure.py",
+    "src/vpp2/flexible_mask/train.py",
+    "tests/flexible_mask/test_pressure_continuation.py"
+  ],
+  "cpu_tests_passed": 165,
+  "current_job": 50254,
+  "current_jobs_modified": false,
+  "current_pending_jobs": [
+    50255,
+    50256
+  ],
+  "expected_parent_update": 1250,
+  "files": {
+    "binder": "/data3/praveen/experiments/vpp2-flexible-mask-pressure2x-20261101/control/bind_checkpoint.py",
+    "config_draft": "/data3/praveen/experiments/vpp2-flexible-mask-pressure2x-20261101/planned_config.json",
+    "launcher": "/data3/praveen/experiments/vpp2-flexible-mask-pressure2x-20261101/slurm/pressure_train.sbatch",
+    "tests": "/data3/praveen/experiments/vpp2-flexible-mask-pressure2x-20261101/checks/pytest.txt"
+  },
+  "final_coefficient": 0.023192727993789842,
+  "gpu_gradient_probe_executed": false,
+  "handoff_steps": [
+    "Approval received: checkpoint and resume near update 1250 with a 250-update ramp to 2x size coefficient.",
+    "Preserve pending jobs and their routing. Use a verified launcher wait because cluster policy rejects scontrol hold.",
+    "Request graceful checkpoint after update 1250 is reported; preserve actual completed update and never rewind.",
+    "Bind the complete checkpoint and preserve full shards using hard links. Waiting launchers do not load models.",
+    "After binding and CPU verification, release continuation 50255 to the new experiment root.",
+    "Verify all-rank size-gradient scaling and the first three updates; then release the backup launcher gate.",
+    "If preparation fails before new updates and before GPU training starts, restore the original continuation route."
+  ],
+  "implementation_requires_checkpoint_resume": true,
+  "live_coefficient_reload_available": false,
+  "ramp_updates": 250,
+  "stability_note": "Five checks must use the final constant weight; earliest 2500 if ramp ends at 1500.",
+  "status": "watcher_running_waiting_for_checkpoint_boundary",
+  "unchanged": [
+    "GT action weight 1",
+    "reliable teacher video weight .05",
+    "reliable late K/V weight .05",
+    "entropy and discreteness .01",
+    "global batch 256",
+    "microbatch 4",
+    "8 GPUs",
+    "optimizer states",
+    "sampling and RNG states",
+    "learning-rate schedule",
+    "minimum 2000 updates, ceiling 3000",
+    "existing convergence criteria",
+    "existing precision and execution optimizations"
+  ],
+  "utc": "2026-11-01T13:44:21.246448+00:00",
+  "approval_received": true,
+  "watcher_job": 50523,
+  "launcher_control_updated": true
+}

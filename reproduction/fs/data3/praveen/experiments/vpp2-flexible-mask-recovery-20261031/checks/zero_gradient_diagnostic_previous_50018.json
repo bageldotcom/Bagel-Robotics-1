@@ -1,0 +1,8 @@
+{
+  "accumulation": 2,
+  "exact_optimizer_mask_and_weight_state": true,
+  "identity": "945238cf1e15bfd3f18867831b680ca64671306893a6ac741e0d59e97feb7a50",
+  "passed": true,
+  "ranks": 8,
+  "updates": 3
+}

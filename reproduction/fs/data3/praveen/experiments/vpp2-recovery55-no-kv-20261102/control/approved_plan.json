@@ -1,0 +1,22 @@
+{
+  "initial_update": 55,
+  "last_update": 250,
+  "new_optimizer_updates": 195,
+  "action_gt_weight": 1.0,
+  "teacher_video_weight": 0.05,
+  "kv_weight": 0.0,
+  "teacher_action_weight": 0.0,
+  "video_reliability": "unchanged detached relative advantage and baseline/component veto",
+  "learning_rate": 1e-06,
+  "batch_size": 256,
+  "seed": 100008,
+  "validation_every": 50,
+  "frozen_action": true,
+  "video_trainable": true,
+  "mask_training": false,
+  "original55_unchanged": true,
+  "original250_not_yet_recovered": true,
+  "pause_replay_job": "51837",
+  "fallback_automatically_launched": false,
+  "review": "compare generated actions to GT and teacher, task-wise and suite-wise; no simulation claim"
+}

@@ -1,0 +1,21 @@
+{
+  "identity": "bb5e8ca6a5827d9c7ef58fe542ce9583da1480d7672af1c42407596f8e927151",
+  "cpu_tests": 143,
+  "gpu_verified": false,
+  "exact_restart_verified_under_source": "28511221db2e457c545a6d0973f71ed578c75265369afb39c47cf82a87883d9a",
+  "jobs": [
+    {
+      "stage": "gradient_verification",
+      "job_id": "50022",
+      "script": "/data3/praveen/experiments/vpp2-flexible-mask-recovery-20261031/slurm/check_gradient.sbatch"
+    },
+    {
+      "stage": "train",
+      "job_id": "50023",
+      "script": "/data3/praveen/experiments/vpp2-flexible-mask-recovery-20261031/slurm/train.sbatch"
+    }
+  ],
+  "status": "corrected_gradient_verification_submitted",
+  "main_training_started": false,
+  "jobs_submitted": true
+}

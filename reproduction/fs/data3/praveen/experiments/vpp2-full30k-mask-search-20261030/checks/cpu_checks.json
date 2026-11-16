@@ -1,0 +1,326 @@
+{
+  "action_overlap_count": 0,
+  "episode_leakage_count": 0,
+  "equal_task_weighting": true,
+  "exact_cross_split_duplicates": 0,
+  "identity": "2a08a93dc35524366366d5ebe46c18f43af2f57f093af4ef1f6d94667d89f376",
+  "loader_checks": [
+    [
+      1,
+      0
+    ],
+    [
+      49,
+      875
+    ],
+    [
+      102,
+      0
+    ],
+    [
+      103,
+      699
+    ],
+    [
+      202,
+      0
+    ],
+    [
+      237,
+      1100
+    ],
+    [
+      318,
+      0
+    ],
+    [
+      314,
+      526
+    ],
+    [
+      402,
+      0
+    ],
+    [
+      489,
+      169
+    ],
+    [
+      516,
+      0
+    ],
+    [
+      538,
+      629
+    ],
+    [
+      637,
+      0
+    ],
+    [
+      644,
+      1496
+    ],
+    [
+      700,
+      0
+    ],
+    [
+      754,
+      680
+    ],
+    [
+      815,
+      0
+    ],
+    [
+      806,
+      982
+    ],
+    [
+      900,
+      0
+    ],
+    [
+      943,
+      280
+    ],
+    [
+      1000,
+      0
+    ],
+    [
+      1013,
+      852
+    ],
+    [
+      1111,
+      0
+    ],
+    [
+      1160,
+      1288
+    ],
+    [
+      1219,
+      0
+    ],
+    [
+      1260,
+      160
+    ],
+    [
+      1300,
+      0
+    ],
+    [
+      1322,
+      295
+    ],
+    [
+      1400,
+      0
+    ],
+    [
+      1400,
+      350
+    ],
+    [
+      1518,
+      0
+    ],
+    [
+      1525,
+      1232
+    ],
+    [
+      1601,
+      0
+    ],
+    [
+      1663,
+      565
+    ],
+    [
+      1705,
+      0
+    ],
+    [
+      1794,
+      888
+    ],
+    [
+      1801,
+      0
+    ],
+    [
+      1888,
+      1157
+    ],
+    [
+      1900,
+      0
+    ],
+    [
+      1970,
+      286
+    ],
+    [
+      2004,
+      0
+    ],
+    [
+      2023,
+      945
+    ],
+    [
+      2114,
+      0
+    ],
+    [
+      2120,
+      895
+    ],
+    [
+      2200,
+      0
+    ],
+    [
+      2225,
+      248
+    ],
+    [
+      2300,
+      0
+    ],
+    [
+      2321,
+      608
+    ],
+    [
+      2401,
+      0
+    ],
+    [
+      2426,
+      452
+    ],
+    [
+      2500,
+      0
+    ],
+    [
+      2521,
+      454
+    ],
+    [
+      2600,
+      0
+    ],
+    [
+      2650,
+      534
+    ],
+    [
+      2700,
+      0
+    ],
+    [
+      2768,
+      553
+    ],
+    [
+      2800,
+      0
+    ],
+    [
+      2862,
+      718
+    ],
+    [
+      2900,
+      0
+    ],
+    [
+      2920,
+      248
+    ],
+    [
+      3000,
+      0
+    ],
+    [
+      3054,
+      742
+    ],
+    [
+      3100,
+      0
+    ],
+    [
+      3195,
+      800
+    ],
+    [
+      3201,
+      0
+    ],
+    [
+      3232,
+      264
+    ],
+    [
+      3300,
+      0
+    ],
+    [
+      3333,
+      413
+    ],
+    [
+      3401,
+      0
+    ],
+    [
+      3402,
+      928
+    ]
+  ],
+  "mask_learning_ready": false,
+  "model_forward_equivalence": "pending_gpu_check",
+  "monitor_episodes": 280,
+  "native_checkpoint_contract": {
+    "action_horizon": 32,
+    "action_video_freq_ratio": 4,
+    "checkpoint": "/data1/praveen/experiments/vpp2-joint-feature-cache-20261013/assets/model/checkpoints/joint2b_s100000/action.pt",
+    "checkpoint_step": 100000,
+    "condition_history_frames": 8,
+    "condition_history_stride": 25,
+    "condition_history_target_prefix": true,
+    "condition_include_episode_first": true,
+    "processor": {
+      "action_output_dim": 16,
+      "norm_default_mode": "z-score",
+      "norm_exception_mode": null,
+      "num_image_obs_steps": 17,
+      "proprio_output_dim": 16,
+      "use_stepwise_action_norm": false
+    },
+    "video_size": [
+      240,
+      416
+    ]
+  },
+  "normalization_unchanged": true,
+  "panel_identity": "8ed4ebb29c4d595e59edfd62f32016ac938e80105be76e3f773fa180c99846b7",
+  "passed": true,
+  "resume_and_rank_order": true,
+  "selected_episodes": 2906,
+  "selected_window_hashes_verified": 31119,
+  "semantic_review": "pending",
+  "tasks": 35,
+  "window_counts": {
+    "monitor": 1119,
+    "selection_initial": 30000
+  }
+}

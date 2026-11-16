@@ -1,0 +1,115 @@
+{
+  "baseline_executed_identity": "c6588ad732105d09e5c6fd7a90971ac56c471bf2d1d1268a7e3edf1a7b8eb92d",
+  "baseline_seconds": 146.82270896542468,
+  "bitwise_equivalent_across_microbatches": false,
+  "cache_batch_statistics": [
+    {
+      "batches": 49,
+      "mixed_batches": 0,
+      "singly_encoded_windows": 96
+    },
+    {
+      "batches": 49,
+      "mixed_batches": 0,
+      "singly_encoded_windows": 98
+    },
+    {
+      "batches": 49,
+      "mixed_batches": 1,
+      "singly_encoded_windows": 97
+    },
+    {
+      "batches": 49,
+      "mixed_batches": 0,
+      "singly_encoded_windows": 96
+    },
+    {
+      "batches": 49,
+      "mixed_batches": 1,
+      "singly_encoded_windows": 97
+    },
+    {
+      "batches": 49,
+      "mixed_batches": 1,
+      "singly_encoded_windows": 97
+    },
+    {
+      "batches": 49,
+      "mixed_batches": 0,
+      "singly_encoded_windows": 98
+    },
+    {
+      "batches": 49,
+      "mixed_batches": 0,
+      "singly_encoded_windows": 98
+    }
+  ],
+  "candidate_seconds": 84.7464579337975,
+  "checkpoint": {
+    "config_sha256": "f084dc3e5b0a8e0b003a138494d9fef04923af89f4764bf176135fa677523c0f",
+    "identity": "bb5e8ca6a5827d9c7ef58fe542ce9583da1480d7672af1c42407596f8e927151",
+    "receipt_sha256": "6294739454743eb41b1e8d31c732289f74c1134fd27b0c326f6f75e7e715e54e",
+    "root": "/data3/praveen/experiments/vpp2-flexible-mask-recovery-20261031",
+    "tag": "update_000031"
+  },
+  "compared_updates": 3,
+  "diagnostics": "All eight ranks exercised real mask-gradient calibration without optimizer/model/RNG changes",
+  "failures": [],
+  "identity": "72f7387ca10b6e2b2c08bcab5ad77ec8f9d7afea8ed69777a93a16a8f4ddd6da",
+  "numerics": [
+    {
+      "cross_gradient_cosine": 0.9995033740997314,
+      "cross_gradient_norm_relative_difference": 0.0027381651473311667,
+      "ffn_gradient_cosine": 0.9995955228805542,
+      "ffn_gradient_norm_relative_difference": 0.0004975227659885161,
+      "gt_action_relative_difference": 0.004198446855905244,
+      "hidden_gradient_cosine": 0.9999660849571228,
+      "hidden_gradient_norm_relative_difference": 0.0020758346597545296,
+      "late_kv_gated_relative_difference": 0.006320659992004871,
+      "student_action_relative_rmse": 0.004982519253659741,
+      "teacher_action_relative_rmse": 0.005398604268962494,
+      "teacher_video_gated_relative_difference": 0.004444479223015104,
+      "total_relative_difference": 0.004366412110789273,
+      "update": 32,
+      "video_gradient_norm_relative_difference": 0.001316626267728795
+    },
+    {
+      "cross_gradient_cosine": 0.9995348453521729,
+      "cross_gradient_norm_relative_difference": 0.002644530987825579,
+      "ffn_gradient_cosine": 0.9996529221534729,
+      "ffn_gradient_norm_relative_difference": 0.0014647450097173703,
+      "gt_action_relative_difference": 8.924313551194033e-05,
+      "hidden_gradient_cosine": 0.9999383091926575,
+      "hidden_gradient_norm_relative_difference": 0.005700720871630417,
+      "late_kv_gated_relative_difference": 0.005928715107167941,
+      "student_action_relative_rmse": 0.006868961186787829,
+      "teacher_action_relative_rmse": 0.007086801868358184,
+      "teacher_video_gated_relative_difference": 0.005709987891989582,
+      "total_relative_difference": 0.0005890613949017058,
+      "update": 33,
+      "video_gradient_norm_relative_difference": 0.0021727990536335655
+    },
+    {
+      "cross_gradient_cosine": 0.9996473789215088,
+      "cross_gradient_norm_relative_difference": 0.0010820238045236995,
+      "ffn_gradient_cosine": 0.9995162487030029,
+      "ffn_gradient_norm_relative_difference": 0.002049479312146535,
+      "gt_action_relative_difference": 0.0037251384629600607,
+      "hidden_gradient_cosine": 0.9998932480812073,
+      "hidden_gradient_norm_relative_difference": 0.014287366177587649,
+      "late_kv_gated_relative_difference": 0.0034091755563204276,
+      "student_action_relative_rmse": 0.009646492454730206,
+      "teacher_action_relative_rmse": 0.009448191851734015,
+      "teacher_video_gated_relative_difference": 0.0009132101096302105,
+      "total_relative_difference": 0.0036341936302552898,
+      "update": 34,
+      "video_gradient_norm_relative_difference": 0.0009807098921066296
+    }
+  ],
+  "passed": true,
+  "peak_allocated_gib": 60.01447772979736,
+  "samples_and_initial_state_match": true,
+  "scientific_objectives_unchanged": true,
+  "speedup": 1.7324937530736695,
+  "timing_discard_first_update": true
+}

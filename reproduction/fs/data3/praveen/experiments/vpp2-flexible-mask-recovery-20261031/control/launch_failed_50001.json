@@ -1,0 +1,29 @@
+{
+  "created_at": "2026-10-31T14:32:14.904265+00:00",
+  "failure": {
+    "cause": "Missing zstandard at checkpoint save after three updates",
+    "dependent_training_cancelled": "50002",
+    "job_id": "50001",
+    "updates_completed": 3
+  },
+  "identity": "4e7debbc78f529c2dc6fc7e5d750071dd40f5b8082f81005670b288bf121b7d4",
+  "jobs": [
+    {
+      "dependency": null,
+      "job_id": "50001",
+      "script": "/data3/praveen/experiments/vpp2-flexible-mask-recovery-20261031/slurm/distributed.sbatch",
+      "stage": "distributed"
+    },
+    {
+      "dependency": "afterok:50001",
+      "job_id": "50002",
+      "script": "/data3/praveen/experiments/vpp2-flexible-mask-recovery-20261031/slurm/train.sbatch",
+      "stage": "train"
+    }
+  ],
+  "node": "bagel-gpu-03",
+  "replaces": "49995/49996",
+  "source": "/data3/praveen/experiments/vpp2-flexible-mask-recovery-20261031/source-4a2cd3cad884",
+  "structural_evidence_job": "49994",
+  "training_requires_gpu_receipt": true
+}

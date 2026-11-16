@@ -1,0 +1,145 @@
+{
+  "checkpoint_identity": "790bffc9464fa7a026aa43b217aec2033d186895cad643166daa0bcc01914d5c",
+  "conclusion": "K/V matching disabled on resuming checkpoint55: all 945 recovery updates 56..1000 have zero matching weight. Earlier selected mask learning and recovery1..55 used K/V matching.",
+  "stages": [
+    {
+      "stage": "mask-learning",
+      "config": "/data3/praveen/experiments/vpp2-flexible-mask-pressure2x-20261101/config.json",
+      "config_sha256": "973334635f21f65ab9e25c58b1cfcc9828ec211427d7b39f43d8769f8f482fa7",
+      "metrics": "/data3/praveen/experiments/vpp2-flexible-mask-pressure2x-20261101/mask/metrics.jsonl",
+      "metrics_sha256": "9a782eb2a070c439812be3d01d0b1c500c363f64d5156ab5bd9fde04a4c760f1",
+      "configured_kv_weight": 0.05,
+      "records": 1561,
+      "min_update": 1,
+      "max_update": 1561,
+      "all_recorded_kv_weights_zero": false,
+      "example_updates": [
+        {
+          "update": 55,
+          "stage": "mask",
+          "late_kv_weight": 0.027499999850988388,
+          "effective_kv_weight": 0.021395824325736612
+        },
+        {
+          "update": 56,
+          "stage": "mask",
+          "late_kv_weight": 0.02800000086426735,
+          "effective_kv_weight": 0.021204650729487184
+        },
+        {
+          "update": 249,
+          "stage": "mask",
+          "late_kv_weight": 0.05000000074505806,
+          "effective_kv_weight": 0.032402790664491476
+        },
+        {
+          "update": 250,
+          "stage": "mask",
+          "late_kv_weight": 0.05000000074505806,
+          "effective_kv_weight": 0.033312848361674696
+        },
+        {
+          "update": 251,
+          "stage": "mask",
+          "late_kv_weight": 0.05000000074505806,
+          "effective_kv_weight": 0.03181795566342771
+        },
+        {
+          "update": 1000,
+          "stage": "mask",
+          "late_kv_weight": 0.05000000074505806,
+          "effective_kv_weight": 0.01852316652366426
+        },
+        {
+          "update": 1500,
+          "stage": "mask",
+          "late_kv_weight": 0.05000000074505806,
+          "effective_kv_weight": 0.011512651384691708
+        }
+      ]
+    },
+    {
+      "stage": "early-recovery",
+      "config": "/data3/praveen/experiments/vpp2-selected-mask-recovery-20261101/config.json",
+      "config_sha256": "d1fcf70b6a625698866a175bd10c24238067a3c6a0e4f945c48e360e7b0cff77",
+      "metrics": "/data3/praveen/experiments/vpp2-selected-mask-recovery-20261101/recovery/metrics.jsonl",
+      "metrics_sha256": "4237ac2cb2773734742f5b3560a1b993bfece93cca93fc73bed49cc0fa57e706",
+      "configured_kv_weight": 0.05,
+      "records": 55,
+      "min_update": 1,
+      "max_update": 55,
+      "all_recorded_kv_weights_zero": false,
+      "example_updates": [
+        {
+          "update": 55,
+          "stage": "recovery",
+          "late_kv_weight": 0.05000000074505806,
+          "effective_kv_weight": 0.030576508666854352
+        }
+      ]
+    },
+    {
+      "stage": "recovery-56-250",
+      "config": "/data3/praveen/experiments/vpp2-recovery55-no-kv-20261102/config.json",
+      "config_sha256": "3b3a91b77d0dd8e599e17941c5c8080674431bce101f743e00c7820d56a64f28",
+      "metrics": "/data3/praveen/experiments/vpp2-recovery55-no-kv-20261102/recovery/metrics.jsonl",
+      "metrics_sha256": "783ee5cb2cac5d055f90e6268a2d3ba332f6c07d4093f099e17ae67d5c57143b",
+      "configured_kv_weight": 0.0,
+      "records": 195,
+      "min_update": 56,
+      "max_update": 250,
+      "all_recorded_kv_weights_zero": true,
+      "example_updates": [
+        {
+          "update": 56,
+          "stage": "recovery",
+          "late_kv_weight": 0.0,
+          "effective_kv_weight": 0.0,
+          "kv_comparisons_measured": 0.0
+        },
+        {
+          "update": 249,
+          "stage": "recovery",
+          "late_kv_weight": 0.0,
+          "effective_kv_weight": 0.0,
+          "kv_comparisons_measured": 0.0
+        },
+        {
+          "update": 250,
+          "stage": "recovery",
+          "late_kv_weight": 0.0,
+          "effective_kv_weight": 0.0,
+          "kv_comparisons_measured": 0.0
+        }
+      ]
+    },
+    {
+      "stage": "recovery-251-1000",
+      "config": "/data3/praveen/experiments/vpp2-recovery55-no-kv-to1000-20261103/config.json",
+      "config_sha256": "75d5278ad92fa2ba3d44113b74c346302bcfbb1ae4681ad33e74cd25bca714f8",
+      "metrics": "/data3/praveen/experiments/vpp2-recovery55-no-kv-to1000-20261103/recovery/metrics.jsonl",
+      "metrics_sha256": "2f4f6ab9798410735e01964a82dfea1a29c8e954f1d3e3734e6a105a909d1a10",
+      "configured_kv_weight": 0.0,
+      "records": 750,
+      "min_update": 251,
+      "max_update": 1000,
+      "all_recorded_kv_weights_zero": true,
+      "example_updates": [
+        {
+          "update": 251,
+          "stage": "recovery",
+          "late_kv_weight": 0.0,
+          "effective_kv_weight": 0.0,
+          "kv_comparisons_measured": 0.0
+        },
+        {
+          "update": 1000,
+          "stage": "recovery",
+          "late_kv_weight": 0.0,
+          "effective_kv_weight": 0.0,
+          "kv_comparisons_measured": 0.0
+        }
+      ]
+    }
+  ]
+}

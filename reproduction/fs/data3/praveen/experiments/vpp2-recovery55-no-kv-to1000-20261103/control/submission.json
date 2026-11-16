@@ -1,0 +1,12 @@
+{
+  "parent_training_job": "51934",
+  "parent_review_job": "51935",
+  "handoff_job": "52230",
+  "training_job": "52231",
+  "target_update": 1000,
+  "supersedes_jobs": [
+    "52217",
+    "52218"
+  ],
+  "submitted_at": "2026-11-03T01:25:59.416278+00:00"
+}

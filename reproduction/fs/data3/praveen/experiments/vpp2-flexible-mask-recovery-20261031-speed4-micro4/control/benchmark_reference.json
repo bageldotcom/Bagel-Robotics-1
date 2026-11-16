@@ -1,0 +1,9 @@
+{
+  "root": "/data3/praveen/experiments/vpp2-flexible-mask-recovery-20261031-speed3-micro4",
+  "identity": "d4ec76e810102a5aa6fb41f5c2869178439323b1996650288bf015f1c0012426",
+  "reason": "Ordinary-update source path unchanged; only calibration backward releases unused allocator cache.",
+  "allowed_source_changes": [
+    "src/vpp2/flexible_mask/calibration_batch.py",
+    "src/vpp2/flexible_mask/train.py"
+  ]
+}

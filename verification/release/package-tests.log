@@ -1,0 +1,29 @@
+test_checkpoint_completeness (test_launcher.LauncherTests.test_checkpoint_completeness) ... ok
+test_command_never_enables_upload (test_launcher.LauncherTests.test_command_never_enables_upload) ... ok
+test_export_verification_uses_original_verifier (test_launcher.LauncherTests.test_export_verification_uses_original_verifier) ... ok
+test_init_refuses_existing_directory (test_launcher.LauncherTests.test_init_refuses_existing_directory) ... ok
+test_missing_assets_reported (test_launcher.LauncherTests.test_missing_assets_reported) ... ok
+test_no_source_edits_on_command (test_launcher.LauncherTests.test_no_source_edits_on_command) ... ok
+test_physical_export_is_one_process (test_launcher.LauncherTests.test_physical_export_is_one_process) ... ok
+test_rejects_relative_and_traversal (test_launcher.LauncherTests.test_rejects_relative_and_traversal) ... ok
+test_rejects_symlink_escape (test_launcher.LauncherTests.test_rejects_symlink_escape) ... ok
+test_stage_contracts (test_launcher.LauncherTests.test_stage_contracts) ... ok
+test_training_requires_allocation (test_launcher.LauncherTests.test_training_requires_allocation) ... ok
+test_weights_not_bundled (test_launcher.LauncherTests.test_weights_not_bundled) ... ok
+test_wrong_checkpoint_identity_rejected (test_launcher.LauncherTests.test_wrong_checkpoint_identity_rejected) ... ok
+test_all_exposed_training_stages_disable_kv (test_release_scope.ReleaseScopeTests.test_all_exposed_training_stages_disable_kv) ... ok
+test_conditioning_and_normalization_are_original (test_release_scope.ReleaseScopeTests.test_conditioning_and_normalization_are_original) ... ok
+test_data_paths_cannot_escape (test_release_scope.ReleaseScopeTests.test_data_paths_cannot_escape) ... ok
+test_episode_hash_check_detects_changes (test_release_scope.ReleaseScopeTests.test_episode_hash_check_detects_changes) ... ok
+test_guard_rejects_nonzero_or_missing_loss (test_release_scope.ReleaseScopeTests.test_guard_rejects_nonzero_or_missing_loss) ... ok
+test_best_two_match_recorded_selection (test_results.ResultsTests.test_best_two_match_recorded_selection) ... ok
+test_duplicate_windows_rejected (test_results.ResultsTests.test_duplicate_windows_rejected) ... ok
+test_macro_average_recomputed (test_results.ResultsTests.test_macro_average_recomputed) ... ok
+test_missing_comparison_is_not_invented (test_results.ResultsTests.test_missing_comparison_is_not_invented) ... ok
+test_missing_task_rejected (test_results.ResultsTests.test_missing_task_rejected) ... ok
+test_teacher_constant_and_validations_complete (test_results.ResultsTests.test_teacher_constant_and_validations_complete) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.106s
+
+OK

@@ -1,0 +1,32 @@
+{
+  "action_gt_weight": 1.0,
+  "active_pilot_unchanged": true,
+  "best_policy_scope": "Pilot plus continuation; GT action MSE ranking",
+  "frozen_action": true,
+  "global_batch": 256,
+  "gpus": 8,
+  "gradient_updates": [
+    500,
+    1000
+  ],
+  "handoff_condition": "Current250 beats previous historical250 GT action MSE on identical validation windows",
+  "keep_best_policies": 2,
+  "keep_latest_resumable": 2,
+  "kv_weight": 0.0,
+  "learning_rate_schedule_unchanged": true,
+  "mask_training": false,
+  "micro_batch": 4,
+  "new_updates": 750,
+  "parent250_preserved": true,
+  "parent_update": 250,
+  "reliable_teacher_video_weight": 0.05,
+  "restore_checks": "Full shard hashes, optimizer/RNG/data cursor, eight-rank small-model next-update test, real-model validation reproduction",
+  "resumable_every": 250,
+  "schedule_endpoint": 2399,
+  "simulation_automatic": false,
+  "target_update": 1000,
+  "teacher_action_weight": 0.0,
+  "teacher_agreement_logged": true,
+  "trainable_compact_video": true,
+  "validation_every": 50
+}

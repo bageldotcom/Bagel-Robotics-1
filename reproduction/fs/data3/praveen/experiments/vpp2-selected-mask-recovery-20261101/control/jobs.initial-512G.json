@@ -1,0 +1,18 @@
+{
+  "selection_job": "50812",
+  "cpu_preparation_job": "50813",
+  "physical_export_job": "50814",
+  "export_verification_job": "50815",
+  "recovery_job": "50816",
+  "recovery_continuations": [
+    "50817",
+    "50818"
+  ],
+  "recovery_updates_total": 6000,
+  "resume_does_not_add_updates": true,
+  "gpus": 8,
+  "node": "bagel-gpu-03",
+  "selection_rule_unchanged": true,
+  "cross_environment_checks": false,
+  "mask_convergence_claimed": false
+}

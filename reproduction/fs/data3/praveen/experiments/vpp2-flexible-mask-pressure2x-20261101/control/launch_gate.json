@@ -1,0 +1,19 @@
+{
+  "managed_jobs": [
+    "50255",
+    "50256"
+  ],
+  "parent_job": "50254",
+  "releases": {
+    "50255": {
+      "root": "/data3/praveen/experiments/vpp2-flexible-mask-pressure2x-20261101",
+      "utc": "2026-11-01T14:47:11.839296+00:00"
+    },
+    "50256": {
+      "root": "/data3/praveen/experiments/vpp2-flexible-mask-pressure2x-20261101",
+      "utc": "2026-11-01T14:53:14.690468+00:00"
+    }
+  },
+  "schema": "pressure-handoff-launcher-v1",
+  "target_root": "/data3/praveen/experiments/vpp2-flexible-mask-pressure2x-20261101"
+}

@@ -1,0 +1,10 @@
+{
+  "cross_environment_checks": false,
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "identity": "3f649598843973f50aacbc93e571f2c8ee3f22a9e6adbdf6e030e1fc26f78d22",
+  "job": "50812",
+  "native_inference_unchanged": true,
+  "rank": 6,
+  "torch": "2.10.0+cu128",
+  "world": 8
+}

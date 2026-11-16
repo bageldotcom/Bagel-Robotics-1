@@ -1,0 +1,13 @@
+{
+  "parent": {
+    "root": "/data3/praveen/experiments/vpp2-flexible-mask-recovery-20261031",
+    "tag": "update_000031",
+    "identity": "bb5e8ca6a5827d9c7ef58fe542ce9583da1480d7672af1c42407596f8e927151",
+    "config_sha256": "f084dc3e5b0a8e0b003a138494d9fef04923af89f4764bf176135fa677523c0f",
+    "receipt_sha256": "6294739454743eb41b1e8d31c732289f74c1134fd27b0c326f6f75e7e715e54e"
+  },
+  "source": "/data3/praveen/experiments/vpp2-flexible-mask-recovery-20261031-micro2/source-2d124189848d",
+  "utc": "2026-10-31T17:46:51.060215+00:00",
+  "scientific_changes": false,
+  "jobs_submitted": false
+}

@@ -1,0 +1,20 @@
+{
+  "continuation_checkpoint": {
+    "config_sha256": "f084dc3e5b0a8e0b003a138494d9fef04923af89f4764bf176135fa677523c0f",
+    "identity": "bb5e8ca6a5827d9c7ef58fe542ce9583da1480d7672af1c42407596f8e927151",
+    "receipt_sha256": "6294739454743eb41b1e8d31c732289f74c1134fd27b0c326f6f75e7e715e54e",
+    "root": "/data3/praveen/experiments/vpp2-flexible-mask-recovery-20261031",
+    "tag": "update_000031"
+  },
+  "contracts": true,
+  "diagnostic_gradient_noninterference": true,
+  "export_equivalence_still_required": true,
+  "frozen_reference_unchanged": true,
+  "global_batch": 256,
+  "identity": "72f7387ca10b6e2b2c08bcab5ad77ec8f9d7afea8ed69777a93a16a8f4ddd6da",
+  "micro_batch": 2,
+  "numerical_comparison_receipt": "/data3/praveen/experiments/vpp2-flexible-mask-recovery-20261031-micro2/checks/throughput.json",
+  "numerical_comparison_sha256": "f77efdccd97e3b0ca8f3bc51c5563a8b2fc48992df975ac0a824380391ff65cc",
+  "passed": true,
+  "world_size": 8
+}

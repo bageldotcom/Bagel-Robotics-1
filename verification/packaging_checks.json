@@ -1,0 +1,29 @@
+{
+  "source_hashes": {
+    "files_checked": 2148,
+    "passed": true,
+    "failures": []
+  },
+  "cpu_tests": {
+    "passed": true,
+    "output": "test_checkpoint_completeness (test_launcher.LauncherTests.test_checkpoint_completeness) ... ok\ntest_command_never_enables_upload (test_launcher.LauncherTests.test_command_never_enables_upload) ... ok\ntest_export_verification_uses_original_verifier (test_launcher.LauncherTests.test_export_verification_uses_original_verifier) ... ok\ntest_init_refuses_existing_directory (test_launcher.LauncherTests.test_init_refuses_existing_directory) ... ok\ntest_missing_assets_reported (test_launcher.LauncherTests.test_missing_assets_reported) ... ok\ntest_no_source_edits_on_command (test_launcher.LauncherTests.test_no_source_edits_on_command) ... ok\ntest_physical_export_is_one_process (test_launcher.LauncherTests.test_physical_export_is_one_process) ... ok\ntest_rejects_relative_and_traversal (test_launcher.LauncherTests.test_rejects_relative_and_traversal) ... ok\ntest_rejects_symlink_escape (test_launcher.LauncherTests.test_rejects_symlink_escape) ... ok\ntest_stage_contracts (test_launcher.LauncherTests.test_stage_contracts) ... ok\ntest_training_requires_allocation (test_launcher.LauncherTests.test_training_requires_allocation) ... ok\ntest_weights_not_bundled (test_launcher.LauncherTests.test_weights_not_bundled) ... ok\ntest_wrong_checkpoint_identity_rejected (test_launcher.LauncherTests.test_wrong_checkpoint_identity_rejected) ... ok\ntest_best_two_match_recorded_selection (test_results.ResultsTests.test_best_two_match_recorded_selection) ... ok\ntest_duplicate_windows_rejected (test_results.ResultsTests.test_duplicate_windows_rejected) ... ok\ntest_macro_average_recomputed (test_results.ResultsTests.test_macro_average_recomputed) ... ok\ntest_missing_comparison_is_not_invented (test_results.ResultsTests.test_missing_comparison_is_not_invented) ... ok\ntest_missing_task_rejected (test_results.ResultsTests.test_missing_task_rejected) ... ok\ntest_teacher_constant_and_validations_complete (test_results.ResultsTests.test_teacher_constant_and_validations_complete) ... ok\n\n----------------------------------------------------------------------\nRan 19 tests in 0.039s\n\nOK\n"
+  },
+  "slurm_syntax": {
+    "passed": true,
+    "stderr": ""
+  },
+  "documentation_links": {
+    "passed": true,
+    "missing": []
+  },
+  "weight_free": {
+    "passed": true,
+    "unexpected_tensors": []
+  },
+  "passed": true,
+  "gpu_replay_run": false,
+  "container_built": false,
+  "full_tensor_hash_scan": false,
+  "training_or_slurm_jobs_changed": false,
+  "scope": "Standalone packaging and existing results; not new GPU training or evaluation"
+}

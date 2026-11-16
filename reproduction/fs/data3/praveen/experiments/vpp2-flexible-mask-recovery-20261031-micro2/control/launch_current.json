@@ -1,0 +1,22 @@
+{
+  "utc": "2026-10-31T18:14:04.336046+00:00",
+  "root": "/data3/praveen/experiments/vpp2-flexible-mask-recovery-20261031-micro2",
+  "identity": "72f7387ca10b6e2b2c08bcab5ad77ec8f9d7afea8ed69777a93a16a8f4ddd6da",
+  "verification_job": "50027",
+  "jobs": {
+    "train": "50028",
+    "continuation_1": "50029",
+    "continuation_2": "50030"
+  },
+  "parent_update": 31,
+  "global_batch": 256,
+  "micro_batch": 2,
+  "accumulation": 16,
+  "teacher_video_retained": true,
+  "verification_passed": true,
+  "verified_benchmark_seconds": 84.7464579337975,
+  "verification_sha256": "f77efdccd97e3b0ca8f3bc51c5563a8b2fc48992df975ac0a824380391ff65cc",
+  "updated_at": "2026-10-31T18:18:31.172318+00:00",
+  "source": "/data3/praveen/experiments/vpp2-flexible-mask-recovery-20261031-micro2/source-aa7bf6c846b9",
+  "wandb": "https://wandb.ai/bakery_ismail-bagel-network/vpp2-thaw-robodojo/runs/flexible-mask-72f7387ca10b"
+}

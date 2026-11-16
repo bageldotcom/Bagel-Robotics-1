@@ -1,0 +1,27 @@
+{
+  "baseline_root": "/data3/praveen/experiments/vpp2-flexible-mask-recovery-20261031",
+  "candidate_root": "/data3/praveen/experiments/vpp2-flexible-mask-recovery-20261031/performance/resident_teacher",
+  "created_at": "2026-10-31T14:47:55.058500+00:00",
+  "execution_candidate_only": true,
+  "jobs": [
+    {
+      "dependency": null,
+      "job_id": "50006",
+      "root": "/data3/praveen/experiments/vpp2-flexible-mask-recovery-20261031",
+      "stage": "baseline"
+    },
+    {
+      "dependency": "afterok:50006",
+      "job_id": "50007",
+      "root": "/data3/praveen/experiments/vpp2-flexible-mask-recovery-20261031/performance/resident_teacher",
+      "stage": "distributed"
+    },
+    {
+      "dependency": "afterok:50007",
+      "job_id": "50008",
+      "root": "/data3/praveen/experiments/vpp2-flexible-mask-recovery-20261031/performance/resident_teacher",
+      "stage": "train"
+    }
+  ],
+  "optimizer_state_comparison_required": true
+}

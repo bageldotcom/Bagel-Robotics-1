@@ -1,0 +1,66 @@
+{
+  "schema": "vpp2-width-kv-precision-v1",
+  "root": "/data3/praveen/experiments/vpp2-compact-kv-width-precision-20261027",
+  "teacher_bundle": "/data1/praveen/experiments/vpp2-joint-feature-cache-20261013/assets/model/checkpoints/joint2b_s100000",
+  "wan_root": "/data1/praveen/experiments/vpp2-joint-feature-cache-20261013/assets/model/checkpoints/Wan2.1-I2V-14B-480P",
+  "source_dataset": "/data1/praveen/experiments/vpp2-joint-feature-cache-20261013/assets/dataset/data/RoboDojo_ee_lerobot_v30_video",
+  "reference_split": "/data1/praveen/experiments/vpp2-online-distill-20261015/prepared_split",
+  "baseline_eval_root": "/home/praveen/experiment_launchers/robodojo-native-repeatability-20261026",
+  "seed": 100008,
+  "max_updates": 1000,
+  "global_batch": 288,
+  "micro_batch": 4,
+  "learning_rate": 5e-06,
+  "warmup_updates": 50,
+  "lr_final_fraction": 0.1,
+  "betas": [
+    0.9,
+    0.95
+  ],
+  "weight_decay": 0.01,
+  "gradient_clipping": 1.0,
+  "action_gt_weight": 1.0,
+  "action_teacher_weight": 1.0,
+  "kv_max_weight": 0.1,
+  "kv_ramp_updates": 50,
+  "validation_updates": [
+    0,
+    100,
+    250,
+    500
+  ],
+  "checkpoint_every": 250,
+  "log_every": 1,
+  "plot_every": 50,
+  "num_workers": 4,
+  "convert_workers": 16,
+  "candidates": [
+    "W1",
+    "W2"
+  ],
+  "simulation": {
+    "enabled": false,
+    "policies": [],
+    "reason": "User requested pilot selection by train and held-out teacher replication only."
+  },
+  "wandb": {
+    "enabled": true,
+    "entity": "bakery_ismail-bagel-network",
+    "project": "vpp2-thaw-robodojo",
+    "group": "compact-width-kv-precision-20261027"
+  },
+  "zero_stage": 3,
+  "optimizer_cpu_offload": false,
+  "width_temporal_diagnostics": true,
+  "width_calibration": {
+    "scoring_windows_per_task": 48,
+    "diagnostic_windows_per_task": 16,
+    "noise_draws": 2,
+    "output_probes": 2,
+    "behaviour_fraction": 0.5,
+    "task_mean_fraction": 0.5,
+    "residual_width": 2048,
+    "ffn_width": 8192
+  },
+  "comparison_updates": 500
+}

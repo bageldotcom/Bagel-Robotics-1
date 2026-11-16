@@ -1,0 +1,18 @@
+{
+  "identity": "bb5e8ca6a5827d9c7ef58fe542ce9583da1480d7672af1c42407596f8e927151",
+  "executed_identity": "28511221db2e457c545a6d0973f71ed578c75265369afb39c47cf82a87883d9a",
+  "source_manifest": "/data3/praveen/experiments/vpp2-flexible-mask-recovery-20261031/preparation_revisions/source-249d386b05b3/source_manifest.json",
+  "source_manifest_sha256": "99bddc1542fa6a9cad1180de475e93f5af0ddbfc8da15f27b071eb807d50a028",
+  "inputs": "/data3/praveen/experiments/vpp2-flexible-mask-recovery-20261031/preparation_revisions/source-249d386b05b3/inputs.json",
+  "changed_files": [
+    "scripts/flexible_mask/check_zero_gradient.py",
+    "src/vpp2/flexible_mask/gradient_probe.py",
+    "src/vpp2/flexible_mask/preflight.py",
+    "tests/flexible_mask/test_flexible_contracts.py"
+  ],
+  "probe_jobs": {
+    "uninterrupted": "50006",
+    "resumed": "50016"
+  },
+  "ordinary_reference_files_relabelled": false
+}

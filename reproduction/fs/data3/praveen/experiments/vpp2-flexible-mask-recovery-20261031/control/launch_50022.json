@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-10-31T15:55:23.990396+00:00",
+  "root": "/data3/praveen/experiments/vpp2-flexible-mask-recovery-20261031",
+  "identity": "bb5e8ca6a5827d9c7ef58fe542ce9583da1480d7672af1c42407596f8e927151",
+  "execution": "sharded_teacher",
+  "reference_job": "50006",
+  "resume_evidence_job": "50016",
+  "jobs": [
+    {
+      "stage": "gradient_verification",
+      "job_id": "50022",
+      "script": "/data3/praveen/experiments/vpp2-flexible-mask-recovery-20261031/slurm/check_gradient.sbatch"
+    },
+    {
+      "stage": "train",
+      "job_id": "50023",
+      "script": "/data3/praveen/experiments/vpp2-flexible-mask-recovery-20261031/slurm/train.sbatch"
+    }
+  ]
+}

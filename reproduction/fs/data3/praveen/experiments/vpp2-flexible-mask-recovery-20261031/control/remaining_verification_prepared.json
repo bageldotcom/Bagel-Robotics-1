@@ -1,0 +1,12 @@
+{
+  "script": "/data3/praveen/experiments/vpp2-flexible-mask-recovery-20261031/slurm/verify_remaining.sbatch",
+  "sha256": "49b763d042f24e8454e0505ee54aca84bff6be0585c44315af507d06551df36e",
+  "reuse_completed_reference_job": "50006",
+  "steps": [
+    "resumed_1",
+    "resumed_3",
+    "gradient_probe_3",
+    "finish_gpu"
+  ],
+  "created_at": "2026-10-31T15:09:36.770233+00:00"
+}

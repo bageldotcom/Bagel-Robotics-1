@@ -1,0 +1,24 @@
+{
+  "time_utc": "2026-11-01T21:12:11.642801+00:00",
+  "identity": "0c94de36c72c55171c825364757390237142fbb18eafd27253be93c0fa5ca0ef",
+  "recovery": 50858,
+  "walltime_continuation": 50859,
+  "node": "bagel-gpu-03",
+  "new_phase_updates": 2344,
+  "total_optimizer_endpoint": 2399,
+  "global_batch": 256,
+  "sampler": "original curated 30000 fitting windows; task balanced",
+  "parent_update": 55,
+  "parent_job": 50844,
+  "superseded_pending_jobs": [
+    50845,
+    50846
+  ],
+  "continuations_are_same_run": true,
+  "status": "checkpointed_for_kv_decay",
+  "final_parent_update": 1266,
+  "superseded_fallback": 50859,
+  "current_root": "/data3/praveen/experiments/vpp2-selected-mask-recovery-curated30k-kvdecay250-bestckpt-20261102",
+  "current_recovery_job": 51267,
+  "current_fallback": 51268
+}

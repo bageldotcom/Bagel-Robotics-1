@@ -1,0 +1,9 @@
+{
+  "identity": "0c94de36c72c55171c825364757390237142fbb18eafd27253be93c0fa5ca0ef",
+  "bash_syntax_passed": true,
+  "slurm_script_sha256": "d240d3316f0732ad46acda0a7d72f672ea2b3d2dc2e8d1dbec9d08e0311b82fd",
+  "parent_checkpoint_preserved": "/data3/praveen/experiments/vpp2-selected-mask-recovery-20261101/recovery/checkpoints/update_000055",
+  "updates": 2344,
+  "global_batch": 256,
+  "optimizer_endpoint": 2399
+}

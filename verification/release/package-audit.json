@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "errors": [],
+  "source_files_checked": 2828,
+  "package_files_checked": 2988,
+  "checkpoint_repo": "bageldotcom/Bagel-Robotics-1",
+  "checkpoint_revision": "2651631c5d08819088475e8778676f5cf6d9afcf",
+  "no_kv_training_enforced": true,
+  "gpu_training_rerun": false,
+  "public_release_complete": false
+}

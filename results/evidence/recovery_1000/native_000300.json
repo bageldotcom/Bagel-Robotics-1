@@ -1,0 +1,3153 @@
+{
+  "action_agreement": {
+    "overall": 0.0004046458343119801,
+    "suite/DLC_auxiliary": 0.0005113515144330449,
+    "suite/generalization": 0.0004494270807905802,
+    "suite/long-horizon": 0.0006603121756256769,
+    "suite/memory": 0.0002168842232398068,
+    "suite/precision": 0.00020929062156938016,
+    "task/arrange_largest_number": 0.0002028544040513225,
+    "task/build_tower": 0.00011670452659018338,
+    "task/classify_objects": 0.0015841079293750226,
+    "task/cover_blocks": 2.214445476056426e-05,
+    "task/deposit_coin": 0.00036671671114163473,
+    "task/dlc": 0.0005113515144330449,
+    "task/fasten_screws": 0.00018623146752361208,
+    "task/fill_egg_holder": 0.0007264209780259989,
+    "task/fill_pen_holder": 0.0007519376449636184,
+    "task/fold_clothes": 8.707919823791599e-05,
+    "task/hang_mugs": 0.00038810275873402134,
+    "task/imitate_sorting_sequence": 0.0005109936925009606,
+    "task/insert_key": 0.0002871952201530803,
+    "task/insert_tubes": 9.686651173979044e-05,
+    "task/make_kong": 9.433702734895633e-05,
+    "task/make_toast": 0.0003958054876420647,
+    "task/match_and_pick_from_conveyor": 0.00019348723196799256,
+    "task/organize_table": 0.0008627425413578749,
+    "task/pack_objects_into_box": 0.0010006622251239605,
+    "task/play_Xylophone": 9.359877003589645e-05,
+    "task/play_stacking_toy": 8.459911259706132e-05,
+    "task/play_tic_tac_toe": 0.0002489696580596501,
+    "task/plug_in_charger": 0.00011693477790686302,
+    "task/pour_balls_into_vase": 0.0004100769874639809,
+    "task/pour_liquid_into_cup": 0.000559557820452028,
+    "task/press_by_number": 7.312329535125173e-05,
+    "task/push_T": 0.0001793445335351862,
+    "task/put_bottles_into_dustbin": 0.0009293825132772326,
+    "task/sort_nesting_dolls_by_size": 0.00010088513681694167,
+    "task/stack_blocks": 0.00012439225247362629,
+    "task/stack_bowls": 0.0006046015805623028,
+    "task/store_laptop_and_headphones": 0.0011899733653990552,
+    "task/swap_T": 0.0001872734665084863,
+    "task/swap_blocks": 0.0003142831983495853,
+    "task/sweep_blocks": 0.0005598662064585369
+  },
+  "actions": {
+    "suite/DLC_auxiliary": {
+      "student_error": 0.000708033621776849,
+      "teacher_error": 0.00010069859490613453
+    },
+    "suite/generalization": {
+      "student_error": 0.0007630622881909707,
+      "teacher_error": 0.00034869938932994654
+    },
+    "suite/long-horizon": {
+      "student_error": 0.0010065317958378728,
+      "teacher_error": 0.0004205108877499697
+    },
+    "suite/memory": {
+      "student_error": 0.00025644591361621377,
+      "teacher_error": 6.175885415397413e-05
+    },
+    "suite/precision": {
+      "student_error": 0.000409059975368109,
+      "teacher_error": 0.00015722701579079512
+    },
+    "task/arrange_largest_number": {
+      "student_error": 0.00043222895692451857,
+      "teacher_error": 0.00015770303025419707
+    },
+    "task/build_tower": {
+      "student_error": 0.00017131832646555267,
+      "teacher_error": 7.97488855823758e-05
+    },
+    "task/classify_objects": {
+      "student_error": 0.0028527129907160997,
+      "teacher_error": 0.0012026101758237928
+    },
+    "task/cover_blocks": {
+      "student_error": 3.518281891956576e-05,
+      "teacher_error": 2.3995619358174736e-05
+    },
+    "task/deposit_coin": {
+      "student_error": 0.000381403664505342,
+      "teacher_error": 6.167201991047477e-05
+    },
+    "task/dlc": {
+      "student_error": 0.000708033621776849,
+      "teacher_error": 0.00010069859490613453
+    },
+    "task/fasten_screws": {
+      "student_error": 0.0004350442686700262,
+      "teacher_error": 0.00016865855741343694
+    },
+    "task/fill_egg_holder": {
+      "student_error": 0.0010722229344537482,
+      "teacher_error": 0.00047749961231602356
+    },
+    "task/fill_pen_holder": {
+      "student_error": 0.001115656952606514,
+      "teacher_error": 0.0005032923836552072
+    },
+    "task/fold_clothes": {
+      "student_error": 0.00010137253502762178,
+      "teacher_error": 2.6147413791477447e-05
+    },
+    "task/hang_mugs": {
+      "student_error": 0.0006544383286382072,
+      "teacher_error": 0.00016135760051838588
+    },
+    "task/imitate_sorting_sequence": {
+      "student_error": 0.0006671823199440041,
+      "teacher_error": 0.00011541660239799967
+    },
+    "task/insert_key": {
+      "student_error": 0.0013911388778069522,
+      "teacher_error": 0.0007115135144886153
+    },
+    "task/insert_tubes": {
+      "student_error": 0.000122653580547194,
+      "teacher_error": 3.248174698455841e-05
+    },
+    "task/make_kong": {
+      "student_error": 0.0001067657158273505,
+      "teacher_error": 9.35934613153222e-05
+    },
+    "task/make_toast": {
+      "student_error": 0.0012799842515960336,
+      "teacher_error": 0.0009562093182466924
+    },
+    "task/match_and_pick_from_conveyor": {
+      "student_error": 0.00021573924266249378,
+      "teacher_error": 2.929468058709972e-05
+    },
+    "task/organize_table": {
+      "student_error": 0.0013403323682723567,
+      "teacher_error": 0.0005744578593294136
+    },
+    "task/pack_objects_into_box": {
+      "student_error": 0.001983738417038694,
+      "teacher_error": 0.000728777074982645
+    },
+    "task/play_Xylophone": {
+      "student_error": 0.00019856234939652495,
+      "teacher_error": 7.715502215432934e-05
+    },
+    "task/play_stacking_toy": {
+      "student_error": 0.00015011330469860695,
+      "teacher_error": 0.00016532193967577768
+    },
+    "task/play_tic_tac_toe": {
+      "student_error": 0.00024970146114355884,
+      "teacher_error": 2.881418868128094e-05
+    },
+    "task/plug_in_charger": {
+      "student_error": 0.00010811983247549506,
+      "teacher_error": 2.7472624879010255e-05
+    },
+    "task/pour_balls_into_vase": {
+      "student_error": 0.0004642389030777849,
+      "teacher_error": 9.911375491356011e-05
+    },
+    "task/pour_liquid_into_cup": {
+      "student_error": 0.0008324605660163797,
+      "teacher_error": 0.0005243070372671355
+    },
+    "task/press_by_number": {
+      "student_error": 8.267022212748998e-05,
+      "teacher_error": 0.0001389245294376451
+    },
+    "task/push_T": {
+      "student_error": 0.0003812440627370961,
+      "teacher_error": 0.0001930644029926043
+    },
+    "task/put_bottles_into_dustbin": {
+      "student_error": 0.0011647486389847472,
+      "teacher_error": 0.0003184974812029395
+    },
+    "task/sort_nesting_dolls_by_size": {
+      "student_error": 0.00015521282693953253,
+      "teacher_error": 5.2306519137346186e-05
+    },
+    "task/stack_blocks": {
+      "student_error": 0.00010401789222669322,
+      "teacher_error": 4.6362897592189256e-05
+    },
+    "task/stack_bowls": {
+      "student_error": 0.00044461535071604885,
+      "teacher_error": 0.0002900409908761503
+    },
+    "task/store_laptop_and_headphones": {
+      "student_error": 0.0014873277104925364,
+      "teacher_error": 0.0005647576945193578
+    },
+    "task/swap_T": {
+      "student_error": 0.00020206931912980508,
+      "teacher_error": 2.562690497143194e-05
+    },
+    "task/swap_blocks": {
+      "student_error": 0.0003358315589139238,
+      "teacher_error": 3.7294788171493565e-05
+    },
+    "task/sweep_blocks": {
+      "student_error": 0.0013001065599382855,
+      "teacher_error": 0.0004833586917811772
+    }
+  },
+  "full": false,
+  "native_10_step_sampler": true,
+  "rows": [
+    {
+      "episode": 17,
+      "executed_steps": 24,
+      "frame": 448,
+      "student_components": [
+        0.00018830562476068735,
+        0.0002385824336670339,
+        0.00012351486657280475
+      ],
+      "student_error": 0.0002053451753454283,
+      "student_teacher_error": 6.901798769831657e-05,
+      "suite": "generalization",
+      "task": "arrange_largest_number",
+      "teacher_components": [
+        0.00016362121095880866,
+        0.0001048145059030503,
+        1.2472967682697345e-05
+      ],
+      "teacher_error": 0.00011532431381056085,
+      "window_id": 30011
+    },
+    {
+      "episode": 21,
+      "executed_steps": 24,
+      "frame": 312,
+      "student_components": [
+        0.002101239515468478,
+        5.28200798726175e-05,
+        0.000303736625937745
+      ],
+      "student_error": 0.0008523418218828738,
+      "student_teacher_error": 0.000159965202328749,
+      "suite": "generalization",
+      "task": "arrange_largest_number",
+      "teacher_components": [
+        0.001007581944577396,
+        5.472537304740399e-05,
+        0.00012063596659572795
+      ],
+      "teacher_error": 0.00042028541793115437,
+      "window_id": 30015
+    },
+    {
+      "episode": 43,
+      "executed_steps": 24,
+      "frame": 152,
+      "student_components": [
+        0.0010045383824035525,
+        0.00017520879919175059,
+        7.6190831350686494e-06
+      ],
+      "student_error": 0.00046525869402103126,
+      "student_teacher_error": 0.00040934947901405394,
+      "suite": "generalization",
+      "task": "arrange_largest_number",
+      "teacher_components": [
+        1.9028850147151388e-05,
+        2.9125500077498145e-05,
+        1.7223012036993168e-05
+      ],
+      "teacher_error": 2.385144580330234e-05,
+      "window_id": 30017
+    },
+    {
+      "episode": 56,
+      "executed_steps": 24,
+      "frame": 472,
+      "student_components": [
+        0.00017412274610251188,
+        9.550361573928967e-05,
+        0.0007433784776367247
+      ],
+      "student_error": 0.00020597013644874096,
+      "student_teacher_error": 0.00017308494716417044,
+      "suite": "generalization",
+      "task": "arrange_largest_number",
+      "teacher_components": [
+        0.00012048282223986462,
+        4.3572435970418155e-05,
+        3.506925713736564e-05
+      ],
+      "teacher_error": 7.135094347177073e-05,
+      "window_id": 30027
+    },
+    {
+      "episode": 127,
+      "executed_steps": 24,
+      "frame": 257,
+      "student_components": [
+        0.00017730455147102475,
+        9.759264503372833e-05,
+        8.11941299616592e-06
+      ],
+      "student_error": 0.0001163004562840797,
+      "student_teacher_error": 6.341162224998698e-05,
+      "suite": "precision",
+      "task": "build_tower",
+      "teacher_components": [
+        0.00016133989265654236,
+        5.594159665633924e-05,
+        8.261748916993383e-06
+      ],
+      "teacher_error": 8.950597839429975e-05,
+      "window_id": 30041
+    },
+    {
+      "episode": 158,
+      "executed_steps": 24,
+      "frame": 259,
+      "student_components": [
+        0.00017601752188056707,
+        8.159683056874201e-05,
+        1.8530592569732107e-05
+      ],
+      "student_error": 0.0001091213125619106,
+      "student_teacher_error": 7.191257464000955e-05,
+      "suite": "precision",
+      "task": "build_tower",
+      "teacher_components": [
+        0.0001089304787456058,
+        6.993116403464228e-05,
+        1.1334571354382206e-05
+      ],
+      "teacher_error": 7.723133603576571e-05,
+      "window_id": 30049
+    },
+    {
+      "episode": 172,
+      "executed_steps": 24,
+      "frame": 258,
+      "student_components": [
+        0.00032985079451464117,
+        0.000313607684802264,
+        1.0631113582348917e-05
+      ],
+      "student_error": 0.0002818267385009676,
+      "student_teacher_error": 0.00016281928401440382,
+      "suite": "precision",
+      "task": "build_tower",
+      "teacher_components": [
+        5.512405186891556e-05,
+        4.688499393523671e-05,
+        6.056068286852678e-06
+      ],
+      "teacher_error": 4.4871023419545963e-05,
+      "window_id": 30053
+    },
+    {
+      "episode": 189,
+      "executed_steps": 24,
+      "frame": 608,
+      "student_components": [
+        0.00031421115272678435,
+        0.00011751944111892954,
+        1.1487077244964894e-05
+      ],
+      "student_error": 0.00017802479851525277,
+      "student_teacher_error": 0.00016867462545633316,
+      "suite": "precision",
+      "task": "build_tower",
+      "teacher_components": [
+        0.00011826707486761734,
+        0.00012376623635645956,
+        9.231491276295856e-06
+      ],
+      "teacher_error": 0.00010738720447989181,
+      "window_id": 30063
+    },
+    {
+      "episode": 222,
+      "executed_steps": 24,
+      "frame": 192,
+      "student_components": [
+        0.007324507925659418,
+        0.002585648326203227,
+        0.01327406708151102
+      ],
+      "student_error": 0.0056987726129591465,
+      "student_teacher_error": 0.0030801512766629457,
+      "suite": "long-horizon",
+      "task": "classify_objects",
+      "teacher_components": [
+        0.0011913523776456714,
+        0.00044458117918111384,
+        0.0041974750347435474
+      ],
+      "teacher_error": 0.0011937321396544576,
+      "window_id": 30073
+    },
+    {
+      "episode": 247,
+      "executed_steps": 24,
+      "frame": 288,
+      "student_components": [
+        0.002695733681321144,
+        0.000930125592276454,
+        0.0005396968917921185
+      ],
+      "student_error": 0.0015434249071404338,
+      "student_teacher_error": 0.0007541072554886341,
+      "suite": "long-horizon",
+      "task": "classify_objects",
+      "teacher_components": [
+        0.0007717077969573438,
+        0.0005162209854461253,
+        2.3830174541217275e-05
+      ],
+      "teacher_error": 0.0005504796281456947,
+      "window_id": 30086
+    },
+    {
+      "episode": 267,
+      "executed_steps": 24,
+      "frame": 224,
+      "student_components": [
+        0.001322619034908712,
+        0.0005586517509073019,
+        0.003036628244444728
+      ],
+      "student_error": 0.0011548864422366023,
+      "student_teacher_error": 0.0010124510154128075,
+      "suite": "long-horizon",
+      "task": "classify_objects",
+      "teacher_components": [
+        0.0015530702657997608,
+        0.00017423281678929925,
+        0.00701117143034935
+      ],
+      "teacher_error": 0.0015459140995517373,
+      "window_id": 30089
+    },
+    {
+      "episode": 295,
+      "executed_steps": 24,
+      "frame": 560,
+      "student_components": [
+        0.0007898548501543701,
+        0.005432259291410446,
+        1.1538220860529691e-05
+      ],
+      "student_error": 0.0030137680005282164,
+      "student_teacher_error": 0.0014897221699357033,
+      "suite": "long-horizon",
+      "task": "classify_objects",
+      "teacher_components": [
+        0.0006940544699318707,
+        0.0025175418704748154,
+        1.0188813575950917e-05
+      ],
+      "teacher_error": 0.0015203148359432817,
+      "window_id": 30095
+    },
+    {
+      "episode": 310,
+      "executed_steps": 24,
+      "frame": 320,
+      "student_components": [
+        4.100882506463677e-05,
+        1.5407980754389428e-05,
+        0.00011174682731507346
+      ],
+      "student_error": 3.705064955283888e-05,
+      "student_teacher_error": 1.4783348888158798e-05,
+      "suite": "memory",
+      "task": "cover_blocks",
+      "teacher_components": [
+        2.6168696422246285e-05,
+        9.96547987597296e-06,
+        4.76486784464214e-05
+      ],
+      "teacher_error": 2.0752086129505187e-05,
+      "window_id": 30098
+    },
+    {
+      "episode": 317,
+      "executed_steps": 24,
+      "frame": 448,
+      "student_components": [
+        4.3499308958416805e-05,
+        1.851291563070845e-05,
+        4.3418138375272974e-05
+      ],
+      "student_error": 3.0995965062174946e-05,
+      "student_teacher_error": 2.054218202829361e-05,
+      "suite": "memory",
+      "task": "cover_blocks",
+      "teacher_components": [
+        2.6427054763189517e-05,
+        1.3423451491689775e-05,
+        4.3869989895028993e-05
+      ],
+      "teacher_error": 2.21056179725565e-05,
+      "window_id": 30103
+    },
+    {
+      "episode": 333,
+      "executed_steps": 24,
+      "frame": 440,
+      "student_components": [
+        8.010954479686916e-05,
+        2.674117604328785e-05,
+        1.1202711903024465e-05
+      ],
+      "student_error": 4.481200812733732e-05,
+      "student_teacher_error": 3.0285678803920746e-05,
+      "suite": "memory",
+      "task": "cover_blocks",
+      "teacher_components": [
+        6.539609603350982e-05,
+        2.1638712496496737e-05,
+        8.787948900135234e-06
+      ],
+      "teacher_error": 3.6441386328078806e-05,
+      "window_id": 30107
+    },
+    {
+      "episode": 334,
+      "executed_steps": 24,
+      "frame": 448,
+      "student_components": [
+        4.1098202927969396e-05,
+        2.0057184883626178e-05,
+        1.9457862435956486e-05
+      ],
+      "student_error": 2.78726529359119e-05,
+      "student_teacher_error": 2.296660932188388e-05,
+      "suite": "memory",
+      "task": "cover_blocks",
+      "teacher_components": [
+        1.878743751149159e-05,
+        1.5923053069855087e-05,
+        1.3412570297077764e-05
+      ],
+      "teacher_error": 1.6683387002558447e-05,
+      "window_id": 30111
+    },
+    {
+      "episode": 407,
+      "executed_steps": 24,
+      "frame": 148,
+      "student_components": [
+        0.000224458533921279,
+        0.000322795967804268,
+        0.0035666313488036394
+      ],
+      "student_error": 0.0006913988036103547,
+      "student_teacher_error": 0.0006907687638886273,
+      "suite": "precision",
+      "task": "deposit_coin",
+      "teacher_components": [
+        5.66167727811262e-05,
+        4.2363815737189725e-05,
+        0.00020281615434214473
+      ],
+      "teacher_error": 6.776521331630647e-05,
+      "window_id": 30131
+    },
+    {
+      "episode": 408,
+      "executed_steps": 24,
+      "frame": 144,
+      "student_components": [
+        0.0001014771987684071,
+        0.000436003872891888,
+        0.00048560951836407185
+      ],
+      "student_error": 0.00031675706850364804,
+      "student_teacher_error": 0.0002800355141516775,
+      "suite": "precision",
+      "task": "deposit_coin",
+      "teacher_components": [
+        3.4909859095932916e-05,
+        4.79345180792734e-05,
+        2.3084836357156746e-05
+      ],
+      "teacher_error": 3.994406506535597e-05,
+      "window_id": 30135
+    },
+    {
+      "episode": 461,
+      "executed_steps": 24,
+      "frame": 136,
+      "student_components": [
+        0.0003333266358822584,
+        0.00031983322696760297,
+        0.0002565737231634557
+      ],
+      "student_error": 0.0003169858537148684,
+      "student_teacher_error": 0.0002459607785567641,
+      "suite": "precision",
+      "task": "deposit_coin",
+      "teacher_components": [
+        4.635749428416602e-05,
+        6.38241326669231e-05,
+        3.5988003219245e-05
+      ],
+      "teacher_error": 5.379463254939765e-05,
+      "window_id": 30143
+    },
+    {
+      "episode": 479,
+      "executed_steps": 24,
+      "frame": 144,
+      "student_components": [
+        0.0002114205271936953,
+        0.00016837066505104303,
+        0.0002960389538202435
+      ],
+      "student_error": 0.00020047293219249696,
+      "student_teacher_error": 0.00025010178796947,
+      "suite": "precision",
+      "task": "deposit_coin",
+      "teacher_components": [
+        7.20764510333538e-05,
+        9.19188023544848e-05,
+        9.756869985722005e-05
+      ],
+      "teacher_error": 8.5184168710839e-05,
+      "window_id": 30158
+    },
+    {
+      "episode": 521,
+      "executed_steps": 24,
+      "frame": 86,
+      "student_components": [
+        0.00012306393182370812,
+        0.0012693250318989158,
+        0.00019578203500714153
+      ],
+      "student_error": 0.0007052842411212623,
+      "student_teacher_error": 0.0004730102082248777,
+      "suite": "DLC_auxiliary",
+      "task": "dlc",
+      "teacher_components": [
+        4.697284384747036e-05,
+        6.302157271420583e-05,
+        4.4447766413213685e-05
+      ],
+      "teacher_error": 5.468157178256661e-05,
+      "window_id": 30167
+    },
+    {
+      "episode": 544,
+      "executed_steps": 24,
+      "frame": 384,
+      "student_components": [
+        0.00042175836279056966,
+        6.33540257695131e-05,
+        0.0003629466809798032
+      ],
+      "student_error": 0.0002352047013118863,
+      "student_teacher_error": 4.9501657485961914e-05,
+      "suite": "DLC_auxiliary",
+      "task": "dlc",
+      "teacher_components": [
+        0.00026538074598647654,
+        3.678040957311168e-05,
+        0.00025633632321842015
+      ],
+      "teacher_error": 0.0001499499921919778,
+      "window_id": 30173
+    },
+    {
+      "episode": 546,
+      "executed_steps": 24,
+      "frame": 84,
+      "student_components": [
+        0.00024090851366054267,
+        0.0011367768747732043,
+        0.00039856540388427675
+      ],
+      "student_error": 0.0007085498073138297,
+      "student_teacher_error": 0.0007519327918998897,
+      "suite": "DLC_auxiliary",
+      "task": "dlc",
+      "teacher_components": [
+        5.209336814004928e-05,
+        4.374944910523482e-05,
+        0.00013969307474326342
+      ],
+      "teacher_error": 5.887137376703322e-05,
+      "window_id": 30175
+    },
+    {
+      "episode": 568,
+      "executed_steps": 24,
+      "frame": 232,
+      "student_components": [
+        0.0002615378180053085,
+        0.0020123820286244154,
+        0.0006306248251348734
+      ],
+      "student_error": 0.0011830957373604178,
+      "student_teacher_error": 0.0007709614001214504,
+      "suite": "DLC_auxiliary",
+      "task": "dlc",
+      "teacher_components": [
+        0.00016211015463341027,
+        0.0001550929300719872,
+        7.62947183829965e-06
+      ],
+      "teacher_error": 0.0001392914418829605,
+      "window_id": 30180
+    },
+    {
+      "episode": 621,
+      "executed_steps": 24,
+      "frame": 168,
+      "student_components": [
+        2.9277842259034514e-05,
+        0.001538718119263649,
+        0.0002258096938021481
+      ],
+      "student_error": 0.000808564480394125,
+      "student_teacher_error": 0.00016300752758979797,
+      "suite": "precision",
+      "task": "fasten_screws",
+      "teacher_components": [
+        1.1418248504924122e-05,
+        0.000569230760447681,
+        0.00010346170165576041
+      ],
+      "teacher_error": 0.000301829946693033,
+      "window_id": 30191
+    },
+    {
+      "episode": 671,
+      "executed_steps": 24,
+      "frame": 1237,
+      "student_components": [
+        1.898880691442173e-05,
+        0.00021348784503061324,
+        3.869479041895829e-05
+      ],
+      "student_error": 0.00011870157322846353,
+      "student_teacher_error": 3.4291453630430624e-05,
+      "suite": "precision",
+      "task": "fasten_screws",
+      "teacher_components": [
+        1.6309806596837007e-05,
+        9.371747728437185e-05,
+        3.1482279155170545e-05
+      ],
+      "teacher_error": 5.69102012377698e-05,
+      "window_id": 30210
+    },
+    {
+      "episode": 678,
+      "executed_steps": 24,
+      "frame": 153,
+      "student_components": [
+        3.237440614611842e-05,
+        0.0006145010702311993,
+        0.00022293011716101319
+      ],
+      "student_error": 0.00034725715522654355,
+      "student_teacher_error": 4.393731433083303e-05,
+      "suite": "precision",
+      "task": "fasten_screws",
+      "teacher_components": [
+        2.9713099138461985e-05,
+        0.00034629961010068655,
+        0.0001292222150368616
+      ],
+      "teacher_error": 0.00020044500706717372,
+      "window_id": 30211
+    },
+    {
+      "episode": 682,
+      "executed_steps": 24,
+      "frame": 816,
+      "student_components": [
+        0.0005102016730234027,
+        0.0005389758734963834,
+        3.872251545544714e-05
+      ],
+      "student_error": 0.0004656538658309728,
+      "student_teacher_error": 0.0005036895745433867,
+      "suite": "precision",
+      "task": "fasten_screws",
+      "teacher_components": [
+        7.565538544440642e-05,
+        0.00016693276120349765,
+        2.889535426220391e-05
+      ],
+      "teacher_error": 0.00011544907465577126,
+      "window_id": 30221
+    },
+    {
+      "episode": 714,
+      "executed_steps": 24,
+      "frame": 128,
+      "student_components": [
+        0.0006183323566801846,
+        0.0005302404169924557,
+        0.00016002340998966247
+      ],
+      "student_error": 0.0005169977666810155,
+      "student_teacher_error": 0.0005407409626059234,
+      "suite": "long-horizon",
+      "task": "fill_egg_holder",
+      "teacher_components": [
+        0.00034343203878961504,
+        0.0002733608416747302,
+        4.610609539668076e-05
+      ],
+      "teacher_error": 0.0002712307032197714,
+      "window_id": 30224
+    },
+    {
+      "episode": 730,
+      "executed_steps": 24,
+      "frame": 152,
+      "student_components": [
+        0.0028317635878920555,
+        0.001315594301559031,
+        0.0002542373549658805
+      ],
+      "student_error": 0.0017514880746603012,
+      "student_teacher_error": 0.001191684976220131,
+      "suite": "long-horizon",
+      "task": "fill_egg_holder",
+      "teacher_components": [
+        0.0007819013553671539,
+        0.0007633904460817575,
+        2.078259421978146e-05
+      ],
+      "teacher_error": 0.0006775061483494937,
+      "window_id": 30228
+    },
+    {
+      "episode": 732,
+      "executed_steps": 24,
+      "frame": 261,
+      "student_components": [
+        0.0008446444408036768,
+        0.0009115510620176792,
+        0.0034507785458117723
+      ],
+      "student_error": 0.0012038646964356303,
+      "student_teacher_error": 0.000836888502817601,
+      "suite": "long-horizon",
+      "task": "fill_egg_holder",
+      "teacher_components": [
+        0.000602716812863946,
+        0.00036329819704405963,
+        0.0015263945097103715
+      ],
+      "teacher_error": 0.0005984671879559755,
+      "window_id": 30234
+    },
+    {
+      "episode": 794,
+      "executed_steps": 24,
+      "frame": 40,
+      "student_components": [
+        0.0011344486847519875,
+        0.0005888147279620171,
+        0.0007737246924079955
+      ],
+      "student_error": 0.0008165412000380456,
+      "student_teacher_error": 0.0003363694704603404,
+      "suite": "long-horizon",
+      "task": "fill_egg_holder",
+      "teacher_components": [
+        0.0003627052064985037,
+        0.00041206085006706417,
+        0.00016599609807599336
+      ],
+      "teacher_error": 0.0003627944097388536,
+      "window_id": 30251
+    },
+    {
+      "episode": 810,
+      "executed_steps": 24,
+      "frame": 256,
+      "student_components": [
+        0.0006697275675833225,
+        0.0017818697961047292,
+        0.00010705293243518099
+      ],
+      "student_error": 0.001155464444309473,
+      "student_teacher_error": 0.0007891987334005535,
+      "suite": "long-horizon",
+      "task": "fill_pen_holder",
+      "teacher_components": [
+        0.0002653922128956765,
+        0.00048615052946843207,
+        3.464849214651622e-05
+      ],
+      "teacher_error": 0.0003469283983577043,
+      "window_id": 30256
+    },
+    {
+      "episode": 821,
+      "executed_steps": 24,
+      "frame": 83,
+      "student_components": [
+        0.0011894269846379757,
+        0.0014245794154703617,
+        7.674470543861389e-05
+      ],
+      "student_error": 0.0011679178569465876,
+      "student_teacher_error": 0.0009694437030702829,
+      "suite": "long-horizon",
+      "task": "fill_pen_holder",
+      "teacher_components": [
+        0.0001557995128678158,
+        0.0002376130287302658,
+        3.475940684438683e-05
+      ],
+      "teacher_error": 0.00018157628073822707,
+      "window_id": 30263
+    },
+    {
+      "episode": 834,
+      "executed_steps": 24,
+      "frame": 240,
+      "student_components": [
+        0.002413647947832942,
+        0.0015159654431045055,
+        0.00016926774696912616
+      ],
+      "student_error": 0.0016842592740431428,
+      "student_teacher_error": 0.0009101885370910168,
+      "suite": "long-horizon",
+      "task": "fill_pen_holder",
+      "teacher_components": [
+        0.002156991744413972,
+        0.0010599634842947125,
+        5.545232488657348e-05
+      ],
+      "teacher_error": 0.0013457853347063065,
+      "window_id": 30272
+    },
+    {
+      "episode": 899,
+      "executed_steps": 24,
+      "frame": 512,
+      "student_components": [
+        0.000355710944859311,
+        0.0005957619287073612,
+        0.0001897096080938354
+      ],
+      "student_error": 0.000454986235126853,
+      "student_teacher_error": 0.0003389196062926203,
+      "suite": "long-horizon",
+      "task": "fill_pen_holder",
+      "teacher_components": [
+        5.306894308887422e-05,
+        0.00022023294877726585,
+        7.089744758559391e-05
+      ],
+      "teacher_error": 0.00013887952081859112,
+      "window_id": 30286
+    },
+    {
+      "episode": 902,
+      "executed_steps": 24,
+      "frame": 104,
+      "student_components": [
+        0.00015127757797017694,
+        6.386207678588107e-05,
+        1.6550971849937923e-05
+      ],
+      "student_error": 9.072900138562545e-05,
+      "student_teacher_error": 6.945533095858991e-05,
+      "suite": "generalization",
+      "task": "fold_clothes",
+      "teacher_components": [
+        3.2827560062287375e-05,
+        3.4365857572993264e-05,
+        9.057553143065888e-06
+      ],
+      "teacher_error": 3.062545511056669e-05,
+      "window_id": 30288
+    },
+    {
+      "episode": 915,
+      "executed_steps": 24,
+      "frame": 32,
+      "student_components": [
+        4.890575655736029e-05,
+        1.7820284483605064e-05,
+        0.00010346297494834289
+      ],
+      "student_error": 4.01826728193555e-05,
+      "student_teacher_error": 3.329617902636528e-05,
+      "suite": "generalization",
+      "task": "fold_clothes",
+      "teacher_components": [
+        2.841901186911855e-05,
+        1.3446453522192314e-05,
+        1.923474519571755e-05
+      ],
+      "teacher_error": 1.9784702089964412e-05,
+      "window_id": 30295
+    },
+    {
+      "episode": 919,
+      "executed_steps": 24,
+      "frame": 104,
+      "student_components": [
+        0.00012095721467630938,
+        2.8759184715454467e-05,
+        2.5942606953321956e-05
+      ],
+      "student_error": 6.298138032434508e-05,
+      "student_teacher_error": 5.2507657528622076e-05,
+      "suite": "generalization",
+      "task": "fold_clothes",
+      "teacher_components": [
+        3.580335032893345e-05,
+        2.152584602299612e-05,
+        8.483840247208718e-06
+      ],
+      "teacher_error": 2.5249659302062355e-05,
+      "window_id": 30300
+    },
+    {
+      "episode": 920,
+      "executed_steps": 24,
+      "frame": 102,
+      "student_components": [
+        0.0002364216052228585,
+        0.00023679232981521636,
+        3.6342378734843805e-05
+      ],
+      "student_error": 0.00021159708558116108,
+      "student_teacher_error": 0.0001930576254380867,
+      "suite": "generalization",
+      "task": "fold_clothes",
+      "teacher_components": [
+        3.9927312172949314e-05,
+        2.296078127983492e-05,
+        1.981365494430065e-05
+      ],
+      "teacher_error": 2.8929838663316332e-05,
+      "window_id": 30304
+    },
+    {
+      "episode": 1021,
+      "executed_steps": 24,
+      "frame": 448,
+      "student_components": [
+        0.00035841891076415777,
+        0.00030510537908412516,
+        0.0018681358778849244
+      ],
+      "student_error": 0.0005204767803661525,
+      "student_teacher_error": 0.0003628736885730177,
+      "suite": "generalization",
+      "task": "hang_mugs",
+      "teacher_components": [
+        9.035502444021404e-05,
+        9.138335008174181e-05,
+        0.00024929552455432713
+      ],
+      "teacher_error": 0.00011073674977524206,
+      "window_id": 30322
+    },
+    {
+      "episode": 1033,
+      "executed_steps": 24,
+      "frame": 456,
+      "student_components": [
+        0.0006915531703270972,
+        0.0006756249931640923,
+        7.91360143921338e-05
+      ],
+      "student_error": 0.0006070370436646044,
+      "student_teacher_error": 0.00032516580540686846,
+      "suite": "generalization",
+      "task": "hang_mugs",
+      "teacher_components": [
+        0.0003358486865181476,
+        0.00015935440023895353,
+        2.5193117835442536e-05
+      ],
+      "teacher_error": 0.0002087695902446285,
+      "window_id": 30326
+    },
+    {
+      "episode": 1042,
+      "executed_steps": 24,
+      "frame": 64,
+      "student_components": [
+        0.0003654500760603696,
+        0.00010568666039034724,
+        0.0019509829580783844
+      ],
+      "student_error": 0.00043375996756367385,
+      "student_teacher_error": 0.0003880880249198526,
+      "suite": "generalization",
+      "task": "hang_mugs",
+      "teacher_components": [
+        0.0001332300016656518,
+        6.845383177278563e-05,
+        4.5948097977088764e-05
+      ],
+      "teacher_error": 8.993168012239039e-05,
+      "window_id": 30327
+    },
+    {
+      "episode": 1060,
+      "executed_steps": 24,
+      "frame": 64,
+      "student_components": [
+        9.810220217332244e-05,
+        0.0002200799062848091,
+        0.007277209777384996
+      ],
+      "student_error": 0.0010564795229583979,
+      "student_teacher_error": 0.00047628351603634655,
+      "suite": "generalization",
+      "task": "hang_mugs",
+      "teacher_components": [
+        7.919605559436604e-05,
+        0.00010656125959940255,
+        0.0012241058284416795
+      ],
+      "teacher_error": 0.00023599238193128258,
+      "window_id": 30335
+    },
+    {
+      "episode": 1133,
+      "executed_steps": 24,
+      "frame": 420,
+      "student_components": [
+        0.00011702300980687141,
+        0.00036101986188441515,
+        8.69598807184957e-05
+      ],
+      "student_error": 0.00023526354925706983,
+      "student_teacher_error": 0.00019840076856780797,
+      "suite": "memory",
+      "task": "imitate_sorting_sequence",
+      "teacher_components": [
+        9.566669905325398e-05,
+        2.869183663278818e-05,
+        4.412572889123112e-05
+      ],
+      "teacher_error": 5.573664384428412e-05,
+      "window_id": 30352
+    },
+    {
+      "episode": 1136,
+      "executed_steps": 24,
+      "frame": 512,
+      "student_components": [
+        0.00030235073063522577,
+        0.00018476186960469931,
+        0.0003615637542679906
+      ],
+      "student_error": 0.00025095793535001576,
+      "student_teacher_error": 0.0002008255833061412,
+      "suite": "memory",
+      "task": "imitate_sorting_sequence",
+      "teacher_components": [
+        0.00016304920427501202,
+        0.00022105292009655386,
+        0.00024630592088215053
+      ],
+      "teacher_error": 0.00020245816267561167,
+      "window_id": 30356
+    },
+    {
+      "episode": 1155,
+      "executed_steps": 24,
+      "frame": 144,
+      "student_components": [
+        1.0294160347257275e-05,
+        4.768311100633582e-06,
+        8.409519978158642e-06
+      ],
+      "student_error": 7.295655905181775e-06,
+      "student_teacher_error": 5.3147473408898804e-06,
+      "suite": "memory",
+      "task": "imitate_sorting_sequence",
+      "teacher_components": [
+        5.407355729403207e-06,
+        3.1858992315392243e-06,
+        8.000281923159491e-06
+      ],
+      "teacher_error": 4.620743766281521e-06,
+      "window_id": 30359
+    },
+    {
+      "episode": 1194,
+      "executed_steps": 24,
+      "frame": 432,
+      "student_components": [
+        0.0023369004484266043,
+        0.0025942539796233177,
+        1.3979994946566876e-05
+      ],
+      "student_error": 0.002175212139263749,
+      "student_teacher_error": 0.0016394336707890034,
+      "suite": "memory",
+      "task": "imitate_sorting_sequence",
+      "teacher_components": [
+        0.0004925386165268719,
+        2.4487642804160714e-05,
+        1.524046001577517e-05
+      ],
+      "teacher_error": 0.00019885085930582136,
+      "window_id": 30372
+    },
+    {
+      "episode": 1206,
+      "executed_steps": 24,
+      "frame": 18,
+      "student_components": [
+        0.00010404555359855294,
+        9.618926560506225e-05,
+        0.0004111846210435033
+      ],
+      "student_error": 0.000138509800308384,
+      "student_teacher_error": 0.0001467348338337615,
+      "suite": "precision",
+      "task": "insert_key",
+      "teacher_components": [
+        2.2191319658304565e-05,
+        2.103010228893254e-05,
+        6.939900777069852e-05
+      ],
+      "teacher_error": 2.751167085079942e-05,
+      "window_id": 30383
+    },
+    {
+      "episode": 1227,
+      "executed_steps": 24,
+      "frame": 52,
+      "student_components": [
+        0.000247455871431157,
+        0.0004604160785675049,
+        3.129628021270037e-05
+      ],
+      "student_error": 0.00032691602245904505,
+      "student_teacher_error": 0.00015818762767594308,
+      "suite": "precision",
+      "task": "insert_key",
+      "teacher_components": [
+        9.718212095322087e-05,
+        0.00018440293206367642,
+        8.59483134263428e-06
+      ],
+      "teacher_error": 0.00012971913383807987,
+      "window_id": 30388
+    },
+    {
+      "episode": 1234,
+      "executed_steps": 24,
+      "frame": 56,
+      "student_components": [
+        0.0010587284341454506,
+        0.007856993936002254,
+        0.0050134011544287205
+      ],
+      "student_error": 0.0049521951004862785,
+      "student_teacher_error": 0.0006700262892991304,
+      "suite": "precision",
+      "task": "insert_key",
+      "teacher_components": [
+        0.0010632360354065895,
+        0.0037884321063756943,
+        0.002783260541036725
+      ],
+      "teacher_error": 0.0026408368721604347,
+      "window_id": 30392
+    },
+    {
+      "episode": 1245,
+      "executed_steps": 24,
+      "frame": 53,
+      "student_components": [
+        0.0002585130569059402,
+        8.010245073819533e-05,
+        7.952772284625098e-05
+      ],
+      "student_error": 0.0001469345879741013,
+      "student_teacher_error": 0.00017383212980348617,
+      "suite": "precision",
+      "task": "insert_key",
+      "teacher_components": [
+        3.5100048989988863e-05,
+        6.652252341154963e-05,
+        1.25007491078577e-05
+      ],
+      "teacher_error": 4.79863811051473e-05,
+      "window_id": 30400
+    },
+    {
+      "episode": 1319,
+      "executed_steps": 24,
+      "frame": 256,
+      "student_components": [
+        0.0003422061272431165,
+        5.265607251203619e-05,
+        1.143895133282058e-05
+      ],
+      "student_error": 0.00015608522517140955,
+      "student_teacher_error": 0.00016025609511416405,
+      "suite": "precision",
+      "task": "insert_tubes",
+      "teacher_components": [
+        4.3375894165365025e-05,
+        4.623745917342603e-05,
+        1.6402822438976727e-05
+      ],
+      "teacher_error": 4.1435047023696825e-05,
+      "window_id": 30422
+    },
+    {
+      "episode": 1352,
+      "executed_steps": 24,
+      "frame": 32,
+      "student_components": [
+        9.477901767240837e-05,
+        7.126363925635815e-05,
+        5.143831003806554e-05
+      ],
+      "student_error": 7.760374137433246e-05,
+      "student_teacher_error": 2.7616042643785477e-05,
+      "suite": "precision",
+      "task": "insert_tubes",
+      "teacher_components": [
+        3.3794120099628344e-05,
+        4.3339343392290175e-05,
+        3.7324000004446134e-05
+      ],
+      "teacher_error": 3.900796946254559e-05,
+      "window_id": 30431
+    },
+    {
+      "episode": 1369,
+      "executed_steps": 24,
+      "frame": 32,
+      "student_components": [
+        7.303065649466589e-05,
+        0.00014726199151482433,
+        6.829774793004617e-05
+      ],
+      "student_error": 0.00010955470497719944,
+      "student_teacher_error": 7.744785398244858e-05,
+      "suite": "precision",
+      "task": "insert_tubes",
+      "teacher_components": [
+        4.428131433087401e-05,
+        2.052213494607713e-05,
+        3.058736911043525e-05
+      ],
+      "teacher_error": 3.068997830268927e-05,
+      "window_id": 30439
+    },
+    {
+      "episode": 1379,
+      "executed_steps": 24,
+      "frame": 116,
+      "student_components": [
+        9.741014218889177e-05,
+        0.0001995004276977852,
+        8.873290062183514e-05
+      ],
+      "student_error": 0.00014737065066583455,
+      "student_teacher_error": 0.00012214605521876365,
+      "suite": "precision",
+      "task": "insert_tubes",
+      "teacher_components": [
+        1.5797995729371905e-05,
+        1.3361196579353418e-05,
+        4.951317168888636e-05
+      ],
+      "teacher_error": 1.879399314930197e-05,
+      "window_id": 30444
+    },
+    {
+      "episode": 1441,
+      "executed_steps": 24,
+      "frame": 128,
+      "student_components": [
+        8.615793922217563e-05,
+        2.2152533347252756e-05,
+        0.0013839934254065156
+      ],
+      "student_error": 0.00021638469479512423,
+      "student_teacher_error": 0.00010963305248878896,
+      "suite": "long-horizon",
+      "task": "make_kong",
+      "teacher_components": [
+        2.0264747945475392e-05,
+        7.471992375940317e-06,
+        0.00026076092035509646
+      ],
+      "teacher_error": 4.393039853312075e-05,
+      "window_id": 30456
+    },
+    {
+      "episode": 1463,
+      "executed_steps": 24,
+      "frame": 128,
+      "student_components": [
+        0.00010407587978988886,
+        2.776127621473279e-05,
+        0.00039170452510006726
+      ],
+      "student_error": 0.00010187215957557783,
+      "student_teacher_error": 8.128158515319228e-05,
+      "suite": "long-horizon",
+      "task": "make_kong",
+      "teacher_components": [
+        3.121528061456047e-05,
+        1.5259940482792445e-05,
+        9.023717575473711e-05
+      ],
+      "teacher_error": 3.061534880544059e-05,
+      "window_id": 30464
+    },
+    {
+      "episode": 1467,
+      "executed_steps": 24,
+      "frame": 128,
+      "student_components": [
+        4.421388075570576e-05,
+        1.3800438864564057e-05,
+        3.562576603144407e-05
+      ],
+      "student_error": 2.7933645469602197e-05,
+      "student_teacher_error": 2.6149131372221746e-05,
+      "suite": "long-horizon",
+      "task": "make_kong",
+      "teacher_components": [
+        1.2229970707267057e-05,
+        1.2689706636592746e-05,
+        1.1803233974205796e-05
+      ],
+      "teacher_error": 1.240649726241827e-05,
+      "window_id": 30468
+    },
+    {
+      "episode": 1487,
+      "executed_steps": 24,
+      "frame": 294,
+      "student_components": [
+        3.5719593142857775e-05,
+        5.2092309488216415e-05,
+        0.000331450835801661
+      ],
+      "student_error": 8.087236346909776e-05,
+      "student_teacher_error": 0.00016028434038162231,
+      "suite": "long-horizon",
+      "task": "make_kong",
+      "teacher_components": [
+        2.1238403860479593e-05,
+        4.2473518988117576e-05,
+        0.0020657635759562254
+      ],
+      "teacher_error": 0.0002874216006603092,
+      "window_id": 30478
+    },
+    {
+      "episode": 1512,
+      "executed_steps": 24,
+      "frame": 160,
+      "student_components": [
+        0.001100788707844913,
+        0.000320033315801993,
+        5.816506381961517e-05
+      ],
+      "student_error": 0.0005800831131637096,
+      "student_teacher_error": 0.00033972563687711954,
+      "suite": "generalization",
+      "task": "make_toast",
+      "teacher_components": [
+        0.00041071497253142297,
+        0.00035285158082842827,
+        4.444427395355888e-05
+      ],
+      "teacher_error": 0.00033599944435991347,
+      "window_id": 30484
+    },
+    {
+      "episode": 1581,
+      "executed_steps": 24,
+      "frame": 47,
+      "student_components": [
+        0.004333335440605879,
+        0.0028465173672884703,
+        0.0011364720994606614
+      ],
+      "student_error": 0.0031903183553367853,
+      "student_teacher_error": 0.00047503458335995674,
+      "suite": "generalization",
+      "task": "make_toast",
+      "teacher_components": [
+        0.003365064039826393,
+        0.0025979585479944944,
+        0.000998294330202043
+      ],
+      "teacher_error": 0.0026856649201363325,
+      "window_id": 30495
+    },
+    {
+      "episode": 1590,
+      "executed_steps": 24,
+      "frame": 246,
+      "student_components": [
+        0.0006899461732245982,
+        0.0005557322292588651,
+        0.001726833637803793
+      ],
+      "student_error": 0.0007524501415900886,
+      "student_teacher_error": 0.0005024238489568233,
+      "suite": "generalization",
+      "task": "make_toast",
+      "teacher_components": [
+        0.00042727007530629635,
+        0.0004926660913042724,
+        0.00070076814154163
+      ],
+      "teacher_error": 0.0004941553343087435,
+      "window_id": 30504
+    },
+    {
+      "episode": 1595,
+      "executed_steps": 24,
+      "frame": 256,
+      "student_components": [
+        0.001126746996305883,
+        0.0003368726174812764,
+        4.895104211755097e-05
+      ],
+      "student_error": 0.0005970853962935507,
+      "student_teacher_error": 0.00026603788137435913,
+      "suite": "generalization",
+      "task": "make_toast",
+      "teacher_components": [
+        0.0006474911351688206,
+        0.0001260416320292279,
+        2.550057070038747e-05
+      ],
+      "teacher_error": 0.0003090175741817802,
+      "window_id": 30508
+    },
+    {
+      "episode": 1625,
+      "executed_steps": 24,
+      "frame": 48,
+      "student_components": [
+        5.445488113764441e-06,
+        4.523756160779158e-06,
+        8.839094334689435e-06
+      ],
+      "student_error": 5.408822744357167e-06,
+      "student_teacher_error": 5.453824996948242e-06,
+      "suite": "memory",
+      "task": "match_and_pick_from_conveyor",
+      "teacher_components": [
+        4.517709840001771e-06,
+        3.2369109703722643e-06,
+        5.152762696525315e-06
+      ],
+      "teacher_error": 3.956692125939298e-06,
+      "window_id": 30515
+    },
+    {
+      "episode": 1640,
+      "executed_steps": 24,
+      "frame": 304,
+      "student_components": [
+        0.0006217929185368121,
+        0.00020337698515504599,
+        2.315390702278819e-05
+      ],
+      "student_error": 0.00033775510382838547,
+      "student_teacher_error": 0.0002520475536584854,
+      "suite": "memory",
+      "task": "match_and_pick_from_conveyor",
+      "teacher_components": [
+        7.422539783874527e-05,
+        4.8717167373979464e-05,
+        1.7130658306996338e-05
+      ],
+      "teacher_error": 5.4334435844793916e-05,
+      "window_id": 30522
+    },
+    {
+      "episode": 1670,
+      "executed_steps": 24,
+      "frame": 448,
+      "student_components": [
+        0.0008628725190646946,
+        0.00038098343065939844,
+        9.799908184504602e-06
+      ],
+      "student_error": 0.0005152939702384174,
+      "student_teacher_error": 0.0005118232220411301,
+      "suite": "memory",
+      "task": "match_and_pick_from_conveyor",
+      "teacher_components": [
+        7.896690658526495e-05,
+        4.720106880995445e-05,
+        1.7876027413876727e-05
+      ],
+      "teacher_error": 5.544762825593352e-05,
+      "window_id": 30530
+    },
+    {
+      "episode": 1678,
+      "executed_steps": 24,
+      "frame": 144,
+      "student_components": [
+        2.7954747565672733e-06,
+        4.903061835648259e-06,
+        7.993917279236484e-06
+      ],
+      "student_error": 4.499073838815093e-06,
+      "student_teacher_error": 4.624327175406506e-06,
+      "suite": "memory",
+      "task": "match_and_pick_from_conveyor",
+      "teacher_components": [
+        4.142632406001212e-06,
+        2.5414021820324706e-06,
+        4.9262184802501e-06
+      ],
+      "teacher_error": 3.439966121732141e-06,
+      "window_id": 30532
+    },
+    {
+      "episode": 1720,
+      "executed_steps": 24,
+      "frame": 88,
+      "student_components": [
+        0.003209508955478668,
+        0.0009102281183004379,
+        0.0050310916267335415
+      ],
+      "student_error": 0.0022875661961734295,
+      "student_teacher_error": 0.0012568129459396005,
+      "suite": "long-horizon",
+      "task": "organize_table",
+      "teacher_components": [
+        0.0002148621279047802,
+        0.0002646501816343516,
+        0.0010886723175644875
+      ],
+      "teacher_error": 0.0003489824302960187,
+      "window_id": 30551
+    },
+    {
+      "episode": 1743,
+      "executed_steps": 24,
+      "frame": 48,
+      "student_components": [
+        0.0011572610819712281,
+        0.00034003506880253553,
+        0.003048216924071312
+      ],
+      "student_error": 0.0009850175119936466,
+      "student_teacher_error": 0.000780479284003377,
+      "suite": "long-horizon",
+      "task": "organize_table",
+      "teacher_components": [
+        0.0010869887191802263,
+        0.00018400551925878972,
+        0.0017498931847512722
+      ],
+      "teacher_error": 0.0007183601264841855,
+      "window_id": 30559
+    },
+    {
+      "episode": 1750,
+      "executed_steps": 24,
+      "frame": 64,
+      "student_components": [
+        0.001081301481463015,
+        0.0008961944258771837,
+        5.737300671171397e-05
+      ],
+      "student_error": 0.0008607569034211338,
+      "student_teacher_error": 0.0006565724615938962,
+      "suite": "long-horizon",
+      "task": "organize_table",
+      "teacher_components": [
+        0.0006086528301239014,
+        0.0002489551261533052,
+        0.00010214621579507366
+      ],
+      "teacher_error": 0.00036549067590385675,
+      "window_id": 30563
+    },
+    {
+      "episode": 1770,
+      "executed_steps": 24,
+      "frame": 352,
+      "student_components": [
+        0.0018880352145060897,
+        0.000988437794148922,
+        0.00020605389727279544
+      ],
+      "student_error": 0.0012279888615012169,
+      "student_teacher_error": 0.0007571054738946259,
+      "suite": "long-horizon",
+      "task": "organize_table",
+      "teacher_components": [
+        0.0009771084878593683,
+        0.0009788050083443522,
+        7.34397690393962e-05
+      ],
+      "teacher_error": 0.0008649982046335936,
+      "window_id": 30570
+    },
+    {
+      "episode": 1802,
+      "executed_steps": 24,
+      "frame": 496,
+      "student_components": [
+        0.009290741756558418,
+        0.0035338997840881348,
+        1.2722087376459967e-05
+      ],
+      "student_error": 0.005252567585557699,
+      "student_teacher_error": 0.002436764072626829,
+      "suite": "generalization",
+      "task": "pack_objects_into_box",
+      "teacher_components": [
+        0.0028799884021282196,
+        0.0009728795266710222,
+        1.2106327631045133e-05
+      ],
+      "teacher_error": 0.0015679486095905304,
+      "window_id": 30577
+    },
+    {
+      "episode": 1808,
+      "executed_steps": 24,
+      "frame": 96,
+      "student_components": [
+        0.0013506015529856086,
+        0.0012813872890546918,
+        8.551546670787502e-06
+      ],
+      "student_error": 0.0011482381960377097,
+      "student_teacher_error": 0.0005255825817584991,
+      "suite": "generalization",
+      "task": "pack_objects_into_box",
+      "teacher_components": [
+        0.0006820876151323318,
+        0.0014248033985495567,
+        9.322370715381112e-06
+      ],
+      "teacher_error": 0.0009693498723208904,
+      "window_id": 30579
+    },
+    {
+      "episode": 1867,
+      "executed_steps": 24,
+      "frame": 88,
+      "student_components": [
+        0.0012391922064125538,
+        0.0006753277848474681,
+        0.0009761795517988503
+      ],
+      "student_error": 0.0009243832901120186,
+      "student_teacher_error": 0.000663272978272289,
+      "suite": "generalization",
+      "task": "pack_objects_into_box",
+      "teacher_components": [
+        0.00021087641653139144,
+        0.00015343712584581226,
+        0.00012191155838081613
+      ],
+      "teacher_error": 0.00017103616846725345,
+      "window_id": 30591
+    },
+    {
+      "episode": 1871,
+      "executed_steps": 24,
+      "frame": 384,
+      "student_components": [
+        0.000995712704025209,
+        0.00043064923374913633,
+        0.00016838144802022725
+      ],
+      "student_error": 0.0006097645964473486,
+      "student_teacher_error": 0.00037702926783822477,
+      "suite": "generalization",
+      "task": "pack_objects_into_box",
+      "teacher_components": [
+        0.0003210798604413867,
+        0.0001462892978452146,
+        0.00010579238733043894
+      ],
+      "teacher_error": 0.0002067736495519057,
+      "window_id": 30598
+    },
+    {
+      "episode": 1923,
+      "executed_steps": 24,
+      "frame": 177,
+      "student_components": [
+        0.0005357738118618727,
+        0.00014288008969742805,
+        0.00018978102889377624
+      ],
+      "student_error": 0.0002960778365377337,
+      "student_teacher_error": 0.0001262401492567733,
+      "suite": "precision",
+      "task": "play_Xylophone",
+      "teacher_components": [
+        0.00017504894640296698,
+        4.7254812670871615e-05,
+        3.7851528759347275e-05
+      ],
+      "teacher_error": 9.400220005773008e-05,
+      "window_id": 30613
+    },
+    {
+      "episode": 1933,
+      "executed_steps": 24,
+      "frame": 32,
+      "student_components": [
+        0.0001451982097933069,
+        0.00010031302372226492,
+        8.293503196910024e-05
+      ],
+      "student_error": 0.0001149727322626859,
+      "student_teacher_error": 8.446878200629726e-05,
+      "suite": "precision",
+      "task": "play_Xylophone",
+      "teacher_components": [
+        5.681371476384811e-05,
+        4.189788887742907e-05,
+        2.983059130201582e-05
+      ],
+      "teacher_error": 4.598290615831502e-05,
+      "window_id": 30615
+    },
+    {
+      "episode": 1945,
+      "executed_steps": 24,
+      "frame": 176,
+      "student_components": [
+        0.0001691428042249754,
+        0.00010205743456026539,
+        0.00012991491530556232
+      ],
+      "student_error": 0.00013069664419163018,
+      "student_teacher_error": 6.168956315377727e-05,
+      "suite": "precision",
+      "task": "play_Xylophone",
+      "teacher_components": [
+        5.2870746003463864e-05,
+        4.634044671547599e-05,
+        5.024477650295012e-05
+      ],
+      "teacher_error": 4.927735062665306e-05,
+      "window_id": 30621
+    },
+    {
+      "episode": 1981,
+      "executed_steps": 24,
+      "frame": 232,
+      "student_components": [
+        0.00045024233986623585,
+        0.00016132048040162772,
+        2.4008486434468068e-05
+      ],
+      "student_error": 0.00025250218459405005,
+      "student_teacher_error": 0.00010199658572673798,
+      "suite": "precision",
+      "task": "play_Xylophone",
+      "teacher_components": [
+        0.00016822062025312334,
+        7.978183566592634e-05,
+        0.00013107177801430225
+      ],
+      "teacher_error": 0.00011935763177461922,
+      "window_id": 30634
+    },
+    {
+      "episode": 2001,
+      "executed_steps": 24,
+      "frame": 104,
+      "student_components": [
+        0.0004487436672206968,
+        0.0001612594205653295,
+        0.0005816076882183552
+      ],
+      "student_error": 0.00032160955015569925,
+      "student_teacher_error": 0.00011132681538583711,
+      "suite": "long-horizon",
+      "task": "play_stacking_toy",
+      "teacher_components": [
+        0.0006699007353745401,
+        0.00015233193698804826,
+        0.0016641527181491256
+      ],
+      "teacher_error": 0.0005353978485800326,
+      "window_id": 30639
+    },
+    {
+      "episode": 2019,
+      "executed_steps": 24,
+      "frame": 576,
+      "student_components": [
+        7.936626934679225e-05,
+        4.844487921218388e-05,
+        9.531458636047319e-05
+      ],
+      "student_error": 6.589911208720878e-05,
+      "student_teacher_error": 7.610581815242767e-05,
+      "suite": "long-horizon",
+      "task": "play_stacking_toy",
+      "teacher_components": [
+        3.4941469493787736e-05,
+        2.3625090761925094e-05,
+        0.00014614711108151823
+      ],
+      "teacher_error": 4.318398714531213e-05,
+      "window_id": 30649
+    },
+    {
+      "episode": 2050,
+      "executed_steps": 24,
+      "frame": 331,
+      "student_components": [
+        0.00013788347132503986,
+        1.7161071809823625e-05,
+        0.00010568363359197974
+      ],
+      "student_error": 7.349729276029393e-05,
+      "student_teacher_error": 8.877739310264587e-05,
+      "suite": "long-horizon",
+      "task": "play_stacking_toy",
+      "teacher_components": [
+        4.9697846407070756e-05,
+        1.413331392541295e-05,
+        8.615313709015027e-05
+      ],
+      "teacher_error": 3.647249468485825e-05,
+      "window_id": 30664
+    },
+    {
+      "episode": 2062,
+      "executed_steps": 24,
+      "frame": 336,
+      "student_components": [
+        0.0001594630302861333,
+        0.00011657633149297908,
+        0.00017088364984374493
+      ],
+      "student_error": 0.00013944726379122585,
+      "student_teacher_error": 6.218642374733463e-05,
+      "suite": "long-horizon",
+      "task": "play_stacking_toy",
+      "teacher_components": [
+        5.5615120800212026e-05,
+        3.7996131140971556e-05,
+        5.1037550292676315e-05
+      ],
+      "teacher_error": 4.6233428292907774e-05,
+      "window_id": 30668
+    },
+    {
+      "episode": 2123,
+      "executed_steps": 24,
+      "frame": 764,
+      "student_components": [
+        7.524151442339644e-05,
+        5.5258366046473384e-05,
+        1.3041764759691432e-05
+      ],
+      "student_error": 5.747497561969794e-05,
+      "student_teacher_error": 3.630873470683582e-05,
+      "suite": "long-horizon",
+      "task": "play_tic_tac_toe",
+      "teacher_components": [
+        1.6015159417293034e-05,
+        1.726359005260747e-05,
+        1.2183551007183269e-05
+      ],
+      "teacher_error": 1.6160423911060207e-05,
+      "window_id": 30678
+    },
+    {
+      "episode": 2134,
+      "executed_steps": 24,
+      "frame": 256,
+      "student_components": [
+        0.00010832902626134455,
+        1.8219596313429065e-05,
+        0.006609154399484396
+      ],
+      "student_error": 0.0008758774492889643,
+      "student_teacher_error": 0.0009003928862512112,
+      "suite": "long-horizon",
+      "task": "play_tic_tac_toe",
+      "teacher_components": [
+        0.00010163189290324226,
+        1.5082617210282478e-05,
+        1.0612151527311653e-05
+      ],
+      "teacher_error": 4.697978511103429e-05,
+      "window_id": 30680
+    },
+    {
+      "episode": 2136,
+      "executed_steps": 24,
+      "frame": 72,
+      "student_components": [
+        5.0390346586937085e-05,
+        1.5653538866899908e-05,
+        2.0075265638297424e-05
+      ],
+      "student_error": 2.9232556698843837e-05,
+      "student_teacher_error": 3.870980071951635e-05,
+      "suite": "long-horizon",
+      "task": "play_tic_tac_toe",
+      "teacher_components": [
+        4.8093454097397625e-05,
+        1.1320829798933119e-05,
+        7.943974196678028e-06
+      ],
+      "teacher_error": 2.4688457415322773e-05,
+      "window_id": 30683
+    },
+    {
+      "episode": 2176,
+      "executed_steps": 24,
+      "frame": 576,
+      "student_components": [
+        4.3236355850240216e-05,
+        3.764495704672299e-05,
+        9.478058018430602e-06
+      ],
+      "student_error": 3.622086296672933e-05,
+      "student_teacher_error": 2.0467210561037064e-05,
+      "suite": "long-horizon",
+      "task": "play_tic_tac_toe",
+      "teacher_components": [
+        2.4254293748526834e-05,
+        3.4434557164786384e-05,
+        8.923610948841088e-06
+      ],
+      "teacher_error": 2.7428088287706487e-05,
+      "window_id": 30697
+    },
+    {
+      "episode": 2215,
+      "executed_steps": 24,
+      "frame": 152,
+      "student_components": [
+        0.0001302558957831934,
+        0.00010488203406566754,
+        1.42832868732512e-05
+      ],
+      "student_error": 0.0001030723869916983,
+      "student_teacher_error": 0.00010537623893469572,
+      "suite": "precision",
+      "task": "plug_in_charger",
+      "teacher_components": [
+        2.335323915758636e-05,
+        3.332885535201058e-05,
+        2.3779210096108727e-05
+      ],
+      "teacher_error": 2.839429180312436e-05,
+      "window_id": 30709
+    },
+    {
+      "episode": 2254,
+      "executed_steps": 24,
+      "frame": 91,
+      "student_components": [
+        7.316165283555165e-05,
+        5.337944094208069e-05,
+        3.78684708266519e-05
+      ],
+      "student_error": 5.8858906413661316e-05,
+      "student_teacher_error": 7.422408816637471e-05,
+      "suite": "precision",
+      "task": "plug_in_charger",
+      "teacher_components": [
+        2.209289050369989e-05,
+        2.3988579414435662e-05,
+        2.823509566951543e-05
+      ],
+      "teacher_error": 2.3808512196410447e-05,
+      "window_id": 30724
+    },
+    {
+      "episode": 2282,
+      "executed_steps": 24,
+      "frame": 21,
+      "student_components": [
+        0.0002600363804958761,
+        9.093066182686016e-05,
+        7.467042451025918e-05
+      ],
+      "student_error": 0.0001523127721156925,
+      "student_teacher_error": 0.0002165287733078003,
+      "suite": "precision",
+      "task": "plug_in_charger",
+      "teacher_components": [
+        2.7316569685353898e-05,
+        2.1580764951067977e-05,
+        2.669664718268905e-05
+      ],
+      "teacher_error": 2.437117655063048e-05,
+      "window_id": 30727
+    },
+    {
+      "episode": 2286,
+      "executed_steps": 24,
+      "frame": 22,
+      "student_components": [
+        0.00015260375221259892,
+        5.960346243227832e-05,
+        0.00024965699412859976
+      ],
+      "student_error": 0.00011823526438092813,
+      "student_teacher_error": 7.161001121858135e-05,
+      "suite": "precision",
+      "task": "plug_in_charger",
+      "teacher_components": [
+        6.370108894770965e-05,
+        1.4768549590371549e-05,
+        1.6354637409676798e-05
+      ],
+      "teacher_error": 3.331651896587573e-05,
+      "window_id": 30731
+    },
+    {
+      "episode": 2341,
+      "executed_steps": 24,
+      "frame": 176,
+      "student_components": [
+        0.0004866833332926035,
+        0.0011070643085986376,
+        0.0003267805150244385
+      ],
+      "student_error": 0.0007768859504722059,
+      "student_teacher_error": 0.0005486683803610504,
+      "suite": "precision",
+      "task": "pour_balls_into_vase",
+      "teacher_components": [
+        0.00014119349361862987,
+        7.246524910442531e-05,
+        7.90442427387461e-05
+      ],
+      "teacher_error": 9.906070044962689e-05,
+      "window_id": 30745
+    },
+    {
+      "episode": 2352,
+      "executed_steps": 24,
+      "frame": 160,
+      "student_components": [
+        0.00027813829365186393,
+        0.00020081462571397424,
+        2.1347057554521598e-05
+      ],
+      "student_error": 0.0002073775394819677,
+      "student_teacher_error": 0.00017238904547411948,
+      "suite": "precision",
+      "task": "pour_balls_into_vase",
+      "teacher_components": [
+        6.075924102333374e-05,
+        0.00010005509102484211,
+        2.556878280302044e-05
+      ],
+      "teacher_error": 7.600837125210091e-05,
+      "window_id": 30749
+    },
+    {
+      "episode": 2371,
+      "executed_steps": 24,
+      "frame": 224,
+      "student_components": [
+        0.0005137662519700825,
+        0.00016735994722694159,
+        0.002078081713989377
+      ],
+      "student_error": 0.0005361025687307119,
+      "student_teacher_error": 0.0007040711934678257,
+      "suite": "precision",
+      "task": "pour_balls_into_vase",
+      "teacher_components": [
+        4.0785718738334253e-05,
+        2.771928848233074e-05,
+        0.0003688615106511861
+      ],
+      "teacher_error": 7.526197441620752e-05,
+      "window_id": 30758
+    },
+    {
+      "episode": 2395,
+      "executed_steps": 24,
+      "frame": 224,
+      "student_components": [
+        0.0002888189919758588,
+        0.0004536011547315866,
+        1.1854902368213516e-05
+      ],
+      "student_error": 0.0003365895536262542,
+      "student_teacher_error": 0.00021517933055292815,
+      "suite": "precision",
+      "task": "pour_balls_into_vase",
+      "teacher_components": [
+        0.00012727560533676296,
+        0.0001938036148203537,
+        1.1950392035942059e-05
+      ],
+      "teacher_error": 0.00014612397353630513,
+      "window_id": 30766
+    },
+    {
+      "episode": 2412,
+      "executed_steps": 24,
+      "frame": 120,
+      "student_components": [
+        0.000875774014275521,
+        0.002659885212779045,
+        3.412452861084603e-05
+      ],
+      "student_error": 0.001662623486481607,
+      "student_teacher_error": 0.0016009658575057983,
+      "suite": "generalization",
+      "task": "pour_liquid_into_cup",
+      "teacher_components": [
+        0.0009296645293943584,
+        0.0013014903524890542,
+        5.952173887635581e-05
+      ],
+      "teacher_error": 0.001006809645332396,
+      "window_id": 30770
+    },
+    {
+      "episode": 2469,
+      "executed_steps": 24,
+      "frame": 23,
+      "student_components": [
+        0.00030460089328698814,
+        0.0005459563690237701,
+        7.320792065002024e-05
+      ],
+      "student_error": 0.0003963545022998005,
+      "student_teacher_error": 0.00017058837693184614,
+      "suite": "generalization",
+      "task": "pour_liquid_into_cup",
+      "teacher_components": [
+        0.00022761542641092092,
+        0.0003405245952308178,
+        0.0001440025371266529
+      ],
+      "teacher_error": 0.0002736184105742723,
+      "window_id": 30783
+    },
+    {
+      "episode": 2487,
+      "executed_steps": 24,
+      "frame": 144,
+      "student_components": [
+        0.00021037482656538486,
+        0.00042446109000593424,
+        1.86046654562233e-05
+      ],
+      "student_error": 0.00029344670474529266,
+      "student_teacher_error": 9.501228487351909e-05,
+      "suite": "generalization",
+      "task": "pour_liquid_into_cup",
+      "teacher_components": [
+        5.717005115002394e-05,
+        0.00025632456527091563,
+        7.347050541284261e-06
+      ],
+      "teacher_error": 0.0001505194086348638,
+      "window_id": 30789
+    },
+    {
+      "episode": 2491,
+      "executed_steps": 24,
+      "frame": 184,
+      "student_components": [
+        0.0009624059894122183,
+        0.0012234074529260397,
+        3.8493577449116856e-05
+      ],
+      "student_error": 0.0009774175705388188,
+      "student_teacher_error": 0.00037166476249694824,
+      "suite": "generalization",
+      "task": "pour_liquid_into_cup",
+      "teacher_components": [
+        0.0008626484195701778,
+        0.0006816131062805653,
+        1.5847559552639723e-05
+      ],
+      "teacher_error": 0.0006662806845270097,
+      "window_id": 30797
+    },
+    {
+      "episode": 2541,
+      "executed_steps": 24,
+      "frame": 32,
+      "student_components": [
+        3.0207904273993336e-05,
+        1.1922072189918254e-05,
+        2.183234209951479e-05
+      ],
+      "student_error": 2.0018042050651275e-05,
+      "student_teacher_error": 5.211448296904564e-05,
+      "suite": "memory",
+      "task": "press_by_number",
+      "teacher_components": [
+        0.00012080644955858588,
+        9.819485967454966e-06,
+        8.203601282730233e-06
+      ],
+      "teacher_error": 5.1237617299193516e-05,
+      "window_id": 30807
+    },
+    {
+      "episode": 2557,
+      "executed_steps": 24,
+      "frame": 40,
+      "student_components": [
+        0.0004514158936217427,
+        1.8420476408209652e-05,
+        1.932178383867722e-05
+      ],
+      "student_error": 0.00018090639787260443,
+      "student_teacher_error": 5.896451693843119e-05,
+      "suite": "memory",
+      "task": "press_by_number",
+      "teacher_components": [
+        0.0008563944138586521,
+        1.2713128853647504e-05,
+        1.6130761650856584e-05
+      ],
+      "teacher_error": 0.0003295208152849227,
+      "window_id": 30811
+    },
+    {
+      "episode": 2564,
+      "executed_steps": 24,
+      "frame": 40,
+      "student_components": [
+        0.00019127462292090058,
+        2.7265581593383104e-05,
+        6.2728231569053605e-06
+      ],
+      "student_error": 8.614487160230055e-05,
+      "student_teacher_error": 0.00015370671462733299,
+      "suite": "memory",
+      "task": "press_by_number",
+      "teacher_components": [
+        0.0003940202295780182,
+        1.6328602214343846e-05,
+        2.6497111321077682e-05
+      ],
+      "teacher_error": 0.0001592340413480997,
+      "window_id": 30815
+    },
+    {
+      "episode": 2592,
+      "executed_steps": 24,
+      "frame": 200,
+      "student_components": [
+        4.920540959574282e-05,
+        2.213445804954972e-05,
+        0.00011273855488980189
+      ],
+      "student_error": 4.3611576984403655e-05,
+      "student_teacher_error": 2.7707466870197095e-05,
+      "suite": "memory",
+      "task": "press_by_number",
+      "teacher_components": [
+        1.6397347280872054e-05,
+        1.0332080819352996e-05,
+        3.5124776331940666e-05
+      ],
+      "teacher_error": 1.570564381836448e-05,
+      "window_id": 30830
+    },
+    {
+      "episode": 2609,
+      "executed_steps": 24,
+      "frame": 472,
+      "student_components": [
+        0.0013224813155829906,
+        0.0005912089836783707,
+        3.741672480828129e-05
+      ],
+      "student_error": 0.0007962120580486953,
+      "student_teacher_error": 0.0003095318970736116,
+      "suite": "generalization",
+      "task": "push_T",
+      "teacher_components": [
+        0.0005459811072796583,
+        0.0004171687178313732,
+        2.2067282770876773e-05
+      ],
+      "teacher_error": 0.00041608570609241724,
+      "window_id": 30833
+    },
+    {
+      "episode": 2630,
+      "executed_steps": 24,
+      "frame": 128,
+      "student_components": [
+        0.0006244845571927726,
+        0.0002406919520581141,
+        2.87475049844943e-05
+      ],
+      "student_error": 0.00035812112037092447,
+      "student_teacher_error": 0.000154259309056215,
+      "suite": "generalization",
+      "task": "push_T",
+      "teacher_components": [
+        0.0001953084283741191,
+        0.00012974176206625998,
+        2.1451834982144646e-05
+      ],
+      "teacher_error": 0.00014079302491154522,
+      "window_id": 30841
+    },
+    {
+      "episode": 2681,
+      "executed_steps": 24,
+      "frame": 288,
+      "student_components": [
+        0.0002773946325760335,
+        0.00023340480402112007,
+        3.2391148124588653e-05
+      ],
+      "student_error": 0.00022477428137790412,
+      "student_teacher_error": 0.00015572355187032372,
+      "suite": "generalization",
+      "task": "push_T",
+      "teacher_components": [
+        0.00011133602674817666,
+        0.00017440637748222798,
+        3.0932231311453506e-05
+      ],
+      "teacher_error": 0.00013282071449793875,
+      "window_id": 30858
+    },
+    {
+      "episode": 2692,
+      "executed_steps": 24,
+      "frame": 176,
+      "student_components": [
+        0.000276477774605155,
+        8.046648144954816e-05,
+        1.565097591083031e-05
+      ],
+      "student_error": 0.0001458687911508605,
+      "student_teacher_error": 9.786337614059448e-05,
+      "suite": "generalization",
+      "task": "push_T",
+      "teacher_components": [
+        0.00014151092909742147,
+        4.4956559577258304e-05,
+        5.610630978480913e-05
+      ],
+      "teacher_error": 8.255816646851599e-05,
+      "window_id": 30862
+    },
+    {
+      "episode": 2714,
+      "executed_steps": 24,
+      "frame": 64,
+      "student_components": [
+        0.0008040396496653557,
+        0.0014848901191726327,
+        0.0004081391089130193
+      ],
+      "student_error": 0.0010949773713946342,
+      "student_teacher_error": 0.0012106547364965081,
+      "suite": "long-horizon",
+      "task": "put_bottles_into_dustbin",
+      "teacher_components": [
+        0.00015139332390390337,
+        0.0003836232062894851,
+        0.00018391478806734085
+      ],
+      "teacher_error": 0.00027157345903106034,
+      "window_id": 30871
+    },
+    {
+      "episode": 2721,
+      "executed_steps": 24,
+      "frame": 96,
+      "student_components": [
+        0.001208678586408496,
+        0.00027562829200178385,
+        0.0005188080249354243
+      ],
+      "student_error": 0.0006559196044690907,
+      "student_teacher_error": 0.0005456136423163116,
+      "suite": "long-horizon",
+      "task": "put_bottles_into_dustbin",
+      "teacher_components": [
+        0.00025002966867759824,
+        0.0001394360588165,
+        9.500537271378562e-05
+      ],
+      "teacher_error": 0.00017535481310915202,
+      "window_id": 30876
+    },
+    {
+      "episode": 2748,
+      "executed_steps": 24,
+      "frame": 159,
+      "student_components": [
+        0.0027717810589820147,
+        0.0015427410835400224,
+        3.3145839552162215e-05
+      ],
+      "student_error": 0.0018149317475035787,
+      "student_teacher_error": 0.00138882827013731,
+      "suite": "long-horizon",
+      "task": "put_bottles_into_dustbin",
+      "teacher_components": [
+        0.0005655513377860188,
+        0.00038720076554454863,
+        0.00015649065608158708
+      ],
+      "teacher_error": 0.0004252434882801026,
+      "window_id": 30881
+    },
+    {
+      "episode": 2764,
+      "executed_steps": 24,
+      "frame": 136,
+      "student_components": [
+        0.001726183108985424,
+        0.000888226495590061,
+        1.3870719158148859e-05
+      ],
+      "student_error": 0.0010931658325716853,
+      "student_teacher_error": 0.0005724334041588008,
+      "suite": "long-horizon",
+      "task": "put_bottles_into_dustbin",
+      "teacher_components": [
+        0.0005562969017773867,
+        0.00038306674105115235,
+        1.3387751096161082e-05
+      ],
+      "teacher_error": 0.00040181816439144313,
+      "window_id": 30884
+    },
+    {
+      "episode": 2826,
+      "executed_steps": 24,
+      "frame": 193,
+      "student_components": [
+        0.00021038840350229293,
+        3.766715235542506e-05,
+        0.0001526169216958806
+      ],
+      "student_error": 0.00011680633906507865,
+      "student_teacher_error": 0.00013296057295519859,
+      "suite": "generalization",
+      "task": "sort_nesting_dolls_by_size",
+      "teacher_components": [
+        3.551929330569692e-05,
+        3.93761474697385e-05,
+        1.736057674861513e-05
+      ],
+      "teacher_error": 3.5177879908587784e-05,
+      "window_id": 30904
+    },
+    {
+      "episode": 2846,
+      "executed_steps": 24,
+      "frame": 536,
+      "student_components": [
+        0.0003949080128222704,
+        0.00031332465005107224,
+        1.3342604688659776e-05
+      ],
+      "student_error": 0.00030642066849395633,
+      "student_teacher_error": 0.0001561396784381941,
+      "suite": "generalization",
+      "task": "sort_nesting_dolls_by_size",
+      "teacher_components": [
+        0.00014920385729055852,
+        7.60561742936261e-05,
+        9.135316759056877e-06
+      ],
+      "teacher_error": 9.51214533415623e-05,
+      "window_id": 30910
+    },
+    {
+      "episode": 2853,
+      "executed_steps": 24,
+      "frame": 64,
+      "student_components": [
+        0.00012939548469148576,
+        1.9078952391282655e-05,
+        0.00040725598228164017
+      ],
+      "student_error": 0.00010896978346863762,
+      "student_teacher_error": 5.1611412345664576e-05,
+      "suite": "generalization",
+      "task": "sort_nesting_dolls_by_size",
+      "teacher_components": [
+        7.146376447053626e-05,
+        1.1008795809175353e-05,
+        0.00010778073919937015
+      ],
+      "teacher_error": 4.57759051641915e-05,
+      "window_id": 30911
+    },
+    {
+      "episode": 2861,
+      "executed_steps": 24,
+      "frame": 512,
+      "student_components": [
+        0.0001587222795933485,
+        5.434831473394297e-05,
+        1.5675976101192646e-05
+      ],
+      "student_error": 8.865451673045754e-05,
+      "student_teacher_error": 6.282888352870941e-05,
+      "suite": "generalization",
+      "task": "sort_nesting_dolls_by_size",
+      "teacher_components": [
+        4.790714956470765e-05,
+        2.7785004931502044e-05,
+        1.0345243026677053e-05
+      ],
+      "teacher_error": 3.315083813504316e-05,
+      "window_id": 30918
+    },
+    {
+      "episode": 2910,
+      "executed_steps": 24,
+      "frame": 206,
+      "student_components": [
+        0.00010080713400384411,
+        1.5161088413151447e-05,
+        6.906080670887604e-05
+      ],
+      "student_error": 5.4015818022890016e-05,
+      "student_teacher_error": 3.567896783351898e-05,
+      "suite": "generalization",
+      "task": "stack_blocks",
+      "teacher_components": [
+        5.542216604226269e-05,
+        1.0355760423408356e-05,
+        2.566064358688891e-05
+      ],
+      "teacher_error": 2.91687738354085e-05,
+      "window_id": 30930
+    },
+    {
+      "episode": 2931,
+      "executed_steps": 24,
+      "frame": 192,
+      "student_components": [
+        0.0006031260709278286,
+        2.2990834622760303e-05,
+        9.628528641769662e-05
+      ],
+      "student_error": 0.00024970335653051734,
+      "student_teacher_error": 0.00036406578146852553,
+      "suite": "generalization",
+      "task": "stack_blocks",
+      "teacher_components": [
+        0.0002583765017334372,
+        1.9607223293860443e-05,
+        1.8153408746002242e-05
+      ],
+      "teacher_error": 0.00010896399180637673,
+      "window_id": 30938
+    },
+    {
+      "episode": 2979,
+      "executed_steps": 24,
+      "frame": 88,
+      "student_components": [
+        6.167773972265422e-05,
+        2.935433622042183e-05,
+        0.0002483445859979838
+      ],
+      "student_error": 6.884939648443833e-05,
+      "student_teacher_error": 4.950289803673513e-05,
+      "suite": "generalization",
+      "task": "stack_blocks",
+      "teacher_components": [
+        3.304763959022239e-05,
+        2.130542998202145e-05,
+        4.114465264137834e-05
+      ],
+      "teacher_error": 2.8188660508021712e-05,
+      "window_id": 30952
+    },
+    {
+      "episode": 2990,
+      "executed_steps": 24,
+      "frame": 96,
+      "student_components": [
+        8.10376659501344e-05,
+        2.4594350179540925e-05,
+        6.533582109113922e-06
+      ],
+      "student_error": 4.3502997868927196e-05,
+      "student_teacher_error": 4.83213625557255e-05,
+      "suite": "generalization",
+      "task": "stack_blocks",
+      "teacher_components": [
+        2.2460633772425354e-05,
+        1.5148964848776814e-05,
+        2.5063534849323332e-05
+      ],
+      "teacher_error": 1.9130164218950085e-05,
+      "window_id": 30956
+    },
+    {
+      "episode": 3011,
+      "executed_steps": 24,
+      "frame": 164,
+      "student_components": [
+        0.0019365190528333187,
+        0.0007132627069950104,
+        0.0004482603690121323
+      ],
+      "student_error": 0.0011388584971427917,
+      "student_teacher_error": 0.0012447340413928032,
+      "suite": "generalization",
+      "task": "stack_bowls",
+      "teacher_components": [
+        0.0005514888907782733,
+        0.0004650674236472696,
+        0.00012219052587170154
+      ],
+      "teacher_error": 0.00045461583067663014,
+      "window_id": 30965
+    },
+    {
+      "episode": 3012,
+      "executed_steps": 24,
+      "frame": 151,
+      "student_components": [
+        0.00030558969592675567,
+        0.0001768225192790851,
+        0.0002392566530033946
+      ],
+      "student_error": 0.00023291446268558502,
+      "student_teacher_error": 0.000715235888492316,
+      "suite": "generalization",
+      "task": "stack_bowls",
+      "teacher_components": [
+        0.0002095337986247614,
+        4.4751708628609776e-05,
+        0.0030333874747157097
+      ],
+      "teacher_error": 0.000480124494060874,
+      "window_id": 30970
+    },
+    {
+      "episode": 3037,
+      "executed_steps": 24,
+      "frame": 328,
+      "student_components": [
+        0.00034548903931863606,
+        0.0001653427752899006,
+        2.021214459091425e-05
+      ],
+      "student_error": 0.00021475630637723953,
+      "student_teacher_error": 0.00019204367708880454,
+      "suite": "generalization",
+      "task": "stack_bowls",
+      "teacher_components": [
+        0.00016779072757344693,
+        0.00011997462570434436,
+        1.763036379998084e-05
+      ],
+      "teacher_error": 0.00012511260865721852,
+      "window_id": 30974
+    },
+    {
+      "episode": 3061,
+      "executed_steps": 24,
+      "frame": 256,
+      "student_components": [
+        8.173971582436934e-05,
+        0.00026816860190592706,
+        0.0002175634726881981
+      ],
+      "student_error": 0.0001919321366585791,
+      "student_teacher_error": 0.00026639271527528763,
+      "suite": "generalization",
+      "task": "stack_bowls",
+      "teacher_components": [
+        3.665867188828997e-05,
+        4.667157190851867e-05,
+        0.0005058259121142328
+      ],
+      "teacher_error": 0.00010031103010987863,
+      "window_id": 30980
+    },
+    {
+      "episode": 3107,
+      "executed_steps": 24,
+      "frame": 399,
+      "student_components": [
+        0.0025245079305022955,
+        0.001073259860277176,
+        0.0026514148339629173
+      ],
+      "student_error": 0.001814747229218483,
+      "student_teacher_error": 0.0011574075324460864,
+      "suite": "generalization",
+      "task": "store_laptop_and_headphones",
+      "teacher_components": [
+        0.0008003914845176041,
+        0.0005870816530659795,
+        0.0007297932170331478
+      ],
+      "teacher_error": 0.0006849117926321924,
+      "window_id": 30994
+    },
+    {
+      "episode": 3166,
+      "executed_steps": 24,
+      "frame": 176,
+      "student_components": [
+        0.0020159196574240923,
+        0.0007478571496903896,
+        3.204671520506963e-05
+      ],
+      "student_error": 0.0011339042102918029,
+      "student_teacher_error": 0.0006985029322095215,
+      "suite": "generalization",
+      "task": "store_laptop_and_headphones",
+      "teacher_components": [
+        0.0004386060172691941,
+        0.0002759318158496171,
+        3.6277870094636455e-05
+      ],
+      "teacher_error": 0.00030697789043188095,
+      "window_id": 31008
+    },
+    {
+      "episode": 3168,
+      "executed_steps": 24,
+      "frame": 456,
+      "student_components": [
+        0.0020446397829800844,
+        0.0021639589685946703,
+        0.00036841281689703465
+      ],
+      "student_error": 0.001894771121442318,
+      "student_teacher_error": 0.001839008298702538,
+      "suite": "generalization",
+      "task": "store_laptop_and_headphones",
+      "teacher_components": [
+        0.001704980619251728,
+        0.0008140290156006813,
+        0.000549216172657907
+      ],
+      "teacher_error": 0.001115034450776875,
+      "window_id": 31014
+    },
+    {
+      "episode": 3192,
+      "executed_steps": 24,
+      "frame": 64,
+      "student_components": [
+        0.0014119199477136135,
+        0.0011438888031989336,
+        3.5791093978332356e-05
+      ],
+      "student_error": 0.0011058882810175419,
+      "student_teacher_error": 0.0010649746982380748,
+      "suite": "generalization",
+      "task": "store_laptop_and_headphones",
+      "teacher_components": [
+        0.0002885021094698459,
+        8.093211363302544e-05,
+        2.761827636277303e-05
+      ],
+      "teacher_error": 0.00015210664423648268,
+      "window_id": 31019
+    },
+    {
+      "episode": 3200,
+      "executed_steps": 24,
+      "frame": 214,
+      "student_components": [
+        0.00010022699279943481,
+        0.00026225135661661625,
+        0.00025583512615412474
+      ],
+      "student_error": 0.00020069019228685647,
+      "student_teacher_error": 0.0001292489469051361,
+      "suite": "memory",
+      "task": "swap_T",
+      "teacher_components": [
+        2.046742338279728e-05,
+        2.6052201064885594e-05,
+        4.4941509258933365e-05
+      ],
+      "teacher_error": 2.6319074095226824e-05,
+      "window_id": 31026
+    },
+    {
+      "episode": 3209,
+      "executed_steps": 24,
+      "frame": 208,
+      "student_components": [
+        0.00014094884681981057,
+        7.265073509188369e-05,
+        2.806421252898872e-05
+      ],
+      "student_error": 9.2689209850505e-05,
+      "student_teacher_error": 6.759609095752239e-05,
+      "suite": "memory",
+      "task": "swap_T",
+      "teacher_components": [
+        4.2524523450993e-05,
+        3.054542685276829e-05,
+        1.692745354375802e-05
+      ],
+      "teacher_error": 3.333534186822362e-05,
+      "window_id": 31030
+    },
+    {
+      "episode": 3247,
+      "executed_steps": 24,
+      "frame": 216,
+      "student_components": [
+        8.620108565082774e-05,
+        0.0006846671458333731,
+        0.00018664148228708655
+      ],
+      "student_error": 0.0003979891480412334,
+      "student_teacher_error": 0.00045645609498023987,
+      "suite": "memory",
+      "task": "swap_T",
+      "teacher_components": [
+        2.8005635613226332e-05,
+        2.6263121981173754e-05,
+        2.4730201403144747e-05
+      ],
+      "teacher_error": 2.6724950657808222e-05,
+      "window_id": 31042
+    },
+    {
+      "episode": 3258,
+      "executed_steps": 24,
+      "frame": 152,
+      "student_components": [
+        4.815462671103887e-05,
+        7.004791405051947e-05,
+        0.0005106143071316183
+      ],
+      "student_error": 0.00011690872634062544,
+      "student_teacher_error": 9.579273319104686e-05,
+      "suite": "memory",
+      "task": "swap_T",
+      "teacher_components": [
+        1.4137182915874291e-05,
+        1.7399448552168906e-05,
+        1.7016680430970155e-05
+      ],
+      "teacher_error": 1.6128253264469095e-05,
+      "window_id": 31045
+    },
+    {
+      "episode": 3317,
+      "executed_steps": 24,
+      "frame": 48,
+      "student_components": [
+        2.860438689822331e-05,
+        1.9697919924510643e-05,
+        0.006943828891962767
+      ],
+      "student_error": 0.0008885542047210038,
+      "student_teacher_error": 0.0009089906816370785,
+      "suite": "memory",
+      "task": "swap_blocks",
+      "teacher_components": [
+        4.454771624295972e-05,
+        1.38316509037395e-05,
+        2.4611756089143455e-05
+      ],
+      "teacher_error": 2.6697687644627877e-05,
+      "window_id": 31055
+    },
+    {
+      "episode": 3367,
+      "executed_steps": 24,
+      "frame": 56,
+      "student_components": [
+        6.823566218372434e-05,
+        2.1557956642936915e-05,
+        0.00013013237912673503
+      ],
+      "student_error": 5.2633899031206965e-05,
+      "student_teacher_error": 4.476371032069437e-05,
+      "suite": "memory",
+      "task": "swap_blocks",
+      "teacher_components": [
+        1.2947007235197816e-05,
+        1.3433417734631803e-05,
+        2.7555646738619544e-05
+      ],
+      "teacher_error": 1.5016291399660986e-05,
+      "window_id": 31063
+    },
+    {
+      "episode": 3378,
+      "executed_steps": 24,
+      "frame": 56,
+      "student_components": [
+        0.00018736322817858309,
+        0.00012170515401521698,
+        0.001341149676591158
+      ],
+      "student_error": 0.00029875748441554606,
+      "student_teacher_error": 0.00022359805006999522,
+      "suite": "memory",
+      "task": "swap_blocks",
+      "teacher_components": [
+        4.2960746213793755e-05,
+        3.020799340447411e-05,
+        0.0002802697417791933
+      ],
+      "teacher_error": 6.624799425480887e-05,
+      "window_id": 31067
+    },
+    {
+      "episode": 3383,
+      "executed_steps": 24,
+      "frame": 256,
+      "student_components": [
+        0.00018404149159323424,
+        4.1319402953376994e-05,
+        0.00010964303510263562
+      ],
+      "student_error": 0.0001033806474879384,
+      "student_teacher_error": 7.978035137057304e-05,
+      "suite": "memory",
+      "task": "swap_blocks",
+      "teacher_components": [
+        2.973751543322578e-05,
+        4.776463538291864e-05,
+        4.946632179780863e-05
+      ],
+      "teacher_error": 4.1217179386876523e-05,
+      "window_id": 31073
+    },
+    {
+      "episode": 3422,
+      "executed_steps": 24,
+      "frame": 88,
+      "student_components": [
+        0.0001251635403605178,
+        0.00020015596237499267,
+        0.002563548507168889
+      ],
+      "student_error": 0.0004674578958656639,
+      "student_teacher_error": 0.00012508593499660492,
+      "suite": "generalization",
+      "task": "sweep_blocks",
+      "teacher_components": [
+        6.575581210199744e-05,
+        9.457904525334015e-05,
+        0.001379406196065247
+      ],
+      "teacher_error": 0.00024437374668195844,
+      "window_id": 31087
+    },
+    {
+      "episode": 3454,
+      "executed_steps": 24,
+      "frame": 312,
+      "student_components": [
+        0.0028829684015363455,
+        0.0023020741064101458,
+        0.004385214764624834
+      ],
+      "student_error": 0.002780302194878459,
+      "student_teacher_error": 0.00075378647306934,
+      "suite": "generalization",
+      "task": "sweep_blocks",
+      "teacher_components": [
+        0.0012903640745207667,
+        0.0009717748616822064,
+        0.001504679792560637
+      ],
+      "teacher_error": 0.0011578588746488094,
+      "window_id": 31097
+    },
+    {
+      "episode": 3472,
+      "executed_steps": 24,
+      "frame": 280,
+      "student_components": [
+        0.00014640753215644509,
+        0.00017024074622895569,
+        0.00017818745982367545
+      ],
+      "student_error": 0.0001622966374270618,
+      "student_teacher_error": 0.00013047769607510418,
+      "suite": "generalization",
+      "task": "sweep_blocks",
+      "teacher_components": [
+        0.00010265476885251701,
+        7.410535909002647e-05,
+        5.297776442603208e-05
+      ],
+      "teacher_error": 8.217043796321377e-05,
+      "window_id": 31104
+    },
+    {
+      "episode": 3489,
+      "executed_steps": 24,
+      "frame": 384,
+      "student_components": [
+        0.0028194449841976166,
+        0.0014008204452693462,
+        0.0002613395045045763
+      ],
+      "student_error": 0.0017903695115819573,
+      "student_teacher_error": 0.0012301147216930985,
+      "suite": "generalization",
+      "task": "sweep_blocks",
+      "teacher_components": [
+        0.0005237653385847807,
+        0.0004871150304097682,
+        7.249742338899523e-05
+      ],
+      "teacher_error": 0.0004490317078307271,
+      "window_id": 31110
+    }
+  ],
+  "simulation": false,
+  "update": 300
+}

@@ -1,0 +1,17 @@
+{
+  "schema": "GT-primary-teacher-secondary-v1",
+  "declared_before_comparison": true,
+  "primary": "Lowest held-out task-macro GT action MSE across all 35 tasks, with all four primary suites and DLC separately reported.",
+  "teacher_tiebreak": "Consider other candidates only when the paired 95% episode-bootstrap interval of their aggregate GT difference includes zero and no primary suite has a 95% interval wholly above zero versus the GT leader. Among these candidates choose minimum fixed-reliability teacher agreement MSE.",
+  "uncertainty_caveat": "A non-significant difference is inconclusive, not proof that candidates are equivalent. Any selected GT/teacher tradeoff must be shown explicitly before recovery.",
+  "other_tiebreaks": [
+    "Lower GT MSE",
+    "Fewer actual selected parameters"
+  ],
+  "teacher_weights": "Computed only from teacher versus GT and the fixed zero-action baseline/component checks; identical across candidates.",
+  "fit_data": "Used for overfitting and consistency diagnostics, not candidate ranking.",
+  "task_regressions": "Report every task and components; do not hide them in the aggregate.",
+  "automatic_recovery": false,
+  "teacher_action_loss_added": false,
+  "active_training_changes": false
+}

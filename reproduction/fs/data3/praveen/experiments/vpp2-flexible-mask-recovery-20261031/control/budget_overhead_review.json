@@ -1,0 +1,19 @@
+{
+  "created_at": "2026-10-31T16:26:14.963075+00:00",
+  "identity": "bb5e8ca6a5827d9c7ef58fe542ce9583da1480d7672af1c42407596f8e927151",
+  "decision": "retain_current_flexible_recipe",
+  "reason": "Fixed budget does not reduce dense network dimensions during soft-mask training; no repeated capacity trial runs are implemented.",
+  "ordinary_update_seconds_last_two": 139.8451135030482,
+  "diagnostic_update_seconds_last_two": 497.0540203524288,
+  "ordinary_updates_observed": 3,
+  "diagnostic_updates_observed": 3,
+  "coefficient_measurements_normally_required": 8,
+  "coefficient_measurements_maximum": 40,
+  "estimated_normal_extra_minutes": 47.62785424658408,
+  "estimated_fraction_of_3000_update_training": 0.006811514975894518,
+  "estimate_limit": "Uses early verification update timings; later calibration timing is not measured.",
+  "recipe_changed": false,
+  "teacher_video_loss_retained": true,
+  "teacher_video_removal_speedup_measured": false,
+  "main_job": "50023"
+}

@@ -1,0 +1,8 @@
+{
+  "gpu_verified": false,
+  "identity": "e00de20e9f535866e0961ce83780def98f3b451d700fd64d4a8a004918456b6a",
+  "jobs_submitted": false,
+  "passed": true,
+  "pytest_log": "/data3/praveen/experiments/vpp2-flexible-mask-pressure2x-20261101/checks/pytest.txt",
+  "pytest_sha256": "37068109ed44f62b4171c1dc3a55a77ca6d0d1dbf7a96ab2bc086572b02366e7"
+}

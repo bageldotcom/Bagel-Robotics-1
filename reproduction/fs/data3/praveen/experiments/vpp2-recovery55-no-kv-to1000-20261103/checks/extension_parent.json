@@ -1,0 +1,40 @@
+{
+  "approved_source_changes": [
+    "src/vpp2/flexible_mask/config.py",
+    "src/vpp2/flexible_mask/low_lr.py",
+    "src/vpp2/flexible_mask/recovery_extension.py",
+    "src/vpp2/flexible_mask/recovery_extension_entry.py",
+    "src/vpp2/flexible_mask/test_recovery_resume_gpu.py",
+    "src/vpp2/flexible_mask/train.py",
+    "tests/flexible_mask/test_recovery_extension.py"
+  ],
+  "best_paths": [
+    "/data3/praveen/experiments/vpp2-recovery55-no-kv-20261102/recovery/best_models/update_000250",
+    "/data3/praveen/experiments/vpp2-recovery55-no-kv-20261102/recovery/best_models/update_000200"
+  ],
+  "best_updates": [
+    250,
+    200
+  ],
+  "checkpoint_bytes": 137711917076,
+  "checkpoint_identity": "ff7e9071e242e1a7ae8213d2dd89eb817d63c0d5999e21665b8a3e77721b23fa",
+  "comparison": "Same 140 offline native-action windows; not simulation evidence",
+  "current250_gt_action_mse": 0.0006520718067771927,
+  "historical250_gt_action_mse": 0.0006851798359483447,
+  "identity": "790bffc9464fa7a026aa43b217aec2033d186895cad643166daa0bcc01914d5c",
+  "optimizer_partition_hashes_checked_on_load": true,
+  "parent_files": {
+    "control/review_250.json": "914ddbf3a392e7b6755dc211a55683ff6d6fc2e11a163dced1d4b8e675483eb6",
+    "control/review_ready.json": "9341d1bfb1d27d7d1ac5fc1d62531937b92b1ed8c51748e126cc65e4e0e61789",
+    "recovery/best_models.json": "3db5927acaa74379875a7d58247694c507682bc11fedf1ad5ef6f62ef8d71afc",
+    "recovery/checkpoints/update_000250/BEST_MODELS.json": "dbf6ff59c583089dfb1b65ed9d0288390ebf84f4b104cc23e74b0144ebce82a8",
+    "recovery/checkpoints/update_000250/COMPLETE.json": "39652b680d3ebe454f57c8fda41762002a3686134226e22f0f2de9177568c65b",
+    "recovery/diagnostics/gradients_000250.json": "58dd2fa2d53c1ac80d293d64768c2fd24f76bcbadc829ad2965d1e3fc5f496d3",
+    "recovery/diagnostics/native_000250.json": "38d36d3e769f09cbd64e62d701d40103310738efea56e75def4adf133467e8ae"
+  },
+  "parent_identity": "491ec49869e4d6a098c87ff99e6285ece09d841db4be9b3a638f9d6ae07aff9d",
+  "parent_update": 250,
+  "passed": true,
+  "relative_improvement": 0.048320203593451794,
+  "target_update": 1000
+}

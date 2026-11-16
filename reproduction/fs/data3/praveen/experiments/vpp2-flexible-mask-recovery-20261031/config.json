@@ -1,0 +1,195 @@
+{
+  "teacher_bundle": "/data1/praveen/experiments/vpp2-joint-feature-cache-20261013/assets/model/checkpoints/joint2b_s100000",
+  "wan_root": "/data1/praveen/experiments/vpp2-joint-feature-cache-20261013/assets/model/checkpoints/Wan2.1-I2V-14B-480P",
+  "demonstrations": "/data1/praveen/experiments/vpp2-online-distill-20261015/demonstrations_native_text",
+  "reference_split": "/data1/praveen/experiments/vpp2-online-distill-20261015/prepared_split",
+  "panel_file": "/data3/praveen/experiments/vpp2-critical-calibration-20261029/revisions/3ca392bfb574898f/panel.json",
+  "curation": {
+    "audit_episodes_per_task": 8,
+    "audit_locked": true,
+    "auto_expand": false,
+    "base_windows_per_episode": 4,
+    "candidate_stride": 8,
+    "max_windows_per_episode": 16,
+    "min_selection_episodes_per_task": 83,
+    "monitor_episodes_per_task": 8,
+    "monitor_windows_per_task": 32,
+    "output": "/data3/praveen/experiments/vpp2-critical-calibration-20261029/revisions/3ca392bfb574898f",
+    "previous_panel": "/data3/praveen/experiments/vpp2-full-robodojo-mask-calibration-20261028/data/curated-v2/panel.json",
+    "quality": {
+      "action_latent": 32,
+      "check_every": 200,
+      "learning_rate": 0.001,
+      "max_updates": 2400,
+      "method": "deminf_inspired_episode_tiebreaker",
+      "minimum_rank_correlation": 0.8,
+      "neighbors": [
+        5,
+        6,
+        7
+      ],
+      "obs_latent": 64,
+      "patience": 4,
+      "repeats": 4
+    },
+    "random_fraction": 0.2,
+    "require_model_probe": true,
+    "require_visual_review": true,
+    "schema": "robodojo-curated-calibration-v3",
+    "seed": 100008,
+    "target_total": 30000,
+    "target_windows_per_task": null,
+    "vision": {
+      "batch_size": 32,
+      "sha256": "983f1562536e84ff750a1576fb08e54de751dbf2e17c0d8a4a13704341fdcd3d",
+      "weights": "/home/praveen/.cache/torch/hub/checkpoints/convnext_tiny-983f1562.pth"
+    },
+    "visual_backend": "frozen_convnext_spatial_history_v1",
+    "visual_descriptor_scope": "frozen pretrained spatial image features with nine native history slots; not verified contact or memory-cue labels"
+  },
+  "curation_artifacts": "/data3/praveen/experiments/vpp2-full-robodojo-mask-calibration-20261028/data/curated-v3",
+  "native_inference": {
+    "history_stride": 25,
+    "horizon": 32,
+    "rand_device": "cpu",
+    "replan": 24,
+    "seed": 1,
+    "shift": 1.0,
+    "steps": 10
+  },
+  "artifacts": {
+    "normalization": {
+      "path": "/data1/praveen/experiments/vpp2-online-distill-20261015/demonstrations_native_text/dataset_stats.json",
+      "sha256": "2649d4e3ff3d6d400c9953b7c20c79541474f9c38a8a9916b9caacecd8578f16"
+    },
+    "source_manifest": {
+      "path": "/data1/praveen/experiments/vpp2-online-distill-20261015/demonstrations_native_text/manifest.json",
+      "sha256": "fbbeae4b8ccf12ac9bd843f51147f78045a1789ad765b9f0e3c24a37b6b2e01f"
+    },
+    "visual_review": {
+      "path": "/data3/praveen/experiments/vpp2-critical-calibration-20261029/revisions/3ca392bfb574898f/visual_review_receipt.json",
+      "sha256": "9cbb622356fd0538f8e071d3feba6df7ea7efd2a0ccc18c1414cc634dc2d1e2f"
+    },
+    "data_cpu_receipt": {
+      "path": "/data3/praveen/experiments/vpp2-full30k-mask-search-20261030/checks/cpu_checks.json",
+      "sha256": "45b5a6ce431e1c5ac15d601180be16a337970d52ef96f141a7505434512cf876"
+    },
+    "audit_manifest": {
+      "path": "/data3/praveen/experiments/vpp2-adaptive-latekv-mask-search-20261030/audit/manifest.json",
+      "sha256": "160d6bfd909032fdc907dc58f30ff7504b35ebe91cd2674ef0ec913e8fe3930e"
+    }
+  },
+  "python_deps": "/data3/praveen/experiments/vpp2-adaptive-latekv-mask-search-20261030/python-deps",
+  "geometry": {
+    "hidden": 5120,
+    "ffn": 13824,
+    "layers": 40,
+    "heads": 40,
+    "head_dim": 128,
+    "pack": 128,
+    "hidden_floor": 4864,
+    "ffn_floor": 4096,
+    "head_floor": 8
+  },
+  "original_video_parameters": 16394878784,
+  "schema": "vpp2-flexible-joint-mask-v1",
+  "root": "/data3/praveen/experiments/vpp2-flexible-mask-recovery-20261031",
+  "seed": 100008,
+  "panel_sha256": "bc6df13b64b5f96bbe17c64244240cc44a40d704babb70893f79c0f30d389680",
+  "normalization_sha256": "2649d4e3ff3d6d400c9953b7c20c79541474f9c38a8a9916b9caacecd8578f16",
+  "initial_masks": "/data3/praveen/experiments/vpp2-adaptive-hidden-latekv-mask-search-20261030/runs/masks_attempt_000870.pt",
+  "initial_masks_sha256": "680ba1058447b05d83d0295efbf1bdbcbe33163d8c4bba13e15ab7893db58c80",
+  "initial_preferred": {
+    "hidden_scores": 4864,
+    "ffn_scores": 9728,
+    "cross_scores": 32
+  },
+  "train": {
+    "global_batch": 256,
+    "micro_batch": 1,
+    "world_size": 8,
+    "video_lr": 1e-06,
+    "mask_lr": 0.01,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "video_weight_decay": 0.01,
+    "mask_weight_decay": 0.0,
+    "gradient_clip": 1.0,
+    "warmup_updates": 50,
+    "max_updates": 3000,
+    "minimum_updates": 2000,
+    "final_lr_fraction": 0.1,
+    "action_gt_weight": 1.0,
+    "teacher_action_weight": 0.0,
+    "teacher_video_weight": 0.05,
+    "kv_weight": 0.05,
+    "kv_layers": [
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "count_budget_weight": 0.0,
+    "frozen_video": false,
+    "frozen_action": true,
+    "checkpoint_every": 250,
+    "flow_monitor_every": 500,
+    "native_windows_per_task": 4
+  },
+  "size_coefficient": {
+    "upper_cap": 1.0,
+    "target_gradient_fraction": 0.1,
+    "first_update": 193,
+    "last_regular_update": 200,
+    "last_replacement_update": 232,
+    "samples_per_family": 8,
+    "ramp_updates": 100,
+    "invalid_measurement": "checkpoint_and_stop"
+  },
+  "reliability": {
+    "method": "relative_student_advantage_with_baseline_component_veto",
+    "floor": 1e-08,
+    "margin_fraction": 0.01
+  },
+  "recovery": {
+    "updates": 6000,
+    "learning_rate": 5e-06,
+    "warmup_updates": 250,
+    "final_lr_fraction": 0.1
+  },
+  "runtime_conditioning_cache": "/data3/praveen/experiments/vpp2-flexible-mask-recovery-20261031/conditioning_cache",
+  "wandb": {
+    "entity": "bakery_ismail-bagel-network",
+    "project": "vpp2-thaw-robodojo",
+    "group": "flexible-joint-masks-full30k-20261031",
+    "name": "GT1-video005-lateKV005-flexible-cap1"
+  },
+  "validation": {
+    "fp32_relative_tolerance": 2e-05,
+    "bf16_action_video_relative_tolerance": 0.01
+  },
+  "launch_policy": {
+    "automatic_submission": false,
+    "simulation_automatic": false,
+    "compact_recovery_automatic": false,
+    "minimum_disk_free_gib": 1200
+  }
+}

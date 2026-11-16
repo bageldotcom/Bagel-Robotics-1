@@ -1,0 +1,36 @@
+{
+  "time_utc": "2026-11-01T20:53:24.867013+00:00",
+  "comparison": 50812,
+  "cpu_checks": 50813,
+  "export": 50814,
+  "verify": 50815,
+  "recovery": [
+    50844,
+    50845,
+    50846
+  ],
+  "supersedes_failed_recovery": [
+    50816,
+    50817,
+    50818
+  ],
+  "reason": "Checkpointed at update 38; batch eight failed CUDA memory test; resume unchanged batch four and global batch 256.",
+  "total_updates": 6000,
+  "continuations_are_same_run": true,
+  "recovery_before_batch_benchmark": [
+    50827,
+    50828,
+    50829
+  ],
+  "benchmark": 50843,
+  "benchmark_conclusion": "/data3/praveen/experiments/vpp2-recovery-batch8-benchmark-20261101/conclusion.json",
+  "status": "superseded_by_curated30k_recovery",
+  "current_recovery_root": "/data3/praveen/experiments/vpp2-selected-mask-recovery-curated30k-20261101",
+  "current_recovery_jobs": [
+    50858,
+    50859
+  ],
+  "preserved_full_data_updates": 55,
+  "new_subset_updates": 2344,
+  "updated_at": "2026-11-01T21:14:39.433048+00:00"
+}

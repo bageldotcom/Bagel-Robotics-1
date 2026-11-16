@@ -1,0 +1,9 @@
+{
+  "utc": "2026-10-31T18:03:27.749988+00:00",
+  "job": "50026",
+  "reason": "Discovered existing conditioning cache supports microbatch one only; preserve baseline and implement deterministic mixed-cache batch preparation before further GPU work",
+  "baseline_seconds": [
+    145.90317117766244,
+    147.74224675318692
+  ]
+}

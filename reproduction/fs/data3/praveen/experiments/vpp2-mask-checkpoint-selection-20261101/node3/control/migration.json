@@ -1,0 +1,12 @@
+{
+  "utc": "2026-11-01T19:37:15.408474+00:00",
+  "authorization": "User requested all eight node 3 GPUs, reuse completed work, and no cross-environment checks.",
+  "cross_environment_checks": false,
+  "training_checkpoint_preserved": 1561,
+  "superseded_jobs": [
+    "50796",
+    "50789",
+    "50797"
+  ],
+  "selection_rule_unchanged": true
+}

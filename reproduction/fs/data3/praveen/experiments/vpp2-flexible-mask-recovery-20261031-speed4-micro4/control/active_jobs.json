@@ -1,0 +1,16 @@
+{
+  "full_calibration_check_job": "50038",
+  "production_job": "50039",
+  "continuation_jobs": [
+    "50040",
+    "50041"
+  ],
+  "parent_update": 47,
+  "production_requires_all_checks": true,
+  "source_identity": "16b6883f7ccce0f8b43557016236a8142b6672ae9a7da070803490ab9db5aefb",
+  "previous_guarded_jobs_auto_cancelled": [
+    "50035",
+    "50036",
+    "50037"
+  ]
+}

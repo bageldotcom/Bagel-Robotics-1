@@ -1,0 +1,14 @@
+{
+  "contracts": true,
+  "diagnostic_gradient_noninterference": true,
+  "exact_restart": true,
+  "export_equivalence_still_required": true,
+  "frozen_reference_unchanged": true,
+  "global_batch": 256,
+  "gradient_probe_executed_identity": "bb5e8ca6a5827d9c7ef58fe542ce9583da1480d7672af1c42407596f8e927151",
+  "identity": "bb5e8ca6a5827d9c7ef58fe542ce9583da1480d7672af1c42407596f8e927151",
+  "micro_batch": 1,
+  "passed": true,
+  "reference_executed_identity": "28511221db2e457c545a6d0973f71ed578c75265369afb39c47cf82a87883d9a",
+  "world_size": 8
+}

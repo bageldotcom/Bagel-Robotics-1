@@ -1,0 +1,2156 @@
+{
+  "carried_forward_evidence": {
+    "changed_files": [
+      "configs/flexible_mask/resident_teacher.json",
+      "scripts/flexible_mask/publish.py",
+      "scripts/flexible_mask/requirements.txt",
+      "scripts/flexible_mask/verify_launch.py",
+      "src/vpp2/compact_kv/checkpointing.py",
+      "src/vpp2/flexible_mask/config.py",
+      "src/vpp2/flexible_mask/performance.py",
+      "src/vpp2/flexible_mask/runtime.py",
+      "src/vpp2/flexible_mask/train.py",
+      "tests/flexible_mask/test_lossless_checkpoint.py",
+      "tests/flexible_mask/test_resident_teacher.py"
+    ],
+    "executed_identity": "cfa100f8128948492d1ee7f72234f3d9aedfcdbb7f049c921917b3048402df21",
+    "previous_receipt": "/data3/praveen/experiments/vpp2-flexible-mask-recovery-20261031/preparation_revisions/source-4a2cd3cad884/structure.json",
+    "previous_sha256": "35ddc9a2e617a10286d323c277e5c16901c812d6b625301bd0e3fda8a8f433ab",
+    "reason": "Numerical model, masking, slicing, input preparation, and raw data-reader code and all input hashes unchanged. Changes are runtime teacher storage, checkpoint I/O, launch validation, tests, and performance acceptance. Actual eight-GPU candidate outputs and optimizer state must still pass separate checks."
+  },
+  "checks": [
+    {
+      "bf16": [
+        {
+          "max_absolute": 0.09375,
+          "relative_rmse": 0.009180229157209396,
+          "tensor": "video"
+        },
+        {
+          "max_absolute": 0.015625,
+          "relative_rmse": 0.0024439473636448383,
+          "tensor": "action"
+        },
+        {
+          "max_absolute": 0.0625,
+          "relative_rmse": 0.0005552693037316203,
+          "tensor": "layer_00_k"
+        },
+        {
+          "max_absolute": 0.0625,
+          "relative_rmse": 0.0005134287057444453,
+          "tensor": "layer_00_v"
+        },
+        {
+          "max_absolute": 0.125,
+          "relative_rmse": 0.003741308581084013,
+          "tensor": "layer_01_k"
+        },
+        {
+          "max_absolute": 0.03125,
+          "relative_rmse": 0.003671724582090974,
+          "tensor": "layer_01_v"
+        },
+        {
+          "max_absolute": 0.125,
+          "relative_rmse": 0.005542037542909384,
+          "tensor": "layer_02_k"
+        },
+        {
+          "max_absolute": 0.0625,
+          "relative_rmse": 0.0054864538833498955,
+          "tensor": "layer_02_v"
+        },
+        {
+          "max_absolute": 0.109375,
+          "relative_rmse": 0.006297967862337828,
+          "tensor": "layer_03_k"
+        },
+        {
+          "max_absolute": 0.09375,
+          "relative_rmse": 0.006377053447067738,
+          "tensor": "layer_03_v"
+        },
+        {
+          "max_absolute": 0.125,
+          "relative_rmse": 0.006237228866666555,
+          "tensor": "layer_04_k"
+        },
+        {
+          "max_absolute": 0.125,
+          "relative_rmse": 0.006521969567984343,
+          "tensor": "layer_04_v"
+        },
+        {
+          "max_absolute": 0.1484375,
+          "relative_rmse": 0.0075902570970356464,
+          "tensor": "layer_05_k"
+        },
+        {
+          "max_absolute": 0.125,
+          "relative_rmse": 0.007360393647104502,
+          "tensor": "layer_05_v"
+        },
+        {
+          "max_absolute": 0.234375,
+          "relative_rmse": 0.008026832714676857,
+          "tensor": "layer_06_k"
+        },
+        {
+          "max_absolute": 0.140625,
+          "relative_rmse": 0.008057202212512493,
+          "tensor": "layer_06_v"
+        },
+        {
+          "max_absolute": 0.21875,
+          "relative_rmse": 0.00891159288585186,
+          "tensor": "layer_07_k"
+        },
+        {
+          "max_absolute": 0.12890625,
+          "relative_rmse": 0.009222587570548058,
+          "tensor": "layer_07_v"
+        },
+        {
+          "max_absolute": 0.32421875,
+          "relative_rmse": 0.009665656834840775,
+          "tensor": "layer_08_k"
+        },
+        {
+          "max_absolute": 0.1953125,
+          "relative_rmse": 0.009927330538630486,
+          "tensor": "layer_08_v"
+        },
+        {
+          "max_absolute": 0.34765625,
+          "relative_rmse": 0.010961540974676609,
+          "tensor": "layer_09_k"
+        },
+        {
+          "max_absolute": 0.2421875,
+          "relative_rmse": 0.010850667953491211,
+          "tensor": "layer_09_v"
+        },
+        {
+          "max_absolute": 0.3203125,
+          "relative_rmse": 0.011429359205067158,
+          "tensor": "layer_10_k"
+        },
+        {
+          "max_absolute": 0.359375,
+          "relative_rmse": 0.01228809542953968,
+          "tensor": "layer_10_v"
+        },
+        {
+          "max_absolute": 0.41015625,
+          "relative_rmse": 0.012807432562112808,
+          "tensor": "layer_11_k"
+        },
+        {
+          "max_absolute": 0.46875,
+          "relative_rmse": 0.014174153096973896,
+          "tensor": "layer_11_v"
+        },
+        {
+          "max_absolute": 0.40625,
+          "relative_rmse": 0.014021694660186768,
+          "tensor": "layer_12_k"
+        },
+        {
+          "max_absolute": 0.3515625,
+          "relative_rmse": 0.0167735256254673,
+          "tensor": "layer_12_v"
+        },
+        {
+          "max_absolute": 0.453125,
+          "relative_rmse": 0.014214377850294113,
+          "tensor": "layer_13_k"
+        },
+        {
+          "max_absolute": 0.40625,
+          "relative_rmse": 0.01778722181916237,
+          "tensor": "layer_13_v"
+        },
+        {
+          "max_absolute": 0.4375,
+          "relative_rmse": 0.016528036445379257,
+          "tensor": "layer_14_k"
+        },
+        {
+          "max_absolute": 0.5,
+          "relative_rmse": 0.020298894494771957,
+          "tensor": "layer_14_v"
+        },
+        {
+          "max_absolute": 0.3515625,
+          "relative_rmse": 0.01534030307084322,
+          "tensor": "layer_15_k"
+        },
+        {
+          "max_absolute": 0.5,
+          "relative_rmse": 0.020307589322328568,
+          "tensor": "layer_15_v"
+        },
+        {
+          "max_absolute": 0.46875,
+          "relative_rmse": 0.017611775547266006,
+          "tensor": "layer_16_k"
+        },
+        {
+          "max_absolute": 0.3984375,
+          "relative_rmse": 0.022314131259918213,
+          "tensor": "layer_16_v"
+        },
+        {
+          "max_absolute": 0.486328125,
+          "relative_rmse": 0.0184766985476017,
+          "tensor": "layer_17_k"
+        },
+        {
+          "max_absolute": 0.5546875,
+          "relative_rmse": 0.023274576291441917,
+          "tensor": "layer_17_v"
+        },
+        {
+          "max_absolute": 0.47900390625,
+          "relative_rmse": 0.018271198496222496,
+          "tensor": "layer_18_k"
+        },
+        {
+          "max_absolute": 0.421875,
+          "relative_rmse": 0.023066189140081406,
+          "tensor": "layer_18_v"
+        },
+        {
+          "max_absolute": 0.47265625,
+          "relative_rmse": 0.019190700724720955,
+          "tensor": "layer_19_k"
+        },
+        {
+          "max_absolute": 0.431640625,
+          "relative_rmse": 0.023308558389544487,
+          "tensor": "layer_19_v"
+        },
+        {
+          "max_absolute": 0.40625,
+          "relative_rmse": 0.01865847036242485,
+          "tensor": "layer_20_k"
+        },
+        {
+          "max_absolute": 0.390625,
+          "relative_rmse": 0.02275901660323143,
+          "tensor": "layer_20_v"
+        },
+        {
+          "max_absolute": 0.390625,
+          "relative_rmse": 0.019587786868214607,
+          "tensor": "layer_21_k"
+        },
+        {
+          "max_absolute": 1.4375,
+          "relative_rmse": 0.02622571773827076,
+          "tensor": "layer_21_v"
+        },
+        {
+          "max_absolute": 0.359375,
+          "relative_rmse": 0.016124039888381958,
+          "tensor": "layer_22_k"
+        },
+        {
+          "max_absolute": 0.51806640625,
+          "relative_rmse": 0.021305767819285393,
+          "tensor": "layer_22_v"
+        },
+        {
+          "max_absolute": 0.390625,
+          "relative_rmse": 0.019525153562426567,
+          "tensor": "layer_23_k"
+        },
+        {
+          "max_absolute": 0.42578125,
+          "relative_rmse": 0.022968459874391556,
+          "tensor": "layer_23_v"
+        },
+        {
+          "max_absolute": 0.390625,
+          "relative_rmse": 0.01859436184167862,
+          "tensor": "layer_24_k"
+        },
+        {
+          "max_absolute": 0.33544921875,
+          "relative_rmse": 0.02154388278722763,
+          "tensor": "layer_24_v"
+        },
+        {
+          "max_absolute": 0.3662109375,
+          "relative_rmse": 0.018649006262421608,
+          "tensor": "layer_25_k"
+        },
+        {
+          "max_absolute": 0.3671875,
+          "relative_rmse": 0.022653231397271156,
+          "tensor": "layer_25_v"
+        },
+        {
+          "max_absolute": 0.4296875,
+          "relative_rmse": 0.017886316403746605,
+          "tensor": "layer_26_k"
+        },
+        {
+          "max_absolute": 0.3828125,
+          "relative_rmse": 0.021603899076581,
+          "tensor": "layer_26_v"
+        },
+        {
+          "max_absolute": 0.3134765625,
+          "relative_rmse": 0.01753869093954563,
+          "tensor": "layer_27_k"
+        },
+        {
+          "max_absolute": 0.29296875,
+          "relative_rmse": 0.021949028596282005,
+          "tensor": "layer_27_v"
+        },
+        {
+          "max_absolute": 0.353515625,
+          "relative_rmse": 0.018624896183609962,
+          "tensor": "layer_28_k"
+        },
+        {
+          "max_absolute": 0.25,
+          "relative_rmse": 0.022456087172031403,
+          "tensor": "layer_28_v"
+        },
+        {
+          "max_absolute": 0.3515625,
+          "relative_rmse": 0.016855712980031967,
+          "tensor": "layer_29_k"
+        },
+        {
+          "max_absolute": 0.298095703125,
+          "relative_rmse": 0.020495224744081497,
+          "tensor": "layer_29_v"
+        },
+        {
+          "max_absolute": 0.34375,
+          "relative_rmse": 0.0191152673214674,
+          "tensor": "layer_30_k"
+        },
+        {
+          "max_absolute": 0.2578125,
+          "relative_rmse": 0.02284056879580021,
+          "tensor": "layer_30_v"
+        },
+        {
+          "max_absolute": 0.3515625,
+          "relative_rmse": 0.018255706876516342,
+          "tensor": "layer_31_k"
+        },
+        {
+          "max_absolute": 0.2421875,
+          "relative_rmse": 0.021864501759409904,
+          "tensor": "layer_31_v"
+        },
+        {
+          "max_absolute": 0.3125,
+          "relative_rmse": 0.017232444137334824,
+          "tensor": "layer_32_k"
+        },
+        {
+          "max_absolute": 0.181640625,
+          "relative_rmse": 0.020323511213064194,
+          "tensor": "layer_32_v"
+        },
+        {
+          "max_absolute": 0.75,
+          "relative_rmse": 0.00884273461997509,
+          "tensor": "layer_33_k"
+        },
+        {
+          "max_absolute": 0.1796875,
+          "relative_rmse": 0.018263254314661026,
+          "tensor": "layer_33_v"
+        },
+        {
+          "max_absolute": 0.5,
+          "relative_rmse": 0.013880745507776737,
+          "tensor": "layer_34_k"
+        },
+        {
+          "max_absolute": 0.28125,
+          "relative_rmse": 0.022148311138153076,
+          "tensor": "layer_34_v"
+        },
+        {
+          "max_absolute": 0.375,
+          "relative_rmse": 0.017750229686498642,
+          "tensor": "layer_35_k"
+        },
+        {
+          "max_absolute": 0.29931640625,
+          "relative_rmse": 0.020691625773906708,
+          "tensor": "layer_35_v"
+        },
+        {
+          "max_absolute": 0.2978515625,
+          "relative_rmse": 0.014795155264437199,
+          "tensor": "layer_36_k"
+        },
+        {
+          "max_absolute": 0.19140625,
+          "relative_rmse": 0.01888757012784481,
+          "tensor": "layer_36_v"
+        },
+        {
+          "max_absolute": 0.3251953125,
+          "relative_rmse": 0.0172179713845253,
+          "tensor": "layer_37_k"
+        },
+        {
+          "max_absolute": 0.2421875,
+          "relative_rmse": 0.01905755326151848,
+          "tensor": "layer_37_v"
+        },
+        {
+          "max_absolute": 1.0,
+          "relative_rmse": 0.009464031085371971,
+          "tensor": "layer_38_k"
+        },
+        {
+          "max_absolute": 0.225830078125,
+          "relative_rmse": 0.018062129616737366,
+          "tensor": "layer_38_v"
+        },
+        {
+          "max_absolute": 0.40625,
+          "relative_rmse": 0.014433653093874454,
+          "tensor": "layer_39_k"
+        },
+        {
+          "max_absolute": 0.21875,
+          "relative_rmse": 0.014708521775901318,
+          "tensor": "layer_39_v"
+        }
+      ],
+      "fp32": [
+        {
+          "max_absolute": 0.0,
+          "relative_rmse": 0.0,
+          "tensor": "embedding_tokens"
+        },
+        {
+          "max_absolute": 4.470348358154297e-08,
+          "relative_rmse": 1.5936053898712998e-07,
+          "tensor": "embedding_t"
+        },
+        {
+          "max_absolute": 4.76837158203125e-07,
+          "relative_rmse": 8.656834893372434e-08,
+          "tensor": "embedding_t_mod"
+        },
+        {
+          "max_absolute": 3.814697265625e-06,
+          "relative_rmse": 5.388113066828737e-08,
+          "tensor": "embedding_context"
+        },
+        {
+          "max_absolute": 3.337860107421875e-06,
+          "relative_rmse": 1.4145776106033736e-07,
+          "tensor": "layer_00_k"
+        },
+        {
+          "max_absolute": 4.76837158203125e-06,
+          "relative_rmse": 2.3225361189815885e-07,
+          "tensor": "layer_00_v"
+        },
+        {
+          "max_absolute": 0.000213623046875,
+          "relative_rmse": 4.964340405422263e-07,
+          "tensor": "layer_00_hidden"
+        },
+        {
+          "max_absolute": 1.2159347534179688e-05,
+          "relative_rmse": 7.986574814822234e-07,
+          "tensor": "layer_01_k"
+        },
+        {
+          "max_absolute": 8.821487426757812e-06,
+          "relative_rmse": 9.412021881871624e-07,
+          "tensor": "layer_01_v"
+        },
+        {
+          "max_absolute": 0.00022125244140625,
+          "relative_rmse": 6.946575012989342e-07,
+          "tensor": "layer_01_hidden"
+        },
+        {
+          "max_absolute": 1.8596649169921875e-05,
+          "relative_rmse": 1.1469871878944105e-06,
+          "tensor": "layer_02_k"
+        },
+        {
+          "max_absolute": 1.4543533325195312e-05,
+          "relative_rmse": 1.2864101108789328e-06,
+          "tensor": "layer_02_v"
+        },
+        {
+          "max_absolute": 0.000244140625,
+          "relative_rmse": 7.261994028340268e-07,
+          "tensor": "layer_02_hidden"
+        },
+        {
+          "max_absolute": 1.5497207641601562e-05,
+          "relative_rmse": 1.2667144346778514e-06,
+          "tensor": "layer_03_k"
+        },
+        {
+          "max_absolute": 2.384185791015625e-05,
+          "relative_rmse": 1.4369613836606732e-06,
+          "tensor": "layer_03_v"
+        },
+        {
+          "max_absolute": 0.000274658203125,
+          "relative_rmse": 7.067392289172858e-07,
+          "tensor": "layer_03_hidden"
+        },
+        {
+          "max_absolute": 1.811981201171875e-05,
+          "relative_rmse": 1.209879769703548e-06,
+          "tensor": "layer_04_k"
+        },
+        {
+          "max_absolute": 1.811981201171875e-05,
+          "relative_rmse": 1.4223251127987169e-06,
+          "tensor": "layer_04_v"
+        },
+        {
+          "max_absolute": 0.0002593994140625,
+          "relative_rmse": 7.121332714632445e-07,
+          "tensor": "layer_04_hidden"
+        },
+        {
+          "max_absolute": 1.7642974853515625e-05,
+          "relative_rmse": 1.461120518797543e-06,
+          "tensor": "layer_05_k"
+        },
+        {
+          "max_absolute": 2.09808349609375e-05,
+          "relative_rmse": 1.5926539163046982e-06,
+          "tensor": "layer_05_v"
+        },
+        {
+          "max_absolute": 0.000244140625,
+          "relative_rmse": 7.348164103859745e-07,
+          "tensor": "layer_05_hidden"
+        },
+        {
+          "max_absolute": 1.9669532775878906e-05,
+          "relative_rmse": 1.5211812751658726e-06,
+          "tensor": "layer_06_k"
+        },
+        {
+          "max_absolute": 1.8596649169921875e-05,
+          "relative_rmse": 1.7186148397740908e-06,
+          "tensor": "layer_06_v"
+        },
+        {
+          "max_absolute": 0.00026702880859375,
+          "relative_rmse": 8.445493335784704e-07,
+          "tensor": "layer_06_hidden"
+        },
+        {
+          "max_absolute": 1.8358230590820312e-05,
+          "relative_rmse": 1.6737541272959788e-06,
+          "tensor": "layer_07_k"
+        },
+        {
+          "max_absolute": 1.9550323486328125e-05,
+          "relative_rmse": 1.919253691085032e-06,
+          "tensor": "layer_07_v"
+        },
+        {
+          "max_absolute": 0.00030517578125,
+          "relative_rmse": 9.570264865033096e-07,
+          "tensor": "layer_07_hidden"
+        },
+        {
+          "max_absolute": 2.86102294921875e-05,
+          "relative_rmse": 1.7843599380285013e-06,
+          "tensor": "layer_08_k"
+        },
+        {
+          "max_absolute": 1.9550323486328125e-05,
+          "relative_rmse": 2.0302356915635755e-06,
+          "tensor": "layer_08_v"
+        },
+        {
+          "max_absolute": 0.000274658203125,
+          "relative_rmse": 1.0484835684110294e-06,
+          "tensor": "layer_08_hidden"
+        },
+        {
+          "max_absolute": 2.968311309814453e-05,
+          "relative_rmse": 1.9855056052620057e-06,
+          "tensor": "layer_09_k"
+        },
+        {
+          "max_absolute": 2.396106719970703e-05,
+          "relative_rmse": 2.1527794160647318e-06,
+          "tensor": "layer_09_v"
+        },
+        {
+          "max_absolute": 0.00029754638671875,
+          "relative_rmse": 1.1381257536413614e-06,
+          "tensor": "layer_09_hidden"
+        },
+        {
+          "max_absolute": 3.230571746826172e-05,
+          "relative_rmse": 2.069355105049908e-06,
+          "tensor": "layer_10_k"
+        },
+        {
+          "max_absolute": 2.6226043701171875e-05,
+          "relative_rmse": 2.4031123757595196e-06,
+          "tensor": "layer_10_v"
+        },
+        {
+          "max_absolute": 0.000331878662109375,
+          "relative_rmse": 1.3910037068853853e-06,
+          "tensor": "layer_10_hidden"
+        },
+        {
+          "max_absolute": 3.477931022644043e-05,
+          "relative_rmse": 2.3177415187092265e-06,
+          "tensor": "layer_11_k"
+        },
+        {
+          "max_absolute": 3.4809112548828125e-05,
+          "relative_rmse": 2.684447736100992e-06,
+          "tensor": "layer_11_v"
+        },
+        {
+          "max_absolute": 0.00035858154296875,
+          "relative_rmse": 1.6634262465231586e-06,
+          "tensor": "layer_11_hidden"
+        },
+        {
+          "max_absolute": 4.0650367736816406e-05,
+          "relative_rmse": 2.548516022216063e-06,
+          "tensor": "layer_12_k"
+        },
+        {
+          "max_absolute": 4.0531158447265625e-05,
+          "relative_rmse": 3.129603555862559e-06,
+          "tensor": "layer_12_v"
+        },
+        {
+          "max_absolute": 0.000400543212890625,
+          "relative_rmse": 1.8483707435734686e-06,
+          "tensor": "layer_12_hidden"
+        },
+        {
+          "max_absolute": 3.921985626220703e-05,
+          "relative_rmse": 2.602911536087049e-06,
+          "tensor": "layer_13_k"
+        },
+        {
+          "max_absolute": 4.07099723815918e-05,
+          "relative_rmse": 3.368538045833702e-06,
+          "tensor": "layer_13_v"
+        },
+        {
+          "max_absolute": 0.000377655029296875,
+          "relative_rmse": 2.0537434011203004e-06,
+          "tensor": "layer_13_hidden"
+        },
+        {
+          "max_absolute": 5.14984130859375e-05,
+          "relative_rmse": 3.114635546808131e-06,
+          "tensor": "layer_14_k"
+        },
+        {
+          "max_absolute": 5.2094459533691406e-05,
+          "relative_rmse": 3.864198333758395e-06,
+          "tensor": "layer_14_v"
+        },
+        {
+          "max_absolute": 0.000339508056640625,
+          "relative_rmse": 2.1337930320441956e-06,
+          "tensor": "layer_14_hidden"
+        },
+        {
+          "max_absolute": 3.9577484130859375e-05,
+          "relative_rmse": 2.8732140435749898e-06,
+          "tensor": "layer_15_k"
+        },
+        {
+          "max_absolute": 4.649162292480469e-05,
+          "relative_rmse": 3.844884304271545e-06,
+          "tensor": "layer_15_v"
+        },
+        {
+          "max_absolute": 0.000286102294921875,
+          "relative_rmse": 2.350506974835298e-06,
+          "tensor": "layer_15_hidden"
+        },
+        {
+          "max_absolute": 4.929304122924805e-05,
+          "relative_rmse": 3.3338965295115486e-06,
+          "tensor": "layer_16_k"
+        },
+        {
+          "max_absolute": 4.5418739318847656e-05,
+          "relative_rmse": 4.242004251864273e-06,
+          "tensor": "layer_16_v"
+        },
+        {
+          "max_absolute": 0.000270843505859375,
+          "relative_rmse": 2.3787251848261803e-06,
+          "tensor": "layer_16_hidden"
+        },
+        {
+          "max_absolute": 5.173683166503906e-05,
+          "relative_rmse": 3.5097493764624232e-06,
+          "tensor": "layer_17_k"
+        },
+        {
+          "max_absolute": 6.213318556547165e-05,
+          "relative_rmse": 4.465039182832697e-06,
+          "tensor": "layer_17_v"
+        },
+        {
+          "max_absolute": 0.00022125244140625,
+          "relative_rmse": 2.4816879431455163e-06,
+          "tensor": "layer_17_hidden"
+        },
+        {
+          "max_absolute": 6.046891212463379e-05,
+          "relative_rmse": 3.492457835818641e-06,
+          "tensor": "layer_18_k"
+        },
+        {
+          "max_absolute": 5.340576171875e-05,
+          "relative_rmse": 4.445238118933048e-06,
+          "tensor": "layer_18_v"
+        },
+        {
+          "max_absolute": 0.00016498565673828125,
+          "relative_rmse": 2.471295601935708e-06,
+          "tensor": "layer_18_hidden"
+        },
+        {
+          "max_absolute": 5.53131103515625e-05,
+          "relative_rmse": 3.718407015185221e-06,
+          "tensor": "layer_19_k"
+        },
+        {
+          "max_absolute": 4.649162292480469e-05,
+          "relative_rmse": 4.59083594250842e-06,
+          "tensor": "layer_19_v"
+        },
+        {
+          "max_absolute": 0.0001926422119140625,
+          "relative_rmse": 2.4180776563298423e-06,
+          "tensor": "layer_19_hidden"
+        },
+        {
+          "max_absolute": 4.4465065002441406e-05,
+          "relative_rmse": 3.6835645005339757e-06,
+          "tensor": "layer_20_k"
+        },
+        {
+          "max_absolute": 4.506111145019531e-05,
+          "relative_rmse": 4.564212758850772e-06,
+          "tensor": "layer_20_v"
+        },
+        {
+          "max_absolute": 0.000255584716796875,
+          "relative_rmse": 2.5589049528207397e-06,
+          "tensor": "layer_20_hidden"
+        },
+        {
+          "max_absolute": 5.5789947509765625e-05,
+          "relative_rmse": 3.8606922316830605e-06,
+          "tensor": "layer_21_k"
+        },
+        {
+          "max_absolute": 0.00015282630920410156,
+          "relative_rmse": 5.275495823298115e-06,
+          "tensor": "layer_21_v"
+        },
+        {
+          "max_absolute": 0.000316619873046875,
+          "relative_rmse": 2.4915620997489896e-06,
+          "tensor": "layer_21_hidden"
+        },
+        {
+          "max_absolute": 4.982948303222656e-05,
+          "relative_rmse": 3.1877327728579985e-06,
+          "tensor": "layer_22_k"
+        },
+        {
+          "max_absolute": 4.9591064453125e-05,
+          "relative_rmse": 4.283090220269514e-06,
+          "tensor": "layer_22_v"
+        },
+        {
+          "max_absolute": 0.0002536773681640625,
+          "relative_rmse": 2.522398744986276e-06,
+          "tensor": "layer_22_hidden"
+        },
+        {
+          "max_absolute": 5.650520324707031e-05,
+          "relative_rmse": 3.848334927170072e-06,
+          "tensor": "layer_23_k"
+        },
+        {
+          "max_absolute": 4.208087921142578e-05,
+          "relative_rmse": 4.611089934769552e-06,
+          "tensor": "layer_23_v"
+        },
+        {
+          "max_absolute": 0.00026226043701171875,
+          "relative_rmse": 2.4687888071639463e-06,
+          "tensor": "layer_23_hidden"
+        },
+        {
+          "max_absolute": 5.300343036651611e-05,
+          "relative_rmse": 3.678700068121543e-06,
+          "tensor": "layer_24_k"
+        },
+        {
+          "max_absolute": 4.1835010051727295e-05,
+          "relative_rmse": 4.3564427869569045e-06,
+          "tensor": "layer_24_v"
+        },
+        {
+          "max_absolute": 0.0002532005310058594,
+          "relative_rmse": 2.4366854631807655e-06,
+          "tensor": "layer_24_hidden"
+        },
+        {
+          "max_absolute": 5.060434341430664e-05,
+          "relative_rmse": 3.700069100887049e-06,
+          "tensor": "layer_25_k"
+        },
+        {
+          "max_absolute": 3.814697265625e-05,
+          "relative_rmse": 4.611614258465124e-06,
+          "tensor": "layer_25_v"
+        },
+        {
+          "max_absolute": 0.00021839141845703125,
+          "relative_rmse": 2.3164461708802264e-06,
+          "tensor": "layer_25_hidden"
+        },
+        {
+          "max_absolute": 5.3882598876953125e-05,
+          "relative_rmse": 3.5191433198633604e-06,
+          "tensor": "layer_26_k"
+        },
+        {
+          "max_absolute": 4.4345855712890625e-05,
+          "relative_rmse": 4.374820036900928e-06,
+          "tensor": "layer_26_v"
+        },
+        {
+          "max_absolute": 8.58306884765625e-05,
+          "relative_rmse": 2.3172412966232514e-06,
+          "tensor": "layer_26_hidden"
+        },
+        {
+          "max_absolute": 4.029273986816406e-05,
+          "relative_rmse": 3.4259001040481962e-06,
+          "tensor": "layer_27_k"
+        },
+        {
+          "max_absolute": 3.4689903259277344e-05,
+          "relative_rmse": 4.423322479851777e-06,
+          "tensor": "layer_27_v"
+        },
+        {
+          "max_absolute": 0.00015592575073242188,
+          "relative_rmse": 2.3623858851351542e-06,
+          "tensor": "layer_27_hidden"
+        },
+        {
+          "max_absolute": 4.57763671875e-05,
+          "relative_rmse": 3.6211315546097467e-06,
+          "tensor": "layer_28_k"
+        },
+        {
+          "max_absolute": 3.2033771276474e-05,
+          "relative_rmse": 4.49635354016209e-06,
+          "tensor": "layer_28_v"
+        },
+        {
+          "max_absolute": 0.0001087188720703125,
+          "relative_rmse": 2.2416711544792634e-06,
+          "tensor": "layer_28_hidden"
+        },
+        {
+          "max_absolute": 4.38690185546875e-05,
+          "relative_rmse": 3.3013334359566215e-06,
+          "tensor": "layer_29_k"
+        },
+        {
+          "max_absolute": 2.9265880584716797e-05,
+          "relative_rmse": 4.096842985745752e-06,
+          "tensor": "layer_29_v"
+        },
+        {
+          "max_absolute": 7.343292236328125e-05,
+          "relative_rmse": 2.3349234652414452e-06,
+          "tensor": "layer_29_hidden"
+        },
+        {
+          "max_absolute": 3.838539123535156e-05,
+          "relative_rmse": 3.617168431446771e-06,
+          "tensor": "layer_30_k"
+        },
+        {
+          "max_absolute": 2.8967857360839844e-05,
+          "relative_rmse": 4.510413418756798e-06,
+          "tensor": "layer_30_v"
+        },
+        {
+          "max_absolute": 5.91278076171875e-05,
+          "relative_rmse": 2.2693054688716074e-06,
+          "tensor": "layer_30_hidden"
+        },
+        {
+          "max_absolute": 4.00543212890625e-05,
+          "relative_rmse": 3.4876861718657892e-06,
+          "tensor": "layer_31_k"
+        },
+        {
+          "max_absolute": 3.135204315185547e-05,
+          "relative_rmse": 4.339488896221155e-06,
+          "tensor": "layer_31_v"
+        },
+        {
+          "max_absolute": 7.05718994140625e-05,
+          "relative_rmse": 2.2028566490917e-06,
+          "tensor": "layer_31_hidden"
+        },
+        {
+          "max_absolute": 4.100799560546875e-05,
+          "relative_rmse": 3.328783805045532e-06,
+          "tensor": "layer_32_k"
+        },
+        {
+          "max_absolute": 2.469681203365326e-05,
+          "relative_rmse": 4.059341335960198e-06,
+          "tensor": "layer_32_v"
+        },
+        {
+          "max_absolute": 5.14984130859375e-05,
+          "relative_rmse": 2.1952564566163346e-06,
+          "tensor": "layer_32_hidden"
+        },
+        {
+          "max_absolute": 0.000194549560546875,
+          "relative_rmse": 1.7439949715480907e-06,
+          "tensor": "layer_33_k"
+        },
+        {
+          "max_absolute": 2.3603439331054688e-05,
+          "relative_rmse": 3.6206256481818855e-06,
+          "tensor": "layer_33_v"
+        },
+        {
+          "max_absolute": 6.29425048828125e-05,
+          "relative_rmse": 2.4263897557830205e-06,
+          "tensor": "layer_33_hidden"
+        },
+        {
+          "max_absolute": 0.0001068115234375,
+          "relative_rmse": 2.820986082952004e-06,
+          "tensor": "layer_34_k"
+        },
+        {
+          "max_absolute": 7.271766662597656e-05,
+          "relative_rmse": 4.694974450103473e-06,
+          "tensor": "layer_34_v"
+        },
+        {
+          "max_absolute": 0.0001201629638671875,
+          "relative_rmse": 2.3918769329611678e-06,
+          "tensor": "layer_34_hidden"
+        },
+        {
+          "max_absolute": 4.744529724121094e-05,
+          "relative_rmse": 3.5398531963437563e-06,
+          "tensor": "layer_35_k"
+        },
+        {
+          "max_absolute": 7.305294275283813e-05,
+          "relative_rmse": 4.384074145491468e-06,
+          "tensor": "layer_35_v"
+        },
+        {
+          "max_absolute": 0.0001697540283203125,
+          "relative_rmse": 2.3894638161436887e-06,
+          "tensor": "layer_35_hidden"
+        },
+        {
+          "max_absolute": 3.629922866821289e-05,
+          "relative_rmse": 2.9816076221322874e-06,
+          "tensor": "layer_36_k"
+        },
+        {
+          "max_absolute": 3.838539123535156e-05,
+          "relative_rmse": 3.947136519855121e-06,
+          "tensor": "layer_36_v"
+        },
+        {
+          "max_absolute": 0.00012874603271484375,
+          "relative_rmse": 2.4787773327261675e-06,
+          "tensor": "layer_36_hidden"
+        },
+        {
+          "max_absolute": 4.0650367736816406e-05,
+          "relative_rmse": 3.3837832233984955e-06,
+          "tensor": "layer_37_k"
+        },
+        {
+          "max_absolute": 4.744529724121094e-05,
+          "relative_rmse": 3.871328772220295e-06,
+          "tensor": "layer_37_v"
+        },
+        {
+          "max_absolute": 6.198883056640625e-05,
+          "relative_rmse": 2.4810005925246514e-06,
+          "tensor": "layer_37_hidden"
+        },
+        {
+          "max_absolute": 0.000171661376953125,
+          "relative_rmse": 1.938728701134096e-06,
+          "tensor": "layer_38_k"
+        },
+        {
+          "max_absolute": 5.1975250244140625e-05,
+          "relative_rmse": 3.6559999898599926e-06,
+          "tensor": "layer_38_v"
+        },
+        {
+          "max_absolute": 0.00011396408081054688,
+          "relative_rmse": 2.5474512312939623e-06,
+          "tensor": "layer_38_hidden"
+        },
+        {
+          "max_absolute": 9.72747802734375e-05,
+          "relative_rmse": 2.875783138733823e-06,
+          "tensor": "layer_39_k"
+        },
+        {
+          "max_absolute": 6.172060966491699e-05,
+          "relative_rmse": 2.832271320585278e-06,
+          "tensor": "layer_39_v"
+        },
+        {
+          "max_absolute": 0.00017547607421875,
+          "relative_rmse": 2.008837554967613e-06,
+          "tensor": "layer_39_hidden"
+        },
+        {
+          "max_absolute": 9.059906005859375e-06,
+          "relative_rmse": 9.278660400013905e-07,
+          "tensor": "video"
+        }
+      ],
+      "suite": "memory",
+      "summary": {
+        "bf16_cache_limit_enforced": false,
+        "bf16_cache_max_relative_rmse": 0.02622571773827076,
+        "bf16_output_limit": 0.01,
+        "bf16_output_relative_rmse": {
+          "action": 0.0024439473636448383,
+          "video": 0.009180229157209396
+        },
+        "failures": [],
+        "fp32_limit": 2e-05,
+        "fp32_max_relative_rmse": 5.275495823298115e-06,
+        "passed": true,
+        "policy": "fp32_structure_bf16_outputs_v1",
+        "policy_retention_established": false
+      },
+      "window_id": 2853
+    },
+    {
+      "bf16": [
+        {
+          "max_absolute": 0.078125,
+          "relative_rmse": 0.008952181786298752,
+          "tensor": "video"
+        },
+        {
+          "max_absolute": 0.015625,
+          "relative_rmse": 0.0022076298482716084,
+          "tensor": "action"
+        },
+        {
+          "max_absolute": 0.09375,
+          "relative_rmse": 0.0005550796631723642,
+          "tensor": "layer_00_k"
+        },
+        {
+          "max_absolute": 0.0625,
+          "relative_rmse": 0.000514369283337146,
+          "tensor": "layer_00_v"
+        },
+        {
+          "max_absolute": 0.125,
+          "relative_rmse": 0.0037758394610136747,
+          "tensor": "layer_01_k"
+        },
+        {
+          "max_absolute": 0.046875,
+          "relative_rmse": 0.0035884471144527197,
+          "tensor": "layer_01_v"
+        },
+        {
+          "max_absolute": 0.15625,
+          "relative_rmse": 0.005626406520605087,
+          "tensor": "layer_02_k"
+        },
+        {
+          "max_absolute": 0.0625,
+          "relative_rmse": 0.005338490940630436,
+          "tensor": "layer_02_v"
+        },
+        {
+          "max_absolute": 0.140625,
+          "relative_rmse": 0.006603983696550131,
+          "tensor": "layer_03_k"
+        },
+        {
+          "max_absolute": 0.103515625,
+          "relative_rmse": 0.006381122395396233,
+          "tensor": "layer_03_v"
+        },
+        {
+          "max_absolute": 0.13812255859375,
+          "relative_rmse": 0.006321294698864222,
+          "tensor": "layer_04_k"
+        },
+        {
+          "max_absolute": 0.09375,
+          "relative_rmse": 0.006525863893330097,
+          "tensor": "layer_04_v"
+        },
+        {
+          "max_absolute": 0.134765625,
+          "relative_rmse": 0.007732588332146406,
+          "tensor": "layer_05_k"
+        },
+        {
+          "max_absolute": 0.0859375,
+          "relative_rmse": 0.007424534298479557,
+          "tensor": "layer_05_v"
+        },
+        {
+          "max_absolute": 0.15625,
+          "relative_rmse": 0.008210730738937855,
+          "tensor": "layer_06_k"
+        },
+        {
+          "max_absolute": 0.109375,
+          "relative_rmse": 0.00817128550261259,
+          "tensor": "layer_06_v"
+        },
+        {
+          "max_absolute": 0.203125,
+          "relative_rmse": 0.009290936402976513,
+          "tensor": "layer_07_k"
+        },
+        {
+          "max_absolute": 0.1640625,
+          "relative_rmse": 0.009206509217619896,
+          "tensor": "layer_07_v"
+        },
+        {
+          "max_absolute": 0.28125,
+          "relative_rmse": 0.010282925330102444,
+          "tensor": "layer_08_k"
+        },
+        {
+          "max_absolute": 0.234375,
+          "relative_rmse": 0.010332339443266392,
+          "tensor": "layer_08_v"
+        },
+        {
+          "max_absolute": 0.384765625,
+          "relative_rmse": 0.011687099002301693,
+          "tensor": "layer_09_k"
+        },
+        {
+          "max_absolute": 0.265625,
+          "relative_rmse": 0.011717070825397968,
+          "tensor": "layer_09_v"
+        },
+        {
+          "max_absolute": 0.337890625,
+          "relative_rmse": 0.011946159414947033,
+          "tensor": "layer_10_k"
+        },
+        {
+          "max_absolute": 0.296875,
+          "relative_rmse": 0.01292751170694828,
+          "tensor": "layer_10_v"
+        },
+        {
+          "max_absolute": 0.4140625,
+          "relative_rmse": 0.012928078882396221,
+          "tensor": "layer_11_k"
+        },
+        {
+          "max_absolute": 0.31787109375,
+          "relative_rmse": 0.014227546751499176,
+          "tensor": "layer_11_v"
+        },
+        {
+          "max_absolute": 0.439453125,
+          "relative_rmse": 0.014543012715876102,
+          "tensor": "layer_12_k"
+        },
+        {
+          "max_absolute": 0.453125,
+          "relative_rmse": 0.016541695222258568,
+          "tensor": "layer_12_v"
+        },
+        {
+          "max_absolute": 0.359375,
+          "relative_rmse": 0.015009867027401924,
+          "tensor": "layer_13_k"
+        },
+        {
+          "max_absolute": 0.3828125,
+          "relative_rmse": 0.017911460250616074,
+          "tensor": "layer_13_v"
+        },
+        {
+          "max_absolute": 0.40625,
+          "relative_rmse": 0.017637062817811966,
+          "tensor": "layer_14_k"
+        },
+        {
+          "max_absolute": 0.47265625,
+          "relative_rmse": 0.02173597924411297,
+          "tensor": "layer_14_v"
+        },
+        {
+          "max_absolute": 0.29296875,
+          "relative_rmse": 0.01618063822388649,
+          "tensor": "layer_15_k"
+        },
+        {
+          "max_absolute": 0.375,
+          "relative_rmse": 0.02105666883289814,
+          "tensor": "layer_15_v"
+        },
+        {
+          "max_absolute": 0.42578125,
+          "relative_rmse": 0.01882869005203247,
+          "tensor": "layer_16_k"
+        },
+        {
+          "max_absolute": 0.3818359375,
+          "relative_rmse": 0.02320578135550022,
+          "tensor": "layer_16_v"
+        },
+        {
+          "max_absolute": 0.3984375,
+          "relative_rmse": 0.018287749961018562,
+          "tensor": "layer_17_k"
+        },
+        {
+          "max_absolute": 0.390625,
+          "relative_rmse": 0.022938698530197144,
+          "tensor": "layer_17_v"
+        },
+        {
+          "max_absolute": 0.4296875,
+          "relative_rmse": 0.01790829375386238,
+          "tensor": "layer_18_k"
+        },
+        {
+          "max_absolute": 0.3515625,
+          "relative_rmse": 0.023873668164014816,
+          "tensor": "layer_18_v"
+        },
+        {
+          "max_absolute": 0.4375,
+          "relative_rmse": 0.018571842461824417,
+          "tensor": "layer_19_k"
+        },
+        {
+          "max_absolute": 0.341796875,
+          "relative_rmse": 0.023638181388378143,
+          "tensor": "layer_19_v"
+        },
+        {
+          "max_absolute": 0.34375,
+          "relative_rmse": 0.017086640000343323,
+          "tensor": "layer_20_k"
+        },
+        {
+          "max_absolute": 0.335693359375,
+          "relative_rmse": 0.021448245272040367,
+          "tensor": "layer_20_v"
+        },
+        {
+          "max_absolute": 0.34375,
+          "relative_rmse": 0.01743783801794052,
+          "tensor": "layer_21_k"
+        },
+        {
+          "max_absolute": 0.40625,
+          "relative_rmse": 0.0228650514036417,
+          "tensor": "layer_21_v"
+        },
+        {
+          "max_absolute": 0.3125,
+          "relative_rmse": 0.01408860832452774,
+          "tensor": "layer_22_k"
+        },
+        {
+          "max_absolute": 0.3369140625,
+          "relative_rmse": 0.019814813509583473,
+          "tensor": "layer_22_v"
+        },
+        {
+          "max_absolute": 0.33984375,
+          "relative_rmse": 0.017086409032344818,
+          "tensor": "layer_23_k"
+        },
+        {
+          "max_absolute": 0.2890625,
+          "relative_rmse": 0.02048713155090809,
+          "tensor": "layer_23_v"
+        },
+        {
+          "max_absolute": 0.3125,
+          "relative_rmse": 0.016713816672563553,
+          "tensor": "layer_24_k"
+        },
+        {
+          "max_absolute": 0.25,
+          "relative_rmse": 0.020195692777633667,
+          "tensor": "layer_24_v"
+        },
+        {
+          "max_absolute": 0.296875,
+          "relative_rmse": 0.01668526977300644,
+          "tensor": "layer_25_k"
+        },
+        {
+          "max_absolute": 0.25,
+          "relative_rmse": 0.020308835431933403,
+          "tensor": "layer_25_v"
+        },
+        {
+          "max_absolute": 0.30859375,
+          "relative_rmse": 0.015396731905639172,
+          "tensor": "layer_26_k"
+        },
+        {
+          "max_absolute": 0.2421875,
+          "relative_rmse": 0.01913151890039444,
+          "tensor": "layer_26_v"
+        },
+        {
+          "max_absolute": 0.234375,
+          "relative_rmse": 0.014634078368544579,
+          "tensor": "layer_27_k"
+        },
+        {
+          "max_absolute": 0.185546875,
+          "relative_rmse": 0.018423791974782944,
+          "tensor": "layer_27_v"
+        },
+        {
+          "max_absolute": 0.234375,
+          "relative_rmse": 0.015738584101200104,
+          "tensor": "layer_28_k"
+        },
+        {
+          "max_absolute": 0.162109375,
+          "relative_rmse": 0.01902647130191326,
+          "tensor": "layer_28_v"
+        },
+        {
+          "max_absolute": 0.234375,
+          "relative_rmse": 0.014314979314804077,
+          "tensor": "layer_29_k"
+        },
+        {
+          "max_absolute": 0.16015625,
+          "relative_rmse": 0.01852194033563137,
+          "tensor": "layer_29_v"
+        },
+        {
+          "max_absolute": 0.234375,
+          "relative_rmse": 0.016664890572428703,
+          "tensor": "layer_30_k"
+        },
+        {
+          "max_absolute": 0.23828125,
+          "relative_rmse": 0.020793642848730087,
+          "tensor": "layer_30_v"
+        },
+        {
+          "max_absolute": 0.2578125,
+          "relative_rmse": 0.016686925664544106,
+          "tensor": "layer_31_k"
+        },
+        {
+          "max_absolute": 0.169921875,
+          "relative_rmse": 0.019913148134946823,
+          "tensor": "layer_31_v"
+        },
+        {
+          "max_absolute": 0.1875,
+          "relative_rmse": 0.014867580495774746,
+          "tensor": "layer_32_k"
+        },
+        {
+          "max_absolute": 0.140625,
+          "relative_rmse": 0.018928764387965202,
+          "tensor": "layer_32_v"
+        },
+        {
+          "max_absolute": 0.5,
+          "relative_rmse": 0.008038930594921112,
+          "tensor": "layer_33_k"
+        },
+        {
+          "max_absolute": 0.135498046875,
+          "relative_rmse": 0.01797843910753727,
+          "tensor": "layer_33_v"
+        },
+        {
+          "max_absolute": 0.5,
+          "relative_rmse": 0.01223729457706213,
+          "tensor": "layer_34_k"
+        },
+        {
+          "max_absolute": 0.1953125,
+          "relative_rmse": 0.020207421854138374,
+          "tensor": "layer_34_v"
+        },
+        {
+          "max_absolute": 0.23046875,
+          "relative_rmse": 0.016520317643880844,
+          "tensor": "layer_35_k"
+        },
+        {
+          "max_absolute": 0.2265625,
+          "relative_rmse": 0.01912759244441986,
+          "tensor": "layer_35_v"
+        },
+        {
+          "max_absolute": 0.21875,
+          "relative_rmse": 0.013456338085234165,
+          "tensor": "layer_36_k"
+        },
+        {
+          "max_absolute": 0.13671875,
+          "relative_rmse": 0.017331494018435478,
+          "tensor": "layer_36_v"
+        },
+        {
+          "max_absolute": 0.203125,
+          "relative_rmse": 0.015606510452926159,
+          "tensor": "layer_37_k"
+        },
+        {
+          "max_absolute": 0.15625,
+          "relative_rmse": 0.01720489375293255,
+          "tensor": "layer_37_v"
+        },
+        {
+          "max_absolute": 0.75,
+          "relative_rmse": 0.008089346811175346,
+          "tensor": "layer_38_k"
+        },
+        {
+          "max_absolute": 0.15234375,
+          "relative_rmse": 0.016851481050252914,
+          "tensor": "layer_38_v"
+        },
+        {
+          "max_absolute": 0.375,
+          "relative_rmse": 0.010987925343215466,
+          "tensor": "layer_39_k"
+        },
+        {
+          "max_absolute": 0.1934814453125,
+          "relative_rmse": 0.013329102657735348,
+          "tensor": "layer_39_v"
+        }
+      ],
+      "fp32": [
+        {
+          "max_absolute": 0.0,
+          "relative_rmse": 0.0,
+          "tensor": "embedding_tokens"
+        },
+        {
+          "max_absolute": 4.470348358154297e-08,
+          "relative_rmse": 1.5936053898712998e-07,
+          "tensor": "embedding_t"
+        },
+        {
+          "max_absolute": 4.76837158203125e-07,
+          "relative_rmse": 8.656834893372434e-08,
+          "tensor": "embedding_t_mod"
+        },
+        {
+          "max_absolute": 7.62939453125e-06,
+          "relative_rmse": 5.8858912410642006e-08,
+          "tensor": "embedding_context"
+        },
+        {
+          "max_absolute": 3.814697265625e-06,
+          "relative_rmse": 1.410393792866671e-07,
+          "tensor": "layer_00_k"
+        },
+        {
+          "max_absolute": 4.76837158203125e-06,
+          "relative_rmse": 2.3071388000062143e-07,
+          "tensor": "layer_00_v"
+        },
+        {
+          "max_absolute": 0.000213623046875,
+          "relative_rmse": 5.216681415731728e-07,
+          "tensor": "layer_00_hidden"
+        },
+        {
+          "max_absolute": 1.71661376953125e-05,
+          "relative_rmse": 8.101274033833761e-07,
+          "tensor": "layer_01_k"
+        },
+        {
+          "max_absolute": 9.059906005859375e-06,
+          "relative_rmse": 9.385234989167657e-07,
+          "tensor": "layer_01_v"
+        },
+        {
+          "max_absolute": 0.00023651123046875,
+          "relative_rmse": 7.553036880381114e-07,
+          "tensor": "layer_01_hidden"
+        },
+        {
+          "max_absolute": 2.765655517578125e-05,
+          "relative_rmse": 1.2222282066431944e-06,
+          "tensor": "layer_02_k"
+        },
+        {
+          "max_absolute": 1.1444091796875e-05,
+          "relative_rmse": 1.2870059435954317e-06,
+          "tensor": "layer_02_v"
+        },
+        {
+          "max_absolute": 0.0002593994140625,
+          "relative_rmse": 7.746821779619495e-07,
+          "tensor": "layer_02_hidden"
+        },
+        {
+          "max_absolute": 2.014636993408203e-05,
+          "relative_rmse": 1.3503133686754154e-06,
+          "tensor": "layer_03_k"
+        },
+        {
+          "max_absolute": 1.71661376953125e-05,
+          "relative_rmse": 1.447176259716798e-06,
+          "tensor": "layer_03_v"
+        },
+        {
+          "max_absolute": 0.0002899169921875,
+          "relative_rmse": 7.399463015644869e-07,
+          "tensor": "layer_03_hidden"
+        },
+        {
+          "max_absolute": 1.9669532775878906e-05,
+          "relative_rmse": 1.259876626136247e-06,
+          "tensor": "layer_04_k"
+        },
+        {
+          "max_absolute": 1.9073486328125e-05,
+          "relative_rmse": 1.440433493371529e-06,
+          "tensor": "layer_04_v"
+        },
+        {
+          "max_absolute": 0.0002899169921875,
+          "relative_rmse": 7.523690896960034e-07,
+          "tensor": "layer_04_hidden"
+        },
+        {
+          "max_absolute": 2.014636993408203e-05,
+          "relative_rmse": 1.5369644188467646e-06,
+          "tensor": "layer_05_k"
+        },
+        {
+          "max_absolute": 1.811981201171875e-05,
+          "relative_rmse": 1.6220092220464721e-06,
+          "tensor": "layer_05_v"
+        },
+        {
+          "max_absolute": 0.0002899169921875,
+          "relative_rmse": 8.030949629755924e-07,
+          "tensor": "layer_05_hidden"
+        },
+        {
+          "max_absolute": 2.384185791015625e-05,
+          "relative_rmse": 1.5859178574828547e-06,
+          "tensor": "layer_06_k"
+        },
+        {
+          "max_absolute": 1.9550323486328125e-05,
+          "relative_rmse": 1.7497263797849882e-06,
+          "tensor": "layer_06_v"
+        },
+        {
+          "max_absolute": 0.000335693359375,
+          "relative_rmse": 9.292195386478852e-07,
+          "tensor": "layer_06_hidden"
+        },
+        {
+          "max_absolute": 2.8848648071289062e-05,
+          "relative_rmse": 1.7833510810305597e-06,
+          "tensor": "layer_07_k"
+        },
+        {
+          "max_absolute": 2.110004425048828e-05,
+          "relative_rmse": 1.925853666762123e-06,
+          "tensor": "layer_07_v"
+        },
+        {
+          "max_absolute": 0.0003204345703125,
+          "relative_rmse": 1.0439873676659772e-06,
+          "tensor": "layer_07_hidden"
+        },
+        {
+          "max_absolute": 3.6716461181640625e-05,
+          "relative_rmse": 1.948759290826274e-06,
+          "tensor": "layer_08_k"
+        },
+        {
+          "max_absolute": 2.6702880859375e-05,
+          "relative_rmse": 2.1341418232623255e-06,
+          "tensor": "layer_08_v"
+        },
+        {
+          "max_absolute": 0.0003204345703125,
+          "relative_rmse": 1.158990926342085e-06,
+          "tensor": "layer_08_hidden"
+        },
+        {
+          "max_absolute": 3.910064697265625e-05,
+          "relative_rmse": 2.21573782255291e-06,
+          "tensor": "layer_09_k"
+        },
+        {
+          "max_absolute": 3.731250762939453e-05,
+          "relative_rmse": 2.4023488549573813e-06,
+          "tensor": "layer_09_v"
+        },
+        {
+          "max_absolute": 0.00032806396484375,
+          "relative_rmse": 1.226657673214504e-06,
+          "tensor": "layer_09_hidden"
+        },
+        {
+          "max_absolute": 4.6953558921813965e-05,
+          "relative_rmse": 2.283429921590141e-06,
+          "tensor": "layer_10_k"
+        },
+        {
+          "max_absolute": 4.553794860839844e-05,
+          "relative_rmse": 2.6281816190021345e-06,
+          "tensor": "layer_10_v"
+        },
+        {
+          "max_absolute": 0.0003204345703125,
+          "relative_rmse": 1.4631548310717335e-06,
+          "tensor": "layer_10_hidden"
+        },
+        {
+          "max_absolute": 5.710124969482422e-05,
+          "relative_rmse": 2.4640596620884025e-06,
+          "tensor": "layer_11_k"
+        },
+        {
+          "max_absolute": 4.743039608001709e-05,
+          "relative_rmse": 2.8883666800538776e-06,
+          "tensor": "layer_11_v"
+        },
+        {
+          "max_absolute": 0.000335693359375,
+          "relative_rmse": 1.793025148799643e-06,
+          "tensor": "layer_11_hidden"
+        },
+        {
+          "max_absolute": 5.7697296142578125e-05,
+          "relative_rmse": 2.780732302198885e-06,
+          "tensor": "layer_12_k"
+        },
+        {
+          "max_absolute": 4.839897155761719e-05,
+          "relative_rmse": 3.3045710097212577e-06,
+          "tensor": "layer_12_v"
+        },
+        {
+          "max_absolute": 0.0003552436828613281,
+          "relative_rmse": 2.00340082301409e-06,
+          "tensor": "layer_12_hidden"
+        },
+        {
+          "max_absolute": 5.0902366638183594e-05,
+          "relative_rmse": 2.8760759960277937e-06,
+          "tensor": "layer_13_k"
+        },
+        {
+          "max_absolute": 5.53131103515625e-05,
+          "relative_rmse": 3.6141789223620435e-06,
+          "tensor": "layer_13_v"
+        },
+        {
+          "max_absolute": 0.00031280517578125,
+          "relative_rmse": 2.2030794752936345e-06,
+          "tensor": "layer_13_hidden"
+        },
+        {
+          "max_absolute": 5.459785461425781e-05,
+          "relative_rmse": 3.457591446931474e-06,
+          "tensor": "layer_14_k"
+        },
+        {
+          "max_absolute": 6.240606307983398e-05,
+          "relative_rmse": 4.3619656935334206e-06,
+          "tensor": "layer_14_v"
+        },
+        {
+          "max_absolute": 0.0002593994140625,
+          "relative_rmse": 2.33999935517204e-06,
+          "tensor": "layer_14_hidden"
+        },
+        {
+          "max_absolute": 4.7326087951660156e-05,
+          "relative_rmse": 3.145953996863682e-06,
+          "tensor": "layer_15_k"
+        },
+        {
+          "max_absolute": 7.534027099609375e-05,
+          "relative_rmse": 4.200874627713347e-06,
+          "tensor": "layer_15_v"
+        },
+        {
+          "max_absolute": 0.000171661376953125,
+          "relative_rmse": 2.5407450721104397e-06,
+          "tensor": "layer_15_hidden"
+        },
+        {
+          "max_absolute": 6.318092346191406e-05,
+          "relative_rmse": 3.717225126820267e-06,
+          "tensor": "layer_16_k"
+        },
+        {
+          "max_absolute": 5.9761106967926025e-05,
+          "relative_rmse": 4.605619778885739e-06,
+          "tensor": "layer_16_v"
+        },
+        {
+          "max_absolute": 0.0001373291015625,
+          "relative_rmse": 2.5786609967326513e-06,
+          "tensor": "layer_16_hidden"
+        },
+        {
+          "max_absolute": 5.352497100830078e-05,
+          "relative_rmse": 3.667178816613159e-06,
+          "tensor": "layer_17_k"
+        },
+        {
+          "max_absolute": 5.4717063903808594e-05,
+          "relative_rmse": 4.66007440991234e-06,
+          "tensor": "layer_17_v"
+        },
+        {
+          "max_absolute": 0.00014400482177734375,
+          "relative_rmse": 2.6458474167156965e-06,
+          "tensor": "layer_17_hidden"
+        },
+        {
+          "max_absolute": 5.555152893066406e-05,
+          "relative_rmse": 3.633696906035766e-06,
+          "tensor": "layer_18_k"
+        },
+        {
+          "max_absolute": 5.173683166503906e-05,
+          "relative_rmse": 4.854893177252961e-06,
+          "tensor": "layer_18_v"
+        },
+        {
+          "max_absolute": 0.00012969970703125,
+          "relative_rmse": 2.633738631629967e-06,
+          "tensor": "layer_18_hidden"
+        },
+        {
+          "max_absolute": 5.906820297241211e-05,
+          "relative_rmse": 3.812073828157736e-06,
+          "tensor": "layer_19_k"
+        },
+        {
+          "max_absolute": 4.9233436584472656e-05,
+          "relative_rmse": 4.905905370833352e-06,
+          "tensor": "layer_19_v"
+        },
+        {
+          "max_absolute": 0.00019359588623046875,
+          "relative_rmse": 2.5913909666996915e-06,
+          "tensor": "layer_19_hidden"
+        },
+        {
+          "max_absolute": 4.363059997558594e-05,
+          "relative_rmse": 3.5569523788581137e-06,
+          "tensor": "layer_20_k"
+        },
+        {
+          "max_absolute": 4.839897155761719e-05,
+          "relative_rmse": 4.535413154371781e-06,
+          "tensor": "layer_20_v"
+        },
+        {
+          "max_absolute": 0.00021076202392578125,
+          "relative_rmse": 2.663178520379006e-06,
+          "tensor": "layer_20_hidden"
+        },
+        {
+          "max_absolute": 4.285573959350586e-05,
+          "relative_rmse": 3.6102428566664457e-06,
+          "tensor": "layer_21_k"
+        },
+        {
+          "max_absolute": 4.7773122787475586e-05,
+          "relative_rmse": 4.810187874682015e-06,
+          "tensor": "layer_21_v"
+        },
+        {
+          "max_absolute": 0.0002384185791015625,
+          "relative_rmse": 2.5989938876591623e-06,
+          "tensor": "layer_21_hidden"
+        },
+        {
+          "max_absolute": 4.38690185546875e-05,
+          "relative_rmse": 2.9151308353903005e-06,
+          "tensor": "layer_22_k"
+        },
+        {
+          "max_absolute": 3.853440284729004e-05,
+          "relative_rmse": 4.157639068580465e-06,
+          "tensor": "layer_22_v"
+        },
+        {
+          "max_absolute": 0.000240325927734375,
+          "relative_rmse": 2.52341646955756e-06,
+          "tensor": "layer_22_hidden"
+        },
+        {
+          "max_absolute": 4.4345855712890625e-05,
+          "relative_rmse": 3.5242962894699303e-06,
+          "tensor": "layer_23_k"
+        },
+        {
+          "max_absolute": 3.975629806518555e-05,
+          "relative_rmse": 4.301154149288777e-06,
+          "tensor": "layer_23_v"
+        },
+        {
+          "max_absolute": 0.000263214111328125,
+          "relative_rmse": 2.4889816359063843e-06,
+          "tensor": "layer_23_hidden"
+        },
+        {
+          "max_absolute": 4.3392181396484375e-05,
+          "relative_rmse": 3.456082822594908e-06,
+          "tensor": "layer_24_k"
+        },
+        {
+          "max_absolute": 3.7983059883117676e-05,
+          "relative_rmse": 4.265461029717699e-06,
+          "tensor": "layer_24_v"
+        },
+        {
+          "max_absolute": 0.00036716461181640625,
+          "relative_rmse": 2.4622343062219443e-06,
+          "tensor": "layer_24_hidden"
+        },
+        {
+          "max_absolute": 5.173683166503906e-05,
+          "relative_rmse": 3.444321009737905e-06,
+          "tensor": "layer_25_k"
+        },
+        {
+          "max_absolute": 3.3736228942871094e-05,
+          "relative_rmse": 4.327052465669112e-06,
+          "tensor": "layer_25_v"
+        },
+        {
+          "max_absolute": 0.0004596710205078125,
+          "relative_rmse": 2.367521801716066e-06,
+          "tensor": "layer_25_hidden"
+        },
+        {
+          "max_absolute": 5.4836273193359375e-05,
+          "relative_rmse": 3.1600452530256007e-06,
+          "tensor": "layer_26_k"
+        },
+        {
+          "max_absolute": 3.6716461181640625e-05,
+          "relative_rmse": 4.039327450300334e-06,
+          "tensor": "layer_26_v"
+        },
+        {
+          "max_absolute": 0.0002613067626953125,
+          "relative_rmse": 2.241206630060333e-06,
+          "tensor": "layer_26_hidden"
+        },
+        {
+          "max_absolute": 3.814697265625e-05,
+          "relative_rmse": 2.9987877496751025e-06,
+          "tensor": "layer_27_k"
+        },
+        {
+          "max_absolute": 3.5643577575683594e-05,
+          "relative_rmse": 3.8791886254330166e-06,
+          "tensor": "layer_27_v"
+        },
+        {
+          "max_absolute": 0.00017261505126953125,
+          "relative_rmse": 2.2397362045012414e-06,
+          "tensor": "layer_27_hidden"
+        },
+        {
+          "max_absolute": 3.9577484130859375e-05,
+          "relative_rmse": 3.216534423700068e-06,
+          "tensor": "layer_28_k"
+        },
+        {
+          "max_absolute": 3.331899642944336e-05,
+          "relative_rmse": 4.0178852032113355e-06,
+          "tensor": "layer_28_v"
+        },
+        {
+          "max_absolute": 8.20159912109375e-05,
+          "relative_rmse": 2.201662255174597e-06,
+          "tensor": "layer_28_hidden"
+        },
+        {
+          "max_absolute": 4.100799560546875e-05,
+          "relative_rmse": 2.943884737760527e-06,
+          "tensor": "layer_29_k"
+        },
+        {
+          "max_absolute": 3.0159950256347656e-05,
+          "relative_rmse": 3.8802945709903724e-06,
+          "tensor": "layer_29_v"
+        },
+        {
+          "max_absolute": 7.62939453125e-05,
+          "relative_rmse": 2.27241298489389e-06,
+          "tensor": "layer_29_hidden"
+        },
+        {
+          "max_absolute": 3.886222839355469e-05,
+          "relative_rmse": 3.3184714993694797e-06,
+          "tensor": "layer_30_k"
+        },
+        {
+          "max_absolute": 3.159046173095703e-05,
+          "relative_rmse": 4.300934506318299e-06,
+          "tensor": "layer_30_v"
+        },
+        {
+          "max_absolute": 6.008148193359375e-05,
+          "relative_rmse": 2.2126343992567854e-06,
+          "tensor": "layer_30_hidden"
+        },
+        {
+          "max_absolute": 4.6253204345703125e-05,
+          "relative_rmse": 3.327706508571282e-06,
+          "tensor": "layer_31_k"
+        },
+        {
+          "max_absolute": 3.039836883544922e-05,
+          "relative_rmse": 4.131195964873768e-06,
+          "tensor": "layer_31_v"
+        },
+        {
+          "max_absolute": 7.05718994140625e-05,
+          "relative_rmse": 2.144195605069399e-06,
+          "tensor": "layer_31_hidden"
+        },
+        {
+          "max_absolute": 4.0531158447265625e-05,
+          "relative_rmse": 2.991782139361021e-06,
+          "tensor": "layer_32_k"
+        },
+        {
+          "max_absolute": 2.619624137878418e-05,
+          "relative_rmse": 3.9458495848521125e-06,
+          "tensor": "layer_32_v"
+        },
+        {
+          "max_absolute": 5.53131103515625e-05,
+          "relative_rmse": 2.1900189040024998e-06,
+          "tensor": "layer_32_hidden"
+        },
+        {
+          "max_absolute": 0.000133514404296875,
+          "relative_rmse": 1.6313870219164528e-06,
+          "tensor": "layer_33_k"
+        },
+        {
+          "max_absolute": 2.6941299438476562e-05,
+          "relative_rmse": 3.7010331652709283e-06,
+          "tensor": "layer_33_v"
+        },
+        {
+          "max_absolute": 8.392333984375e-05,
+          "relative_rmse": 2.348190719203558e-06,
+          "tensor": "layer_33_hidden"
+        },
+        {
+          "max_absolute": 0.000110626220703125,
+          "relative_rmse": 2.5350261694256915e-06,
+          "tensor": "layer_34_k"
+        },
+        {
+          "max_absolute": 7.283687591552734e-05,
+          "relative_rmse": 4.381264716357691e-06,
+          "tensor": "layer_34_v"
+        },
+        {
+          "max_absolute": 0.00011157989501953125,
+          "relative_rmse": 2.316470045116148e-06,
+          "tensor": "layer_34_hidden"
+        },
+        {
+          "max_absolute": 4.455447196960449e-05,
+          "relative_rmse": 3.357845116624958e-06,
+          "tensor": "layer_35_k"
+        },
+        {
+          "max_absolute": 6.532669067382812e-05,
+          "relative_rmse": 4.118185188417556e-06,
+          "tensor": "layer_35_v"
+        },
+        {
+          "max_absolute": 0.0001373291015625,
+          "relative_rmse": 2.2527754026668845e-06,
+          "tensor": "layer_35_hidden"
+        },
+        {
+          "max_absolute": 4.291534423828125e-05,
+          "relative_rmse": 2.7383416636439506e-06,
+          "tensor": "layer_36_k"
+        },
+        {
+          "max_absolute": 3.707408905029297e-05,
+          "relative_rmse": 3.6876867852697615e-06,
+          "tensor": "layer_36_v"
+        },
+        {
+          "max_absolute": 9.59634780883789e-05,
+          "relative_rmse": 2.3344382498180494e-06,
+          "tensor": "layer_36_hidden"
+        },
+        {
+          "max_absolute": 3.889203071594238e-05,
+          "relative_rmse": 3.084258878516266e-06,
+          "tensor": "layer_37_k"
+        },
+        {
+          "max_absolute": 3.695487976074219e-05,
+          "relative_rmse": 3.561274525054614e-06,
+          "tensor": "layer_37_v"
+        },
+        {
+          "max_absolute": 6.103515625e-05,
+          "relative_rmse": 2.3280499590327963e-06,
+          "tensor": "layer_37_hidden"
+        },
+        {
+          "max_absolute": 0.000171661376953125,
+          "relative_rmse": 1.643816403884557e-06,
+          "tensor": "layer_38_k"
+        },
+        {
+          "max_absolute": 4.500150680541992e-05,
+          "relative_rmse": 3.45037938132009e-06,
+          "tensor": "layer_38_v"
+        },
+        {
+          "max_absolute": 6.961822509765625e-05,
+          "relative_rmse": 2.3180000425782055e-06,
+          "tensor": "layer_38_hidden"
+        },
+        {
+          "max_absolute": 7.82012939453125e-05,
+          "relative_rmse": 2.1896787529840367e-06,
+          "tensor": "layer_39_k"
+        },
+        {
+          "max_absolute": 4.410743713378906e-05,
+          "relative_rmse": 2.5692866074678022e-06,
+          "tensor": "layer_39_v"
+        },
+        {
+          "max_absolute": 9.5367431640625e-05,
+          "relative_rmse": 1.9634021555248182e-06,
+          "tensor": "layer_39_hidden"
+        },
+        {
+          "max_absolute": 8.58306884765625e-06,
+          "relative_rmse": 9.028237855090993e-07,
+          "tensor": "video"
+        }
+      ],
+      "suite": "precision",
+      "summary": {
+        "bf16_cache_limit_enforced": false,
+        "bf16_cache_max_relative_rmse": 0.023873668164014816,
+        "bf16_output_limit": 0.01,
+        "bf16_output_relative_rmse": {
+          "action": 0.0022076298482716084,
+          "video": 0.008952181786298752
+        },
+        "failures": [],
+        "fp32_limit": 2e-05,
+        "fp32_max_relative_rmse": 4.905905370833352e-06,
+        "passed": true,
+        "policy": "fp32_structure_bf16_outputs_v1",
+        "policy_retention_established": false
+      },
+      "window_id": 951
+    }
+  ],
+  "identity": "bb5e8ca6a5827d9c7ef58fe542ce9583da1480d7672af1c42407596f8e927151",
+  "initial_selection_only": true,
+  "native_no_adapter_reload_verified": false,
+  "original_native_all_open_verified": true,
+  "passed": true,
+  "policy_retention_established": false,
+  "teacher_closeness_gate": false,
+  "executed_identity": "cfa100f8128948492d1ee7f72234f3d9aedfcdbb7f049c921917b3048402df21",
+  "carried_forward_from": "/data3/praveen/experiments/vpp2-flexible-mask-recovery-20261031/preparation_revisions/source-4901a8459ed2/checks/structure.json",
+  "previous_receipt_sha256": "8496f2faed69eb92c4a9d8810c43955b7db52e8f2a9c04bc114ffa9e0cf8054a",
+  "changed_files": [
+    "scripts/flexible_mask/check_zero_gradient.py",
+    "src/vpp2/flexible_mask/gradient_probe.py",
+    "src/vpp2/flexible_mask/preflight.py",
+    "tests/flexible_mask/test_flexible_contracts.py"
+  ],
+  "carry_forward_reason": "Only mask-gradient diagnostic and verification code changed; model/forward/data/optimizer/export implementations and input hashes are unchanged. This is carried-forward evidence, not a new GPU execution."
+}

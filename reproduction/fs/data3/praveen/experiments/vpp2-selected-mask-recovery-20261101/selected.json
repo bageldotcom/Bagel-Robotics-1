@@ -1,0 +1,14 @@
+{
+  "checkpoint_identity": "d618225a419aa83c8ceaaec9f7a14d274c30aea110ba9918bc5fcb7a1456e5bd",
+  "cross_environment_checks": false,
+  "identity": "d85b815fd1e304baea64a9f1fd246a2b84ef3b86893a7bba72710e34bea26127",
+  "mask_convergence_claimed": false,
+  "mask_identity": "c6542ae773517e3ec8ec6032dc3b0e2119c9455bf4629433e75210bad6ca4cc0",
+  "parameters": 12468409664,
+  "policy_retention_established": false,
+  "selection_report": "/data3/praveen/experiments/vpp2-mask-checkpoint-selection-20261101/node3/reports/comparison.json",
+  "selection_report_sha256": "fe3ec265b365dffaeb6f2089958c3e978de804d33fb01c68c7a59a4c44ee6da5",
+  "source_export": "/data3/praveen/experiments/vpp2-mask-checkpoint-selection-20261101/node3/exports/update_001500",
+  "status": "selected_for_early_recovery",
+  "update": 1500
+}

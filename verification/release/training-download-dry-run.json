@@ -1,0 +1,19 @@
+{
+  "repo": "Haodong082399/VPP2",
+  "revision": "04824ddb3aae11f13db50984ed7d540c3b77dd9f",
+  "output": "/path/to/new/training-assets",
+  "files": [
+    "checkpoints/joint2b_s100000/video.pt",
+    "checkpoints/joint2b_s100000/action.pt",
+    "checkpoints/joint2b_s100000/dataset_stats.json",
+    "checkpoints/Wan2.1-I2V-14B-480P/LICENSE.txt",
+    "checkpoints/Wan2.1-I2V-14B-480P/Wan2.1_VAE.pth",
+    "checkpoints/Wan2.1-I2V-14B-480P/config.json",
+    "checkpoints/Wan2.1-I2V-14B-480P/google/umt5-xxl/special_tokens_map.json",
+    "checkpoints/Wan2.1-I2V-14B-480P/google/umt5-xxl/spiece.model",
+    "checkpoints/Wan2.1-I2V-14B-480P/google/umt5-xxl/tokenizer.json",
+    "checkpoints/Wan2.1-I2V-14B-480P/google/umt5-xxl/tokenizer_config.json",
+    "checkpoints/Wan2.1-I2V-14B-480P/models_clip_open-clip-xlm-roberta-large-vit-huge-14.pth",
+    "checkpoints/Wan2.1-I2V-14B-480P/models_t5_umt5-xxl-enc-bf16.pth"
+  ]
+}

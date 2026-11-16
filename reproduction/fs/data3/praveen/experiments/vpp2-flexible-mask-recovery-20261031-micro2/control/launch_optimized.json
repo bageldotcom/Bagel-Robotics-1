@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-31T18:14:04.336046+00:00",
+  "root": "/data3/praveen/experiments/vpp2-flexible-mask-recovery-20261031-micro2",
+  "identity": "72f7387ca10b6e2b2c08bcab5ad77ec8f9d7afea8ed69777a93a16a8f4ddd6da",
+  "verification_job": "50027",
+  "jobs": {
+    "train": "50028",
+    "continuation_1": "50029",
+    "continuation_2": "50030"
+  },
+  "parent_update": 31,
+  "global_batch": 256,
+  "micro_batch": 2,
+  "accumulation": 16,
+  "teacher_video_retained": true
+}

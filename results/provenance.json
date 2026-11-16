@@ -1,0 +1,117 @@
+{
+  "sources": [
+    {
+      "path": "results/evidence/mask_fast/native_000000.json",
+      "sha256": "e19c3fce27a193e0c7e31fe5e5fa5e92bbcb8305d5d134dbba333da5f4e97940"
+    },
+    {
+      "path": "results/evidence/mask_fast/native_000250.json",
+      "sha256": "c9e9d1646a971595a0c81196333fa0530b372edca0755cdb7badabfd7d22a767"
+    },
+    {
+      "path": "results/evidence/mask_fast/native_000500.json",
+      "sha256": "38533a1b09c6d006e4faccecfbc615a4c1b6b98594d11dda9c74be65fd10c445"
+    },
+    {
+      "path": "results/evidence/mask_fast/native_000750.json",
+      "sha256": "6a9403afb3b9c0b028adb77307acc40db9aff197ce5dc106a2e2ce8eea93868a"
+    },
+    {
+      "path": "results/evidence/mask_fast/native_001000.json",
+      "sha256": "d407dd5f26b23e3e63bc9b4cc3d9a7c9b6371dc1f0a994fbcfe27ad3a4954468"
+    },
+    {
+      "path": "results/evidence/mask_fast/native_001250.json",
+      "sha256": "176ee02cfaa24d6390c1417466b70be2898c99458dde6bd5bb27ce4e0990b843"
+    },
+    {
+      "path": "results/evidence/mask_final/native_001500.json",
+      "sha256": "0c00e39a38b02d55792f659f6d8a567e5b18e41d1478fd6677ace7fd128fc19c"
+    },
+    {
+      "path": "results/evidence/recovery_pilot/native_000055.json",
+      "sha256": "1a5799beccfbe25b628c949148180b9e75d3744396d4b754e249b43eb5eae899"
+    },
+    {
+      "path": "results/evidence/recovery_pilot/native_000100.json",
+      "sha256": "02a2d50d51322e02f8796d8a23b62bf1da44106d13869dab4626fb625e60ac60"
+    },
+    {
+      "path": "results/evidence/recovery_pilot/native_000150.json",
+      "sha256": "d82de5b64de88902d162aadfdd18eb87f55ee17b394ba1d31ca134427cf620a8"
+    },
+    {
+      "path": "results/evidence/recovery_pilot/native_000200.json",
+      "sha256": "707b4fd4fdb6a244356eb5c3ec310bdb8548daede008e10dfa2d9630f5f9ecd1"
+    },
+    {
+      "path": "results/evidence/recovery_pilot/native_000250.json",
+      "sha256": "38d36d3e769f09cbd64e62d701d40103310738efea56e75def4adf133467e8ae"
+    },
+    {
+      "path": "results/evidence/recovery_1000/native_000300.json",
+      "sha256": "523c4adb0843b8d7f76d95206c938fcf24d83ab461d1f3bd3890d8ce684c0183"
+    },
+    {
+      "path": "results/evidence/recovery_1000/native_000350.json",
+      "sha256": "99e34753dcb9386939db25cb8de3d1fb15c037bb7a9219ddac1fc050d047ed7a"
+    },
+    {
+      "path": "results/evidence/recovery_1000/native_000400.json",
+      "sha256": "1123744c3f027a8f98216bcc030b22c48c457cdf4b698ff5c607047671c86f66"
+    },
+    {
+      "path": "results/evidence/recovery_1000/native_000450.json",
+      "sha256": "125c7afdd89671fa2a31f0f7c886a0b51e15d1fd507afddf876aeaea86392987"
+    },
+    {
+      "path": "results/evidence/recovery_1000/native_000500.json",
+      "sha256": "197a05debe44de51b7759097434126105fb4325b8593db6c679ef09c1f2e2d90"
+    },
+    {
+      "path": "results/evidence/recovery_1000/native_000550.json",
+      "sha256": "0870f1cf4f2f10bb53491df557e38375a7dcae4c9514ff54f66d0b75afc3f08d"
+    },
+    {
+      "path": "results/evidence/recovery_1000/native_000600.json",
+      "sha256": "c2e9ddededab5dc8edf3bfd56259236ac2a90acb78df8f25ad29cde267185eca"
+    },
+    {
+      "path": "results/evidence/recovery_1000/native_000650.json",
+      "sha256": "73e5168b2e81067b13083599f14dc41a0da896dcd65b1a156d35cdc778823394"
+    },
+    {
+      "path": "results/evidence/recovery_1000/native_000700.json",
+      "sha256": "5ee1332b83ee879b2421de9589ecb61054408612d655faafaaae87775770fb7e"
+    },
+    {
+      "path": "results/evidence/recovery_1000/native_000750.json",
+      "sha256": "6c0f7df8060268454be77dbf80810c772bd87a7c566eabd0f825e30e0669e492"
+    },
+    {
+      "path": "results/evidence/recovery_1000/native_000800.json",
+      "sha256": "af059bd697ed648ea4cb7bfa27752bcb9818b3e5c602959b536808d0af79f71a"
+    },
+    {
+      "path": "results/evidence/recovery_1000/native_000850.json",
+      "sha256": "3c926cddcf12aa57b9ac5aa50e781512e2283eb882816c82500752aa0f747e77"
+    },
+    {
+      "path": "results/evidence/recovery_1000/native_000900.json",
+      "sha256": "8f408bdce8dd60c64b27ccf0df2f6bc3189343a8a67f9909fa7756dbffafe7a2"
+    },
+    {
+      "path": "results/evidence/recovery_1000/native_000950.json",
+      "sha256": "188ba2e105c8fb6443f196052452164a8905b724544415c1573734c9189fdb70"
+    },
+    {
+      "path": "results/evidence/recovery_1000/native_001000.json",
+      "sha256": "9806ad2b0b58f879351da58eede46507a79433ec9e4eb8f37f415cf58f2ef70e"
+    }
+  ],
+  "metric": "MSE of normalized generated actions over first min(24, valid_steps) of 32 predicted actions",
+  "validation": "140 fixed development-monitoring windows, 4 per task, 35 tasks",
+  "comparison": "Within-panel checkpoint comparison; no closed-loop success claims",
+  "simulation": false,
+  "missing_teacher_disagreement": "Not recorded at some earlier mask checkpoints; never imputed"
+}

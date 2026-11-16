@@ -1,0 +1,14 @@
+Bagel-Robotics-1 private release preparation.
+
+The exposed training workflows include dataset selection, mask learning without
+K/V-matching loss, physical pruning, and recovery without K/V-matching loss.
+Recovery starts from checkpoint 55. The evaluated checkpoint1000 and the
+separate no-K/V mask-learning experiment retain their distinct provenance.
+
+Preserved implementation components retain their original file headers and
+licenses. See LICENSE, THIRD_PARTY_NOTICES.md and LICENSES/. The internal vpp2
+namespace is retained for compatibility with the recorded source identities.
+
+Large model/optimizer weights, dataset videos and credentials are external.
+Small ranking tensors and generated text conditioning are included with hashes.
+The repository is intended to remain private until the owner authorizes release.

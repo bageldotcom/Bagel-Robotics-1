@@ -1,0 +1,10 @@
+{
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "identity": "7037ef4ad8ffbfa351555fb61b5c848306cd33a9d7e331e2d2e3021cca63e5b5",
+  "job": "50796",
+  "rank": 1,
+  "smoke": false,
+  "torch": "2.11.0+cu130",
+  "windows": 699,
+  "world": 2
+}

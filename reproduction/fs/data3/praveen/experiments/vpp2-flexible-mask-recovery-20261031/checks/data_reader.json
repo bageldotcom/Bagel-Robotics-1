@@ -1,0 +1,75 @@
+{
+  "allowed_episodes": 3186,
+  "audit_episodes_excluded": 280,
+  "audit_read_rejected": true,
+  "carried_forward_evidence": {
+    "changed_files": [
+      "configs/flexible_mask/resident_teacher.json",
+      "scripts/flexible_mask/publish.py",
+      "scripts/flexible_mask/requirements.txt",
+      "scripts/flexible_mask/verify_launch.py",
+      "src/vpp2/compact_kv/checkpointing.py",
+      "src/vpp2/flexible_mask/config.py",
+      "src/vpp2/flexible_mask/performance.py",
+      "src/vpp2/flexible_mask/runtime.py",
+      "src/vpp2/flexible_mask/train.py",
+      "tests/flexible_mask/test_lossless_checkpoint.py",
+      "tests/flexible_mask/test_resident_teacher.py"
+    ],
+    "executed_identity": "cfa100f8128948492d1ee7f72234f3d9aedfcdbb7f049c921917b3048402df21",
+    "previous_receipt": "/data3/praveen/experiments/vpp2-flexible-mask-recovery-20261031/preparation_revisions/source-4a2cd3cad884/data_reader.json",
+    "previous_sha256": "89b957ae52e64af6c7d4e5da1bb8e6cc541dbb4b04339dae963e6983a3121cca",
+    "reason": "Numerical model, masking, slicing, input preparation, and raw data-reader code and all input hashes unchanged. Changes are runtime teacher storage, checkpoint I/O, launch validation, tests, and performance acceptance. Actual eight-GPU candidate outputs and optimizer state must still pass separate checks."
+  },
+  "fitting_windows": 30000,
+  "gpu_used": false,
+  "identity": "bb5e8ca6a5827d9c7ef58fe542ce9583da1480d7672af1c42407596f8e927151",
+  "monitor_windows": 1119,
+  "official_validation_excluded": true,
+  "passed": true,
+  "recovery_windows": 1455016,
+  "samples": [
+    {
+      "action_shape": [
+        32,
+        16
+      ],
+      "episode": 1,
+      "frame": 0,
+      "future_rgb_zero": true,
+      "task": "arrange_largest_number",
+      "video_shape": [
+        3,
+        17,
+        240,
+        416
+      ]
+    },
+    {
+      "action_shape": [
+        32,
+        16
+      ],
+      "episode": 99,
+      "frame": 531,
+      "future_rgb_zero": true,
+      "task": "arrange_largest_number",
+      "video_shape": [
+        3,
+        17,
+        240,
+        416
+      ]
+    }
+  ],
+  "executed_identity": "cfa100f8128948492d1ee7f72234f3d9aedfcdbb7f049c921917b3048402df21",
+  "carried_forward_from": "/data3/praveen/experiments/vpp2-flexible-mask-recovery-20261031/preparation_revisions/source-4901a8459ed2/checks/data_reader.json",
+  "previous_receipt_sha256": "6af20b4fba6ce187a1f8c297b01072ee2ddd6ab09ef132910c4ecd6f8f3cb563",
+  "changed_files": [
+    "scripts/flexible_mask/check_zero_gradient.py",
+    "src/vpp2/flexible_mask/gradient_probe.py",
+    "src/vpp2/flexible_mask/preflight.py",
+    "tests/flexible_mask/test_flexible_contracts.py"
+  ],
+  "carry_forward_reason": "Only mask-gradient diagnostic and verification code changed; model/forward/data/optimizer/export implementations and input hashes are unchanged. This is carried-forward evidence, not a new GPU execution."
+}

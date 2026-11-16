@@ -1,0 +1,267 @@
+{
+  "artifacts": {
+    "audit_manifest": {
+      "path": "/data3/praveen/experiments/vpp2-adaptive-latekv-mask-search-20261030/audit/manifest.json",
+      "sha256": "160d6bfd909032fdc907dc58f30ff7504b35ebe91cd2674ef0ec913e8fe3930e"
+    },
+    "data_cpu_receipt": {
+      "path": "/data3/praveen/experiments/vpp2-full30k-mask-search-20261030/checks/cpu_checks.json",
+      "sha256": "45b5a6ce431e1c5ac15d601180be16a337970d52ef96f141a7505434512cf876"
+    },
+    "normalization": {
+      "path": "/data1/praveen/experiments/vpp2-online-distill-20261015/demonstrations_native_text/dataset_stats.json",
+      "sha256": "2649d4e3ff3d6d400c9953b7c20c79541474f9c38a8a9916b9caacecd8578f16"
+    },
+    "source_manifest": {
+      "path": "/data1/praveen/experiments/vpp2-online-distill-20261015/demonstrations_native_text/manifest.json",
+      "sha256": "fbbeae4b8ccf12ac9bd843f51147f78045a1789ad765b9f0e3c24a37b6b2e01f"
+    },
+    "visual_review": {
+      "path": "/data3/praveen/experiments/vpp2-critical-calibration-20261029/revisions/3ca392bfb574898f/visual_review_receipt.json",
+      "sha256": "9cbb622356fd0538f8e071d3feba6df7ea7efd2a0ccc18c1414cc634dc2d1e2f"
+    }
+  },
+  "curation": {
+    "audit_episodes_per_task": 8,
+    "audit_locked": true,
+    "auto_expand": false,
+    "base_windows_per_episode": 4,
+    "candidate_stride": 8,
+    "max_windows_per_episode": 16,
+    "min_selection_episodes_per_task": 83,
+    "monitor_episodes_per_task": 8,
+    "monitor_windows_per_task": 32,
+    "output": "/data3/praveen/experiments/vpp2-critical-calibration-20261029/revisions/3ca392bfb574898f",
+    "previous_panel": "/data3/praveen/experiments/vpp2-full-robodojo-mask-calibration-20261028/data/curated-v2/panel.json",
+    "quality": {
+      "action_latent": 32,
+      "check_every": 200,
+      "learning_rate": 0.001,
+      "max_updates": 2400,
+      "method": "deminf_inspired_episode_tiebreaker",
+      "minimum_rank_correlation": 0.8,
+      "neighbors": [
+        5,
+        6,
+        7
+      ],
+      "obs_latent": 64,
+      "patience": 4,
+      "repeats": 4
+    },
+    "random_fraction": 0.2,
+    "require_model_probe": true,
+    "require_visual_review": true,
+    "schema": "robodojo-curated-calibration-v3",
+    "seed": 100008,
+    "target_total": 30000,
+    "target_windows_per_task": null,
+    "vision": {
+      "batch_size": 32,
+      "sha256": "983f1562536e84ff750a1576fb08e54de751dbf2e17c0d8a4a13704341fdcd3d",
+      "weights": "/home/praveen/.cache/torch/hub/checkpoints/convnext_tiny-983f1562.pth"
+    },
+    "visual_backend": "frozen_convnext_spatial_history_v1",
+    "visual_descriptor_scope": "frozen pretrained spatial image features with nine native history slots; not verified contact or memory-cue labels"
+  },
+  "curation_artifacts": "/data3/praveen/experiments/vpp2-full-robodojo-mask-calibration-20261028/data/curated-v3",
+  "demonstrations": "/data1/praveen/experiments/vpp2-online-distill-20261015/demonstrations_native_text",
+  "execution": {
+    "cached_norm_flags": true,
+    "calibration_micro_batch": 2,
+    "deduplicate_conditioning_reads": true,
+    "fill_uninitialized_memory": false,
+    "mixed_attention_checkpointing": false,
+    "skip_nograd_checkpointing": true
+  },
+  "geometry": {
+    "ffn": 13824,
+    "ffn_floor": 4096,
+    "head_dim": 128,
+    "head_floor": 8,
+    "heads": 40,
+    "hidden": 5120,
+    "hidden_floor": 4864,
+    "layers": 40,
+    "pack": 128
+  },
+  "initial_masks": "/data3/praveen/experiments/vpp2-adaptive-hidden-latekv-mask-search-20261030/runs/masks_attempt_000870.pt",
+  "initial_masks_sha256": "680ba1058447b05d83d0295efbf1bdbcbe33163d8c4bba13e15ab7893db58c80",
+  "initial_preferred": {
+    "cross_scores": 32,
+    "ffn_scores": 9728,
+    "hidden_scores": 4864
+  },
+  "launch_policy": {
+    "automatic_submission": false,
+    "compact_recovery_automatic": false,
+    "minimum_disk_free_gib": 800,
+    "simulation_automatic": false
+  },
+  "native_inference": {
+    "history_stride": 25,
+    "horizon": 32,
+    "rand_device": "cpu",
+    "replan": 24,
+    "seed": 1,
+    "shift": 1.0,
+    "steps": 10
+  },
+  "normalization_sha256": "2649d4e3ff3d6d400c9953b7c20c79541474f9c38a8a9916b9caacecd8578f16",
+  "original_video_parameters": 16394878784,
+  "panel_file": "/data3/praveen/experiments/vpp2-critical-calibration-20261029/revisions/3ca392bfb574898f/panel.json",
+  "panel_sha256": "bc6df13b64b5f96bbe17c64244240cc44a40d704babb70893f79c0f30d389680",
+  "python_deps": "/data3/praveen/experiments/vpp2-adaptive-latekv-mask-search-20261030/python-deps",
+  "recovery": {
+    "final_lr_fraction": 0.1,
+    "learning_rate": 1e-06,
+    "updates": 2344,
+    "warmup_updates": 0
+  },
+  "recovery_conditioning_cache_entries": 128,
+  "recovery_extension": {
+    "condition": "gt_better_than_historical250",
+    "gradient_updates": [
+      500,
+      1000
+    ],
+    "parent_identity": "491ec49869e4d6a098c87ff99e6285ece09d841db4be9b3a638f9d6ae07aff9d",
+    "parent_pins": {
+      "checks/cpu.json": "4aca2e892c511978bb119d550c07931b92267dcbd6ac7ce3e66d64eac42991e0",
+      "checks/gradient_noninterference_gpu.json": "8efbe5a29cf58a4ba4a8038e3e41cf22afb49f9b1acccb4a5e3642ef2a9e4892",
+      "config.json": "3b3a91b77d0dd8e599e17941c5c8080674431bce101f743e00c7820d56a64f28",
+      "inputs.json": "56b484b54833aa547167083529a21c23d923739bd3c98a1a340206f3e18f7dd8",
+      "source_manifest.json": "3108de14e4b73e822511acc16fbbf5213a3916c79b6ba6da8046783793551d48"
+    },
+    "parent_root": "/data3/praveen/experiments/vpp2-recovery55-no-kv-20261102",
+    "parent_tag": "update_000250",
+    "parent_update": 250,
+    "schema": "no-kv-recovery250-to1000-v1",
+    "selection_metric": "task_macro_ground_truth_native_action_mse",
+    "target_update": 1000
+  },
+  "recovery_handoff": {
+    "cross_environment_checks_requested": false,
+    "early_recovery_authorized": true,
+    "mask_convergence_claimed": false,
+    "protocol_identity": "3adc9422e373a3cd7b386b2aded18c150fb57d38762de3f86393156f9bff69c3",
+    "schema": "milestone-selection-recovery-v1",
+    "selection_root": "/data3/praveen/experiments/vpp2-mask-checkpoint-selection-20261101/node3",
+    "selection_rule_sha256": "ca74561d69f065c73f6c083839a28a2b9a1d03fd45624030109b27b98884c560"
+  },
+  "recovery_lr_branch": {
+    "artifact_storage": "/data3/praveen/experiments/vpp2-recovery55-no-kv-to1000-20261103/artifacts",
+    "baseline55_validation": "/data3/praveen/experiments/vpp2-selected-mask-recovery-curated30k-20261101/recovery/diagnostics/native_000055.json",
+    "baseline55_validation_sha256": "5c13ef2b51d76be5b108cc15b12577083c7dc2f461ebc92e1869084aac043eb4",
+    "checkpoint_every": 250,
+    "checkpoint_storage": "/data3/praveen/experiments/vpp2-recovery55-no-kv-to1000-20261103/artifacts/checkpoints",
+    "comparison_identity": "0c94de36c72c55171c825364757390237142fbb18eafd27253be93c0fa5ca0ef",
+    "comparison_pins": {
+      "config.json": "c086c3ae472e9e0087ad6d70930e094952d62a80a233d67b43cd31f1365e6cff",
+      "inputs.json": "88b34bd5def0064551093a34290cb82c22545f26328be3f71b990bf214e3ff3a",
+      "recovery/diagnostics/native_000250.json": "71306f667cba71f9d9a5838ae3d9f015fc93a62096e4207d95a50ed26ebcd721",
+      "source_manifest.json": "becac462d4a2b25d36e9f915a586413c5f4b2ddbe7134365e3ef9d538abc3a80"
+    },
+    "comparison_root": "/data3/praveen/experiments/vpp2-selected-mask-recovery-curated30k-20261101",
+    "diagnostic_noise_draws": 2,
+    "diagnostic_windows_per_task": 2,
+    "final_lr_fraction": 0.1,
+    "gradient_updates": [
+      55,
+      150,
+      250
+    ],
+    "hold_through": 250,
+    "learning_rate": 1e-06,
+    "load_scratch": "/data3/praveen/experiments/vpp2-recovery55-no-kv-to1000-20261103/artifacts/load-scratch",
+    "parent_identity": "d85b815fd1e304baea64a9f1fd246a2b84ef3b86893a7bba72710e34bea26127",
+    "parent_root": "/data3/praveen/experiments/vpp2-selected-mask-recovery-20261101",
+    "parent_tag": "update_000055",
+    "parent_update": 55,
+    "paused_replay_root": "/data3/praveen/experiments/vpp2-recovery250-faithful-replay-20261102",
+    "review_update": 250,
+    "schedule_endpoint": 2399,
+    "schema": "recovery55-low-lr-no-kv-v1",
+    "validation_every": 50
+  },
+  "recovery_subset": {
+    "export_manifest_sha256": "2917adfeadbc2c6d4da60b7739dbee861d7f318f8fc66877f1ca6bd691938172",
+    "export_path": "/data3/praveen/experiments/vpp2-selected-mask-recovery-20261101/exports/update_001500",
+    "parent_checkpoint_identity": "333fa7a74168926559bf6be86291644f369c11e5680c76539580b951524fa8a7",
+    "parent_config_sha256": "d1fcf70b6a625698866a175bd10c24238067a3c6a0e4f945c48e360e7b0cff77",
+    "parent_export_receipt_sha256": "a8fec6af95b6243fdae2e17dc82f089b316b1a77b19fc8f816e545b12c5fcf2f",
+    "parent_identity": "d85b815fd1e304baea64a9f1fd246a2b84ef3b86893a7bba72710e34bea26127",
+    "parent_inputs_sha256": "296441c7ac166873cc40e1b4056f814844f7fa9d738d46064cea9f5bb8100030",
+    "parent_receipt_sha256": "038a56811ed0cc6aee63fbea71727f985b64db06bbd89a3f53192c44c98e6594",
+    "parent_root": "/data3/praveen/experiments/vpp2-selected-mask-recovery-20261101",
+    "parent_selected_sha256": "aaf1290c299704293b1dd936cbc92dcf0b4aa0043ef8947be86836957c499e9e",
+    "parent_sources_sha256": "ed356b55e1b676522cb7d99de77780306a02b6e8887c91421a9c0b6b83dd3421",
+    "parent_tag": "update_000055",
+    "parent_update": 55,
+    "sampler": "original_curated_task_balanced",
+    "schema": "curated30k-recovery-continuation-v1",
+    "updates": 2344,
+    "windows": 30000
+  },
+  "reference_split": "/data1/praveen/experiments/vpp2-online-distill-20261015/prepared_split",
+  "reliability": {
+    "floor": 1e-08,
+    "margin_fraction": 0.01,
+    "method": "relative_student_advantage_with_baseline_component_veto"
+  },
+  "root": "/data3/praveen/experiments/vpp2-recovery55-no-kv-to1000-20261103",
+  "runtime_conditioning_cache": null,
+  "schema": "vpp2-flexible-joint-mask-v1",
+  "seed": 100008,
+  "size_coefficient": {
+    "first_update": 193,
+    "invalid_measurement": "checkpoint_and_stop",
+    "last_regular_update": 200,
+    "last_replacement_update": 232,
+    "ramp_updates": 100,
+    "samples_per_family": 8,
+    "target_gradient_fraction": 0.1,
+    "upper_cap": 1.0
+  },
+  "teacher_bundle": "/data1/praveen/experiments/vpp2-joint-feature-cache-20261013/assets/model/checkpoints/joint2b_s100000",
+  "train": {
+    "action_gt_weight": 1.0,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "checkpoint_every": 250,
+    "count_budget_weight": 0.0,
+    "final_lr_fraction": 0.1,
+    "flow_monitor_every": 500,
+    "frozen_action": true,
+    "frozen_video": false,
+    "global_batch": 256,
+    "gradient_clip": 1.0,
+    "kv_layers": [],
+    "kv_weight": 0.0,
+    "mask_lr": 0.01,
+    "mask_weight_decay": 0.0,
+    "max_updates": 3000,
+    "micro_batch": 4,
+    "minimum_updates": 2000,
+    "native_windows_per_task": 4,
+    "teacher_action_weight": 0.0,
+    "teacher_video_weight": 0.05,
+    "video_lr": 1e-06,
+    "video_weight_decay": 0.01,
+    "warmup_updates": 50,
+    "world_size": 8
+  },
+  "validation": {
+    "bf16_action_video_relative_tolerance": 0.01,
+    "fp32_relative_tolerance": 2e-05
+  },
+  "wan_root": "/data1/praveen/experiments/vpp2-joint-feature-cache-20261013/assets/model/checkpoints/Wan2.1-I2V-14B-480P",
+  "wandb": {
+    "entity": "bakery_ismail-bagel-network",
+    "group": "recovery55-no-kv-20261102",
+    "name": "recovery55-no-kv-continue250-to1000",
+    "project": "vpp2-thaw-robodojo"
+  }
+}

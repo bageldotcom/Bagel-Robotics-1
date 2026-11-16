@@ -1,0 +1,12 @@
+{
+  "source": "/home/praveen/vpp2-save-all-20261103/preserve_checkpoints.py",
+  "source_sha256": "be649aff4ffb37861da582258d8d4ecbbb1709dcb19d7bfe7a762af89f9f1690",
+  "tests_passed": 5,
+  "training_job": 52231,
+  "training_source_unchanged": true,
+  "training_restart": false,
+  "policy_archive": "/data2/praveen/experiments/vpp2-recovery55-no-kv-to1000-20261103-policy-archive",
+  "restart_archive": "/data3/praveen/experiments/vpp2-recovery55-no-kv-to1000-20261103/preserved_checkpoints/checkpoints",
+  "copy_rate_limit_mib_s": 128,
+  "export_all_validation_requires_code_reload": true
+}

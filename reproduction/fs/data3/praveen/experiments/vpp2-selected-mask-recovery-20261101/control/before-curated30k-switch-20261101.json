@@ -1,0 +1,31 @@
+{
+  "at": "2026-11-01T21:08:07.033220+00:00",
+  "jobs": {
+    "time_utc": "2026-11-01T20:53:24.867013+00:00",
+    "comparison": 50812,
+    "cpu_checks": 50813,
+    "export": 50814,
+    "verify": 50815,
+    "recovery": [
+      50844,
+      50845,
+      50846
+    ],
+    "supersedes_failed_recovery": [
+      50816,
+      50817,
+      50818
+    ],
+    "reason": "Checkpointed at update 38; batch eight failed CUDA memory test; resume unchanged batch four and global batch 256.",
+    "total_updates": 6000,
+    "continuations_are_same_run": true,
+    "recovery_before_batch_benchmark": [
+      50827,
+      50828,
+      50829
+    ],
+    "benchmark": 50843,
+    "benchmark_conclusion": "/data3/praveen/experiments/vpp2-recovery-batch8-benchmark-20261101/conclusion.json"
+  },
+  "squeue": "       JOBID        STATE         TIME NODELIST(REASON)\n       50846      PENDING         0:00 (Dependency)\n       50845      PENDING         0:00 (Dependency)\n       50844      RUNNING        18:13 bagel-gpu-03\n"
+}

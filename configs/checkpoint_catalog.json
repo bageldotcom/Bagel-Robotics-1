@@ -1,0 +1,367 @@
+[
+  {
+    "name": "mask1500",
+    "label": "Mask learning1500, complete training state",
+    "original_path": "/data3/praveen/experiments/vpp2-flexible-mask-pressure2x-20261101/mask/checkpoints/update_001500",
+    "exists_when_checked": true,
+    "weights_only": false,
+    "update": 1500,
+    "identity": "e00de20e9f535866e0961ce83780def98f3b451d700fd64d4a8a004918456b6a",
+    "receipt": {
+      "checkpoint_identity": "d618225a419aa83c8ceaaec9f7a14d274c30aea110ba9918bc5fcb7a1456e5bd",
+      "files": {
+        "bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt": {
+          "sha256": "965a99c090198591e26d1c713d7fa800c8af7799cddb66f59379170580e0832e",
+          "size": 22687936723
+        },
+        "bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt": {
+          "sha256": "3c5f71f1eaadf38067bad6f0161df3807a0c8bac0e0b380535838f1f65f43059",
+          "size": 22694526240
+        },
+        "bf16_zero_pp_rank_2_mp_rank_00_optim_states.pt": {
+          "sha256": "313551687aee28accb82e0099a6a90ef462c16366e926543ebbde72c59614061",
+          "size": 22692093396
+        },
+        "bf16_zero_pp_rank_3_mp_rank_00_optim_states.pt": {
+          "sha256": "412f4ea720d0a312412569efc3be77f619fe5ca844bea5c773159b1359ede7dc",
+          "size": 22695101299
+        },
+        "bf16_zero_pp_rank_4_mp_rank_00_optim_states.pt": {
+          "sha256": "bb38120defa6df5e8b62fd0a3622a7cf31a95a3065816c6793420ed42064b4d6",
+          "size": 22692700087
+        },
+        "bf16_zero_pp_rank_5_mp_rank_00_optim_states.pt": {
+          "sha256": "7ad3d5bf31ba46ba11c86b7146f1e1185858be0093cd9570a3073afe07452e23",
+          "size": 22686602104
+        },
+        "bf16_zero_pp_rank_6_mp_rank_00_optim_states.pt": {
+          "sha256": "b8f65e81c33cbf5a6629a7dd8e7138ce659995b8c5726f84115285e1f6ef41a4",
+          "size": 22678093684
+        },
+        "bf16_zero_pp_rank_7_mp_rank_00_optim_states.pt": {
+          "sha256": "e81a9568fcc597c3bc97cb1342c711b3d2c97a8205312679e1ca324c07793967",
+          "size": 22677913237
+        },
+        "zero_pp_rank_0_mp_rank_00_model_states.pt": {
+          "sha256": "3c85158913e5bc369642c64cefbb66d4b15a01b932bac11e4b49ad21c758cdc2",
+          "size": 10686297
+        },
+        "zero_pp_rank_1_mp_rank_00_model_states.pt": {
+          "sha256": "bf78ba0ab07984eec1775efa6a796a59e424fc34cea5404f672f7ffc24267983",
+          "size": 10686301
+        },
+        "zero_pp_rank_2_mp_rank_00_model_states.pt": {
+          "sha256": "e204e162551bf8616ea7ff9e13a41f48b480a5c4804cb8fee1ac60a3f1336872",
+          "size": 10686299
+        },
+        "zero_pp_rank_3_mp_rank_00_model_states.pt": {
+          "sha256": "5d173b2b05e6848995c3d9a7983c35052ec3a39e891167fd752cf26ed270a336",
+          "size": 10686297
+        },
+        "zero_pp_rank_4_mp_rank_00_model_states.pt": {
+          "sha256": "28af7bb83394b04f14b3c0c1a4b23ab3d697676edc9a934fb3b51b0f1421a54b",
+          "size": 10686297
+        },
+        "zero_pp_rank_5_mp_rank_00_model_states.pt": {
+          "sha256": "2c3da4062d38d83e8db46b6454dd4ec8035ae24fdb6b921241c8ffe51ab12616",
+          "size": 10686297
+        },
+        "zero_pp_rank_6_mp_rank_00_model_states.pt": {
+          "sha256": "35f50559c3c722950be462822b8a93e1bbc2ea368ab7fb9d63161279c5a04361",
+          "size": 10686297
+        },
+        "zero_pp_rank_7_mp_rank_00_model_states.pt": {
+          "sha256": "e6727a6e97651054b3549a9055f27001ee07e35b3c5a1cfcde0d14d6f07e1bdc",
+          "size": 10686298
+        }
+      },
+      "identity": "e00de20e9f535866e0961ce83780def98f3b451d700fd64d4a8a004918456b6a",
+      "mask_identity": "c6542ae773517e3ec8ec6032dc3b0e2119c9455bf4629433e75210bad6ca4cc0",
+      "recovery_export_sha256": null,
+      "stage": "mask",
+      "update": 1500
+    }
+  },
+  {
+    "name": "mask-selection",
+    "label": "Learned scores and exact binary indices",
+    "original_path": "/data3/praveen/experiments/vpp2-flexible-mask-pressure2x-20261101/mask/masks_001500.pt",
+    "exists_when_checked": true,
+    "weights_only": true
+  },
+  {
+    "name": "compact1500",
+    "label": "Physical export before recovery",
+    "original_path": "/data3/praveen/experiments/vpp2-selected-mask-recovery-20261101/exports/update_001500",
+    "exists_when_checked": true,
+    "weights_only": true
+  },
+  {
+    "name": "recovery55",
+    "label": "Starting full recovery state",
+    "original_path": "/data3/praveen/experiments/vpp2-selected-mask-recovery-20261101/recovery/checkpoints/update_000055",
+    "exists_when_checked": true,
+    "weights_only": false,
+    "update": 55,
+    "identity": "d85b815fd1e304baea64a9f1fd246a2b84ef3b86893a7bba72710e34bea26127",
+    "receipt": {
+      "checkpoint_identity": "333fa7a74168926559bf6be86291644f369c11e5680c76539580b951524fa8a7",
+      "files": {
+        "bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt": {
+          "sha256": "52ba28d5bdca2106878ad7f4b89ed9d4bf97f75e1003b4699c7a6d25c4c606b6",
+          "size": 17215536516
+        },
+        "bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt": {
+          "sha256": "c8e8a45df54157b404408ec3e7fc6343a3da024dc5559342d585d8fca693dec5",
+          "size": 17220185646
+        },
+        "bf16_zero_pp_rank_2_mp_rank_00_optim_states.pt": {
+          "sha256": "4b5b4b2a00fcc6aaaa3795d614c5d775fe941cb7133315232b3c19a5793a00c0",
+          "size": 17219178745
+        },
+        "bf16_zero_pp_rank_3_mp_rank_00_optim_states.pt": {
+          "sha256": "367207d06b11884ac7b14ecb3fa8dc56ad042a21ac513c172a3826cd533102c5",
+          "size": 17221731678
+        },
+        "bf16_zero_pp_rank_4_mp_rank_00_optim_states.pt": {
+          "sha256": "2ebee259660dd7541fc59af83d0fdce3522a24862588e10016a642224c977fc3",
+          "size": 17219243897
+        },
+        "bf16_zero_pp_rank_5_mp_rank_00_optim_states.pt": {
+          "sha256": "7084523d0bd5f7aff6fc49c4b41c5c633680790b2d730633de51f2747cab73c4",
+          "size": 17211909050
+        },
+        "bf16_zero_pp_rank_6_mp_rank_00_optim_states.pt": {
+          "sha256": "88c97ac47bbe9f265aaa9c269f5d3a8f7ad0c05eb051f17d88c394491785565f",
+          "size": 17200546642
+        },
+        "bf16_zero_pp_rank_7_mp_rank_00_optim_states.pt": {
+          "sha256": "f2396f33927651f52f586d2e0cc4a9780ea06c5ed4a294735236e176512f7d43",
+          "size": 17202277422
+        },
+        "zero_pp_rank_0_mp_rank_00_model_states.pt": {
+          "sha256": "cb4edffc94e10f122b8e3a8571dc1dc7ed1369264547433d9b559ac3632b9d0d",
+          "size": 77548
+        },
+        "zero_pp_rank_1_mp_rank_00_model_states.pt": {
+          "sha256": "f7d59e904fe4da281acda71cb0f968af560d7bfad7d4491bd87ec0fd237f801e",
+          "size": 77553
+        },
+        "zero_pp_rank_2_mp_rank_00_model_states.pt": {
+          "sha256": "ffb67d6fd7661b66957b24eaf7887d7981d5df09fe63b8df22765449b3f5e76b",
+          "size": 77550
+        },
+        "zero_pp_rank_3_mp_rank_00_model_states.pt": {
+          "sha256": "45f78ba66573f19c5067a59133e8afafc7b86b0aca3f4f8c30a75c828d1a8275",
+          "size": 77548
+        },
+        "zero_pp_rank_4_mp_rank_00_model_states.pt": {
+          "sha256": "4b94c8eeeac90a53573dc5fff4a42f56543fcfce1f0bba645cca52e8322b6075",
+          "size": 77550
+        },
+        "zero_pp_rank_5_mp_rank_00_model_states.pt": {
+          "sha256": "d6840df1efb5193a904de0ecf5b7946f1a9f4d974b960754f5e29cacdd53c437",
+          "size": 77547
+        },
+        "zero_pp_rank_6_mp_rank_00_model_states.pt": {
+          "sha256": "069425247abfb497dca52f0c295fa022bcaaee9287278abc2a634e6c9346cbc1",
+          "size": 77549
+        },
+        "zero_pp_rank_7_mp_rank_00_model_states.pt": {
+          "sha256": "729c2e6774865ef2cf643339dc2f5d896d4b73fe99872085e5df197e66dd46f8",
+          "size": 77548
+        }
+      },
+      "identity": "d85b815fd1e304baea64a9f1fd246a2b84ef3b86893a7bba72710e34bea26127",
+      "mask_identity": null,
+      "recovery_export_sha256": "2917adfeadbc2c6d4da60b7739dbee861d7f318f8fc66877f1ca6bd691938172",
+      "stage": "recovery",
+      "update": 55
+    }
+  },
+  {
+    "name": "recovery1000",
+    "label": "Best inference bundle through1000",
+    "original_path": "/data3/praveen/experiments/vpp2-recovery55-no-kv-to1000-20261103/recovery/best_models/update_001000",
+    "exists_when_checked": true,
+    "weights_only": true,
+    "update": 1000,
+    "identity": "790bffc9464fa7a026aa43b217aec2033d186895cad643166daa0bcc01914d5c",
+    "receipt": {
+      "files": {
+        "action.pt": "9b04836abe5a30972e69ee84e5f5e39c09bf53dd45865551e1d04b42ead90ec3",
+        "compact_architecture.json": "a7f6696ab9a9beca785531c2402b81ccd1550745cb6e9ccaad67f658630f6b32",
+        "dataset_stats.json": "2649d4e3ff3d6d400c9953b7c20c79541474f9c38a8a9916b9caacecd8578f16",
+        "validation.json": "9806ad2b0b58f879351da58eede46507a79433ec9e4eb8f37f415cf58f2ef70e",
+        "video.pt": "fb62db0b3a74a53aeab60f4b1acc8a5be47274f5c9db166684043521fe2a40bb"
+      },
+      "gt_action_mse": 0.0005726480308242441,
+      "identity": "790bffc9464fa7a026aa43b217aec2033d186895cad643166daa0bcc01914d5c",
+      "inference_teacher_required": false,
+      "initial_selection_sha256": "c6542ae773517e3ec8ec6032dc3b0e2119c9455bf4629433e75210bad6ca4cc0",
+      "mask_modules_required": false,
+      "recovery_export_sha256": "2917adfeadbc2c6d4da60b7739dbee861d7f318f8fc66877f1ca6bd691938172",
+      "recovery_kv_decay": null,
+      "recovery_subset": {
+        "export_manifest_sha256": "2917adfeadbc2c6d4da60b7739dbee861d7f318f8fc66877f1ca6bd691938172",
+        "export_path": "/data3/praveen/experiments/vpp2-selected-mask-recovery-20261101/exports/update_001500",
+        "parent_checkpoint_identity": "333fa7a74168926559bf6be86291644f369c11e5680c76539580b951524fa8a7",
+        "parent_config_sha256": "d1fcf70b6a625698866a175bd10c24238067a3c6a0e4f945c48e360e7b0cff77",
+        "parent_export_receipt_sha256": "a8fec6af95b6243fdae2e17dc82f089b316b1a77b19fc8f816e545b12c5fcf2f",
+        "parent_identity": "d85b815fd1e304baea64a9f1fd246a2b84ef3b86893a7bba72710e34bea26127",
+        "parent_inputs_sha256": "296441c7ac166873cc40e1b4056f814844f7fa9d738d46064cea9f5bb8100030",
+        "parent_receipt_sha256": "038a56811ed0cc6aee63fbea71727f985b64db06bbd89a3f53192c44c98e6594",
+        "parent_root": "/data3/praveen/experiments/vpp2-selected-mask-recovery-20261101",
+        "parent_selected_sha256": "aaf1290c299704293b1dd936cbc92dcf0b4aa0043ef8947be86836957c499e9e",
+        "parent_sources_sha256": "ed356b55e1b676522cb7d99de77780306a02b6e8887c91421a9c0b6b83dd3421",
+        "parent_tag": "update_000055",
+        "parent_update": 55,
+        "sampler": "original_curated_task_balanced",
+        "schema": "curated30k-recovery-continuation-v1",
+        "updates": 2344,
+        "windows": 30000
+      },
+      "selection_metric": "task_macro_ground_truth_native_action_mse",
+      "simulation_completed": false,
+      "stage": "recovery",
+      "update": 1000,
+      "validation_sha256": "9806ad2b0b58f879351da58eede46507a79433ec9e4eb8f37f415cf58f2ef70e",
+      "video_parameters": 12468409664,
+      "weights_only": true
+    }
+  },
+  {
+    "name": "recovery950",
+    "label": "Second-best inference bundle",
+    "original_path": "/data3/praveen/experiments/vpp2-recovery55-no-kv-to1000-20261103/recovery/best_models/update_000950",
+    "exists_when_checked": true,
+    "weights_only": true,
+    "update": 950,
+    "identity": "790bffc9464fa7a026aa43b217aec2033d186895cad643166daa0bcc01914d5c",
+    "receipt": {
+      "files": {
+        "action.pt": "252a2e65cd6bed95958f6485db784346777f8e95a0c885f6848a8390190d358e",
+        "compact_architecture.json": "a7f6696ab9a9beca785531c2402b81ccd1550745cb6e9ccaad67f658630f6b32",
+        "dataset_stats.json": "2649d4e3ff3d6d400c9953b7c20c79541474f9c38a8a9916b9caacecd8578f16",
+        "validation.json": "188ba2e105c8fb6443f196052452164a8905b724544415c1573734c9189fdb70",
+        "video.pt": "ba9593ee1bcfb3c14d23ba0cfcf5688132b93ad4e1c4fa530556e0d217d63778"
+      },
+      "gt_action_mse": 0.0005777325033802429,
+      "identity": "790bffc9464fa7a026aa43b217aec2033d186895cad643166daa0bcc01914d5c",
+      "inference_teacher_required": false,
+      "initial_selection_sha256": "c6542ae773517e3ec8ec6032dc3b0e2119c9455bf4629433e75210bad6ca4cc0",
+      "mask_modules_required": false,
+      "recovery_export_sha256": "2917adfeadbc2c6d4da60b7739dbee861d7f318f8fc66877f1ca6bd691938172",
+      "recovery_kv_decay": null,
+      "recovery_subset": {
+        "export_manifest_sha256": "2917adfeadbc2c6d4da60b7739dbee861d7f318f8fc66877f1ca6bd691938172",
+        "export_path": "/data3/praveen/experiments/vpp2-selected-mask-recovery-20261101/exports/update_001500",
+        "parent_checkpoint_identity": "333fa7a74168926559bf6be86291644f369c11e5680c76539580b951524fa8a7",
+        "parent_config_sha256": "d1fcf70b6a625698866a175bd10c24238067a3c6a0e4f945c48e360e7b0cff77",
+        "parent_export_receipt_sha256": "a8fec6af95b6243fdae2e17dc82f089b316b1a77b19fc8f816e545b12c5fcf2f",
+        "parent_identity": "d85b815fd1e304baea64a9f1fd246a2b84ef3b86893a7bba72710e34bea26127",
+        "parent_inputs_sha256": "296441c7ac166873cc40e1b4056f814844f7fa9d738d46064cea9f5bb8100030",
+        "parent_receipt_sha256": "038a56811ed0cc6aee63fbea71727f985b64db06bbd89a3f53192c44c98e6594",
+        "parent_root": "/data3/praveen/experiments/vpp2-selected-mask-recovery-20261101",
+        "parent_selected_sha256": "aaf1290c299704293b1dd936cbc92dcf0b4aa0043ef8947be86836957c499e9e",
+        "parent_sources_sha256": "ed356b55e1b676522cb7d99de77780306a02b6e8887c91421a9c0b6b83dd3421",
+        "parent_tag": "update_000055",
+        "parent_update": 55,
+        "sampler": "original_curated_task_balanced",
+        "schema": "curated30k-recovery-continuation-v1",
+        "updates": 2344,
+        "windows": 30000
+      },
+      "selection_metric": "task_macro_ground_truth_native_action_mse",
+      "simulation_completed": false,
+      "stage": "recovery",
+      "update": 950,
+      "validation_sha256": "188ba2e105c8fb6443f196052452164a8905b724544415c1573734c9189fdb70",
+      "video_parameters": 12468409664,
+      "weights_only": true
+    }
+  },
+  {
+    "name": "resume1000",
+    "label": "Full resumable recovery1000 state",
+    "original_path": "/data3/praveen/experiments/vpp2-recovery55-no-kv-to1000-20261103/recovery/checkpoints/update_001000",
+    "exists_when_checked": true,
+    "weights_only": false,
+    "update": 1000,
+    "identity": "790bffc9464fa7a026aa43b217aec2033d186895cad643166daa0bcc01914d5c",
+    "receipt": {
+      "checkpoint_identity": "2899ec0a0f6af889a1babd95c7475e7bc6449b39b12b354384964f5abd30d388",
+      "files": {
+        "bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt": {
+          "sha256": "0d33035235009137414b82d1d8e08f8042e3b6b2a5751f8078ee7eb66d7c4dee",
+          "size": 17208428484
+        },
+        "bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt": {
+          "sha256": "85ea00ab82114fe05b62f0441b8615f5e2c569d4cdee1cd0d7eaee96243fed63",
+          "size": 17213174428
+        },
+        "bf16_zero_pp_rank_2_mp_rank_00_optim_states.pt": {
+          "sha256": "37c505863a1129efe703fd34d992b45adc440e9dd93bd1306da9d39aa856a0a8",
+          "size": 17211998172
+        },
+        "bf16_zero_pp_rank_3_mp_rank_00_optim_states.pt": {
+          "sha256": "923d3b5fde2d350eb134cc3bfc93a6a98d589b0ef062d8ee945c184cf4422539",
+          "size": 17214269733
+        },
+        "bf16_zero_pp_rank_4_mp_rank_00_optim_states.pt": {
+          "sha256": "c362c831a50935204078a434f05862560d4657d61a2d822f4bade80ab8ec4751",
+          "size": 17211683350
+        },
+        "bf16_zero_pp_rank_5_mp_rank_00_optim_states.pt": {
+          "sha256": "9ff16b0c5a15154c6e486d206379ac70f58fb8a156be12ed7ba777d537ccba76",
+          "size": 17205282759
+        },
+        "bf16_zero_pp_rank_6_mp_rank_00_optim_states.pt": {
+          "sha256": "d3d625ded0abb49ae560a5a9e7356f2f345246f6d2deb1fbf492a8c3dde3a68d",
+          "size": 17193645344
+        },
+        "bf16_zero_pp_rank_7_mp_rank_00_optim_states.pt": {
+          "sha256": "b64e40e2b433e0a95f28ccebd0f3fa899f2bedfb77ef62a9b0371e3f093a21a0",
+          "size": 17196229893
+        },
+        "zero_pp_rank_0_mp_rank_00_model_states.pt": {
+          "sha256": "4eec7353b2f34dbfff54df2013f5261bb20643e1509760766f02686d37d4a94e",
+          "size": 78779
+        },
+        "zero_pp_rank_1_mp_rank_00_model_states.pt": {
+          "sha256": "ab1b0fd39ea72506f2d8f74d570968e646c01ca82f3cd04705d888b137f74090",
+          "size": 78783
+        },
+        "zero_pp_rank_2_mp_rank_00_model_states.pt": {
+          "sha256": "30082af65f03a955dc837eb72eebf1dc2dc1aec23af1f5d20eef1a9f6edae2fe",
+          "size": 78780
+        },
+        "zero_pp_rank_3_mp_rank_00_model_states.pt": {
+          "sha256": "126b9d5641ba0e0c59967ef41285771ad5c76e70a8f8896c745fb9a4f1b54a81",
+          "size": 78781
+        },
+        "zero_pp_rank_4_mp_rank_00_model_states.pt": {
+          "sha256": "93278bc910a03046b2463d964d4187d2d6ae7ddd33b3f1f039aaf425b0dc8924",
+          "size": 78782
+        },
+        "zero_pp_rank_5_mp_rank_00_model_states.pt": {
+          "sha256": "a63df2fdeb27465b234d0f9f32283a86043d38a6e85a96fc89d16046fe5f4c22",
+          "size": 78770
+        },
+        "zero_pp_rank_6_mp_rank_00_model_states.pt": {
+          "sha256": "c7cad4d47a16c0a1bc33e39255001ac3c0b61e7fcdb36ccb337483e4d83a46a8",
+          "size": 78779
+        },
+        "zero_pp_rank_7_mp_rank_00_model_states.pt": {
+          "sha256": "43029cb15da85321fff5e2751376e7178dd239c852d92a6dbc3d73d1ab8db0f2",
+          "size": 78779
+        }
+      },
+      "identity": "790bffc9464fa7a026aa43b217aec2033d186895cad643166daa0bcc01914d5c",
+      "mask_identity": null,
+      "recovery_export_sha256": "2917adfeadbc2c6d4da60b7739dbee861d7f318f8fc66877f1ca6bd691938172",
+      "stage": "recovery",
+      "update": 1000
+    }
+  }
+]

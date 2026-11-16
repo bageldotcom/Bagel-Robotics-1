@@ -1,0 +1,39 @@
+{
+  "created_at": "2026-10-31T14:12:06.266414+00:00",
+  "failure": {
+    "cause": "DeepSpeed process group was not registered before ZeRO config, giving world_size=1",
+    "dependent_train_cancelled": "49996",
+    "job_id": "49995",
+    "updates_completed": 0
+  },
+  "identity": "cfa100f8128948492d1ee7f72234f3d9aedfcdbb7f049c921917b3048402df21",
+  "jobs": [
+    {
+      "dependency": null,
+      "job_id": "49994",
+      "script": "/data3/praveen/experiments/vpp2-flexible-mask-recovery-20261031/slurm/structure.sbatch",
+      "script_sha256": "6e3e277a4186aa645c046c609c1aeafe973677d5c485487b99b67dc4ea18004d",
+      "stage": "structure",
+      "stderr": ""
+    },
+    {
+      "dependency": "afterok:49994",
+      "job_id": "49995",
+      "script": "/data3/praveen/experiments/vpp2-flexible-mask-recovery-20261031/slurm/distributed.sbatch",
+      "script_sha256": "19687369f402c2d85c7411c55f79ee6efbb0646425726dd64a7b12ebf8cacb74",
+      "stage": "distributed",
+      "stderr": ""
+    },
+    {
+      "dependency": "afterok:49995",
+      "job_id": "49996",
+      "script": "/data3/praveen/experiments/vpp2-flexible-mask-recovery-20261031/slurm/train.sbatch",
+      "script_sha256": "cb89ab68db53a74ada83efc0b03b616049513508ce592351798455b92ac798b5",
+      "stage": "train",
+      "stderr": ""
+    }
+  ],
+  "node": "bagel-gpu-03",
+  "source": "/data3/praveen/experiments/vpp2-flexible-mask-recovery-20261031/source-b8c231523dae",
+  "training_requires_gpu_receipt": true
+}

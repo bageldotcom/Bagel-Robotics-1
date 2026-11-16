@@ -1,0 +1,8 @@
+{
+  "gpu_verified": false,
+  "identity": "d337dd2cd1a27c733930a947bb8ca48718d8b19b1b917c37b5d48184e6910f78",
+  "jobs_submitted": false,
+  "passed": true,
+  "pytest_log": "/data3/praveen/experiments/vpp2-fresh-mask-no-kv-20261103/checks/pytest.txt",
+  "pytest_sha256": "2f3e65c3acfd5966fff0a3dc9d3cf2dd24bdbe429cb5909738978b2a497b118b"
+}

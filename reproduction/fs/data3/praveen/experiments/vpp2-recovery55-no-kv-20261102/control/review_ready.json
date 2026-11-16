@@ -1,0 +1,10 @@
+{
+  "automatic_further_training": false,
+  "checkpoint_saved": true,
+  "native_export_saved": true,
+  "original55_preserved": true,
+  "original_replay_preserved": true,
+  "schedule_endpoint": 2399,
+  "training_stopped_for_review": true,
+  "update": 250
+}

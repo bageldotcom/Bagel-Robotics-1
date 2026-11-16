@@ -1,0 +1,32 @@
+{
+  "utc": "2026-11-01T13:54:09.119288+00:00",
+  "files": {
+    "/data3/praveen/experiments/vpp2-flexible-mask-pressure2x-20261101/control/watch_handoff.py": "ae059419684b42f9fd74e462f6ee8d62642eaba0c3be7d66ce244639ee94c98f",
+    "/data3/praveen/experiments/vpp2-flexible-mask-pressure2x-20261101/control/test_watch_handoff.py": "e6cda8fb4a561eaf21abbf71b7c92f1b6742b053dab3698c2d76a378a2392142",
+    "/data3/praveen/experiments/vpp2-flexible-mask-pressure2x-20261101/control/launcher_gate.py": "c1429fc8b42aa22434d2b25cd5d36944d26574283fe9af560fc119e070f975b1",
+    "/data3/praveen/experiments/vpp2-flexible-mask-pressure2x-20261101/control/bind_checkpoint.py": "f345ee17d04162a0a99a82017b5137f893b0b56a1ab4ce5d4e0e122f06f6c17e",
+    "/data3/praveen/experiments/vpp2-flexible-mask-pressure2x-20261101/slurm/watch_handoff.sbatch": "f9cf7ca56ec76c10cb7adf8fd86564bacd6ad8d9b5e7457a6382244ed27f93f5",
+    "/data3/praveen/experiments/vpp2-flexible-mask-execution-review-20261101/control/prepare_resume.py": "b8528cf6fd54e7fe783852d41684f297773ec66b89c678381808781fb400caa0"
+  },
+  "tests_passed": 19,
+  "training_cpu_tests_passed": 165,
+  "authorization": "User yes: activate brief checkpoint-and-resume around update 1250, ramp size coefficient to 2x over 250 updates",
+  "target_update": 1250,
+  "checkpoint_race_policy": "Actual completed update 1250 or next update; never rewind",
+  "gpu_work": false,
+  "planned_training_unchanged_until_resume": true,
+  "watcher_resources": {
+    "partition": "smoke",
+    "cpus": 1,
+    "memory_gib": 8,
+    "gpus": 0,
+    "max_seconds": 9000,
+    "slurm_time_hours": 3
+  },
+  "gating_mechanism": "verified launcher wait; no Slurm resource or hold updates",
+  "previous_watcher_job": 50520,
+  "previous_attempt_effect": "No training stopped and no pending job modified",
+  "binder_permission": "Only exact managed launchers with a live pre-model wait marker may coexist with CPU binding",
+  "original_launcher_sha256": "55ccbded2f2acdbe543886f13ecd992a594acabb12b11de38e8ac80c0e150419",
+  "active_training_source_unchanged": true
+}

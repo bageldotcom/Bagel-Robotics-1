@@ -1,0 +1,27 @@
+{
+  "auxiliary": {
+    "Wan2.1_VAE.pth": {
+      "sha256": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981",
+      "size": 507609880
+    },
+    "models_clip_open-clip-xlm-roberta-large-vit-huge-14.pth": {
+      "sha256": "628c9998b613391f193eb67ff68da9667d75f492911e4eb3decf23460a158c38",
+      "size": 4772359047
+    }
+  },
+  "files": {
+    "action.pt": {
+      "path": "/data1/praveen/experiments/vpp2-joint-feature-cache-20261013/assets/model/checkpoints/joint2b_s100000/action.pt",
+      "sha256": "e3c8bb0e787c6f10e38afc154c75855a0f8b90d747fc5d8767c367d2050e8933"
+    },
+    "dataset_stats.json": {
+      "path": "/data1/praveen/experiments/vpp2-joint-feature-cache-20261013/assets/model/checkpoints/joint2b_s100000/dataset_stats.json",
+      "sha256": "2649d4e3ff3d6d400c9953b7c20c79541474f9c38a8a9916b9caacecd8578f16"
+    },
+    "video.pt": {
+      "path": "/data1/praveen/experiments/vpp2-joint-feature-cache-20261013/assets/model/checkpoints/joint2b_s100000/video.pt",
+      "sha256": "89139f7d043e7c9ad9d24f394e442ce23291e06ef63d1aa44eea1594665e08c4"
+    }
+  },
+  "passed": true
+}
