@@ -37,7 +37,7 @@ This repository provides data preparation, mask learning, physical pruning, reco
 
 ### 1. Get the code
 
-Use Linux and Python 3.10. Cloning this private repository requires Bagel repository access; the checkpoint is public.
+Use Linux and Python 3.10. This repository and the evaluated checkpoint are public; no account or access token is required to download them.
 
 ```bash
 git clone https://github.com/bageldotcom/Bagel-Robotics-1.git

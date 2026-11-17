@@ -2,8 +2,9 @@
 
 Use the [README quickstart](README.md#installation) to install Python 3.10 policy
 dependencies, download and verify the pinned files, and pass both
-debug checks. The standalone inference runtime is included; the private research
-training repository is not needed. Install RoboDojo and its assets separately.
+debug checks. The standalone inference runtime is included. The public
+[training repository](https://github.com/bageldotcom/Bagel-Robotics-1) is optional for
+model reevaluation. Install RoboDojo and its assets separately.
 
 The only policy checkpoint is `cp1000`, from
 [bageldotcom/Bagel-Robotics-1](https://huggingface.co/bageldotcom/Bagel-Robotics-1),
