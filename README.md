@@ -154,4 +154,4 @@ Checkpoint 1000's local three-seed results are **31.59 ± 0.33% success** and **
 
 ## Acknowledgements
 
-Bagel-Robotics-1 builds on [VPP2](https://github.com/roboterax/video-prediction-policy-2). We thank the VPP2, Wan, RoboDojo and XPolicyLab authors for their contributions.
+We thank the VPP2, Wan, RoboDojo and XPolicyLab authors for their contributions.
