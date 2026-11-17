@@ -150,8 +150,8 @@ Checkpoint 1000's local three-seed results are **31.59 ± 0.33% success** and **
 
 **Paper / arXiv: coming soon.** The technical report and citation will be added when available.
 
-<a name="license"></a>
+<a name="acknowledgements"></a>
 
-## 📜 License and acknowledgements
+## Acknowledgements
 
-See [LICENSE](LICENSE), [NOTICE](NOTICE) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Model weights and datasets retain their own terms. We thank the VPP2, Wan, RoboDojo and XPolicyLab authors. The README organization follows [InternW0-Delta](https://github.com/InternRobotics/InternW0-Delta).
+Bagel-Robotics-1 builds on [VPP2](https://github.com/roboterax/video-prediction-policy-2). We thank the VPP2, Wan, RoboDojo and XPolicyLab authors for their contributions.
