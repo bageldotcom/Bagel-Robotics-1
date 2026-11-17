@@ -23,7 +23,7 @@
 
 ## ✨ Overview
 
-**Bagel-Robotics-1** combines data selection, adaptive pruning and recovery training to build a compact world-action model. VPP2 serves as the base model for evaluating the approach.
+**Bagel-Robotics-1** combines data selection, adaptive pruning and recovery training to build a compact world-action model. VPP2 is used as the base model for validation; the data selection, pruning, recovery-training and inference recipe is specific to Bagel-Robotics-1.
 
 - 🗂️ **Focused training data.** Select informative segments across robot demonstrations, balancing task coverage and data quality.
 - ✂️ **Adaptive structured pruning.** Learn which video-expert features, FFN units and cross-attention heads to retain, then export physically smaller tensors. The evaluated video expert has **12.47B parameters — 23.95% fewer** than the base video expert.
@@ -154,4 +154,4 @@ Checkpoint 1000's local three-seed results are **31.59 ± 0.33% success** and **
 
 ## Acknowledgements
 
-We thank the VPP2, RoboDojo and XPolicyLab authors for their contributions.
+We thank the [VPP2](https://github.com/roboterax/video-prediction-policy-2), RoboDojo and XPolicyLab authors for their contributions.
