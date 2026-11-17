@@ -8586,9 +8586,5 @@
   "results/evidence/recovery_pilot/native_000250.json": {
     "sha256": "38d36d3e769f09cbd64e62d701d40103310738efea56e75def4adf133467e8ae",
     "bytes": 88789
-  },
-  "LICENSES/VPP2-upstream-MIT.txt": {
-    "sha256": "8379dddfbbb1154ad9cc57f008f1f8d4a8d26c3de99bd6b36aa4d8067888aa92",
-    "bytes": 1210
   }
 }
