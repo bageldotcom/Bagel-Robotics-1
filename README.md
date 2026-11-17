@@ -154,4 +154,4 @@ Checkpoint 1000's local three-seed results are **31.59 ± 0.33% success** and **
 
 ## Acknowledgements
 
-We thank the VPP2, Wan, RoboDojo and XPolicyLab authors for their contributions.
+We thank the VPP2, RoboDojo and XPolicyLab authors for their contributions.
