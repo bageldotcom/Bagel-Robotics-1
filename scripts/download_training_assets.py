@@ -30,10 +30,8 @@ def main():
             hf_hub_download(base['repo'],name,revision=base['revision'],local_dir=out)
     for name,expected in base['files'].items():
         if sha(out/name)!=expected:raise ValueError('Training artifact checksum mismatch: '+name)
-    import importlib.util
-    spec=importlib.util.spec_from_file_location('bagel_assets',ROOT/'experiments/robodojo/policy/Bagel_Robotics_1/assets.py')
-    module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
-    module.verify_wan(out/'checkpoints/Wan2.1-I2V-14B-480P',full_hash=True)
+    from bagel_robotics.inference.assets import verify_wan
+    verify_wan(out/'checkpoints/Wan2.1-I2V-14B-480P',full_hash=True)
     print('Verified public training base and encoder assets: '+str(out))
 
 

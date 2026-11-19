@@ -5,6 +5,7 @@ __pycache__/
 *.egg-info/
 build/
 dist/
+/local/
 /outputs/
 /external/
 /checkpoints/
@@ -17,3 +18,5 @@ dist/
 *.sif
 *.partial
 wandb/
+
+/configs/*.local.json

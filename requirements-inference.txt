@@ -1,0 +1,20 @@
+# Install the matching CUDA PyTorch wheels first; see docs/EVALUATION.md.
+torch==2.11.0
+torchvision==0.26.0
+numpy==1.26.4
+transformers==4.49.0
+huggingface-hub==0.36.0
+hydra-core==1.3.2
+omegaconf==2.3.0
+einops==0.8.1
+Pillow==12.0.0
+rich==14.2.0
+safetensors==0.5.3
+ftfy==6.3.1
+regex>=2024.11
+sentencepiece>=0.2
+opencv-python-headless==4.11.0.86
+websockets==16.1.1
+h5py==3.16.0
+PyYAML==6.0.3
+msgpack==1.2.3

@@ -1,47 +1,47 @@
-# RoboDojo evaluation
+# Evaluate on RoboDojo
 
-Use the existing public checkpoint and the preserved XPolicyLab adapter. No training assets are required for model reevaluation.
+Evaluation uses the public policy bundle and a thin XPolicyLab adapter under [`benchmarks/robodojo/`](../benchmarks/robodojo). Training demonstrations and full recovery states are not required for inference.
 
-## Install
+## Install the adapter and assets
 
-Create a separate XPolicyLab checkout and install this package's adapter into it:
+Install the simulator and assets with the [RoboDojo guide](https://robodojo-benchmark.com/doc/usage/install-and-download/). Use a dedicated XPolicyLab checkout alongside the benchmark's `env_cfg/` directory, at the revision specified by the evaluation configuration.
+
+From this repository root:
 
 ```bash
-git clone https://github.com/XPolicyLab/XPolicyLab.git /path/to/XPolicyLab
-python scripts/install_adapter.py --xpolicylab /path/to/XPolicyLab
-cd /path/to/XPolicyLab/policy/Bagel_Robotics_1
-PYTHON_BIN=python3.10 bash install.sh /path/to/bagel-policy-env
-PYTHON_BIN=/path/to/bagel-policy-env/bin/python bash download_checkpoint.sh
+python scripts/install_adapter.py --xpolicylab /absolute/path/to/XPolicyLab
+
+BAGEL_POLICY_DIR=/absolute/path/to/XPolicyLab/policy/Bagel_Robotics_1
+BAGEL_POLICY_ENV="$BAGEL_POLICY_DIR/.venv"
+cd "$BAGEL_POLICY_DIR"
+PYTHON_BIN=python3.10 bash install.sh "$BAGEL_POLICY_ENV"
+PYTHON_BIN="$BAGEL_POLICY_ENV/bin/python" bash download_checkpoint.sh
 ```
 
-The installer must run from the installed adapter within XPolicyLab. Running it directly inside this research repository would omit XPolicyLab's server package. The downloader uses the pinned public checkpoint and encoder assets and verifies their complete hashes. The simulator is installed in a separate environment following RoboDojo's installation guide.
+Run installation from the adapter inside XPolicyLab so its server package is available. Use a separate simulator environment. Inference uses PyTorch 2.11.0, torchvision 0.26.0 and CUDA 13.0 wheels. A reference setup is a 96 GB RTX PRO 6000 Blackwell, 128 GiB host RAM and eight CPUs.
 
-## Fixed model settings
+The downloader verifies the configured policy and encoder files. See [MODELS.md](MODELS.md) for storage and artifact requirements.
+
+## Policy settings
 
 | Setting | Value |
 | --- | --- |
-| Predicted action chunk | 32 |
-| Actions executed before replanning | 16 |
-| Denoising | 10 Euler steps, shift 1 |
+| Prediction horizon | 32 actions |
+| Execute before replanning | 16 actions |
+| Denoising | Ten Euler steps, shift one |
 | Precision | BF16 |
 | Temporal blending | 90% new prediction, 10% previous prediction |
-| Observation history | Preserved through the deployment adapter; reset each episode |
-| Checkpoint | Recovery update 1000; pinned revision in `artifact-manifest.json` |
+| Observation history | Retained during each episode, reset between episodes |
 
-Use the same settings for all tasks. K/V matching is a training loss; disabling it does not remove the video K/V features used by the action model.
+Return to the repository root and set local adapter, model, encoder and Python-executable paths in [`configs/evaluation.json`](../configs/evaluation.json). The CLI can download the same pinned assets and run both generated-observation transports:
 
-## Debug, simulation and summaries
+```bash
+python -m bagel_robotics evaluate --config configs/evaluation.json --operation download --dry-run
+python -m bagel_robotics evaluate --config configs/evaluation.json --operation smoke --dry-run
+```
 
-The adapter's [README](../experiments/robodojo/policy/Bagel_Robotics_1/README.md) supplies the standard ten-argument `eval.sh` call and both RGB debug modes. [REEVALUATION.md](../experiments/robodojo/policy/Bagel_Robotics_1/REEVALUATION.md) provides native task, suite and three-seed commands, along with summary generation. Use the simulator's own `scripts/robodojo.sh` rather than a similarly named research helper.
+Inspect the resolved commands, then remove `--dry-run`. Run the GPU smoke operation inside the required allocation. It checks model loading and action prediction in both RGB transport modes; it does not measure task success. Use the simulator's native evaluation entrypoint for full episodes and retain native outputs, failures, task identities and seeds.
 
-## Version provenance
+## Reported results
 
-| Purpose | RoboDojo revision |
-| --- | --- |
-| Historical research episodes | `08b7ee46034c3d0c8a389b2b7bfc138f4d55ee4d` plus recorded local runtime patches |
-| Generated summary scripts and recorded adapter qualification | `f57e1633ffed59761bc8e568cfe7530c4b33381c` |
-| Committee's stated official evaluation target | `f57e1633ffed59761bc8e568cfe7530c4b33381c` |
-
-The summary-script revision does not change the simulator version used for old episodes. Fresh committee-aligned runs should use the agreed official version and retain native outputs. Preserve any startup failure for review; replacement layouts are never enabled silently.
-
-The unchanged [Detailed results](../experiments/robodojo/policy/Bagel_Robotics_1/EVALUATION_RESULTS.md) contains all three-seed task results and the final appendix for 28 later replacements, one repaired Memory episode and four earlier Seed-1 Precision substitutions.
+The reported local three-seed results are **31.59 ± 0.33% success** and **38.36 ± 0.46 partial score /100**, equally weighted across five suites. These results refer to the released evaluated weights. Compare new models using the same inference settings, task coverage, seeds and simulator revision.

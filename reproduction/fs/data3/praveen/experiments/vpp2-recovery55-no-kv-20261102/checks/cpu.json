@@ -1,8 +1,0 @@
-{
-  "gpu_verified": false,
-  "identity": "491ec49869e4d6a098c87ff99e6285ece09d841db4be9b3a638f9d6ae07aff9d",
-  "jobs_submitted": false,
-  "passed": true,
-  "pytest_log": "/data3/praveen/experiments/vpp2-recovery55-no-kv-20261102/checks/pytest.txt",
-  "pytest_sha256": "49b6af12b82ec0aa275001dddd1a92dcf907d1da8f61bd0184d908381c63f98d"
-}

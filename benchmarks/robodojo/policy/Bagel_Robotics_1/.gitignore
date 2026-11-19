@@ -1,0 +1,5 @@
+.bagel_source/
+.venv*/
+checkpoints/
+__pycache__/
+*.pyc

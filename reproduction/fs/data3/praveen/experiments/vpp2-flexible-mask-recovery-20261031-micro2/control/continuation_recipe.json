@@ -1,9 +1,0 @@
-{
-  "identity": "72f7387ca10b6e2b2c08bcab5ad77ec8f9d7afea8ed69777a93a16a8f4ddd6da",
-  "source": "/data3/praveen/experiments/vpp2-flexible-mask-recovery-20261031-micro2/source-aa7bf6c846b9",
-  "parent_update": 31,
-  "global_batch": 256,
-  "micro_batch": 2,
-  "accumulation": 16,
-  "objectives_changed": false
-}

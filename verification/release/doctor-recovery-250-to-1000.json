@@ -1,8 +1,0 @@
-{
-  "stage": "recovery-250-to-1000",
-  "passed": true,
-  "errors": [],
-  "tensor_hashes_checked": false,
-  "gpu_verified": false,
-  "scope": "Paths, source provenance and file completeness; no model execution"
-}

@@ -1,0 +1,14 @@
+{
+  "scope": "Released Bagel-Robotics-1 model",
+  "success_percent": {
+    "mean": 31.59,
+    "population_std_across_three_seeds": 0.33
+  },
+  "partial_score_per_100": {
+    "mean": 38.36,
+    "population_std_across_three_seeds": 0.46
+  },
+  "aggregation": "Equal weighting of five suites",
+  "reported_outcomes": 6300,
+  "qualifications": "Local three-seed results include documented replacement layouts and one repaired episode; not a fresh committee-version evaluation."
+}

@@ -7,6 +7,6 @@ RUN python -m pip install --upgrade pip setuptools wheel packaging
 RUN python -m pip install torch==2.10.0 torchvision==0.25.0 --index-url https://download.pytorch.org/whl/cu128
 COPY requirements-train.txt /tmp/requirements-train.txt
 RUN python -m pip install -r /tmp/requirements-train.txt && python -m pip check
-WORKDIR /opt/vpp2-release
-# Source snapshots are bound read-only from the release/workspace at launch.
+WORKDIR /opt/bagel
+# The installed canonical package is bound read-only at launch.
 CMD ["python", "--version"]

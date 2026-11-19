@@ -1,50 +1,41 @@
-# Data preparation and selection
+# Demonstrations and selection
 
-Use the public `RoboDojo-Benchmark/RoboDojo` dataset at revision `cefcfbbf2497103fe46b99039dbd381976fe4a42`, directory `data/RoboDojo_ee_lerobot_v30_video`. The release reuses the original conversion arithmetic and checks its output against the recorded episode hashes.
+Download the public [RoboDojo dataset](https://huggingface.co/datasets/RoboDojo-Benchmark/RoboDojo) at the dataset revision and directory in [`configs/artifacts.json`](../configs/artifacts.json). Clone the preprocessing reader at `reader_revision` from [`configs/data.json`](../configs/data.json), then set `data.source` and `data.reader` in the research configuration to those local directories.
 
-```bash
-hf download RoboDojo-Benchmark/RoboDojo --repo-type dataset \
-  --revision cefcfbbf2497103fe46b99039dbd381976fe4a42 \
-  --include 'data/RoboDojo_ee_lerobot_v30_video/**' --local-dir /path/to/dataset
+The data configuration also pins normalization and selection hashes. Packaged `resources/native_manifest.json.gz` records each episode's expected arrays and text-context identity. Keep these checks when rebuilding the released inputs; text contexts are downloaded and verified during preparation.
 
-git clone https://github.com/roboterax/video-prediction-policy-2.git external/data-reader
-git -C external/data-reader checkout --detach 72c17acf022494ff63617be86079bb92e92f5bf8
-```
+## Data contract
 
-The data-reader revision is a preprocessing dependency. It does not replace the adaptive pruning or compact inference implementation. Run conversion in the recorded preprocessing environment (Python 3.10, PyTorch 2.11/CUDA 13.0 dependencies); conversion itself uses CPU.
+| Field | Representation |
+| --- | --- |
+| Timing | Native 25 Hz |
+| RGB | Three-camera composition, 240 × 416, including the BF16 round-trip |
+| Actions and state | Absolute dual-arm end-effector targets, 16 values: `[xyz, qwxyz, gripper] × 2` |
+| Episodes | 3,500 source identities; 3,466 training and 34 official held-out episodes |
+| Task conditioning | 35 released text contexts |
 
-Start with one episode in a new directory:
+Conversion uses the native arithmetic and verifies episode hashes. Complete decoded RGB arrays require roughly 556 GB, plus labels and reserve space. Start with one episode in a new output directory; a sample conversion is not a complete dataset. Resume only when source identities and existing episode hashes match.
 
-```bash
-python scripts/prepare_data.py \
-  --source /path/to/dataset/data/RoboDojo_ee_lerobot_v30_video \
-  --vpp2-root external/data-reader --output /path/to/native-sample \
-  --episodes 0 --workers 1 --min-free-gib 10
-```
+Run conversion in the [inference environment](EVALUATION.md) with PyTorch 2.11 and CUDA 13.0 dependencies. Conversion itself uses CPU. Mask learning and recovery use the separate training environment.
 
-For the complete dataset omit `--episodes`. The complete decoded RGB arrays occupy roughly 556 GB, plus labels and reserve space. The script checks available storage before conversion and never marks a sample as a complete dataset. Completed episodes can be resumed only with matching source identities and checksums.
-
-## Exact data contract
-
-- All 3,500 original episode identities and 25 Hz timing are preserved.
-- RGB uses the native three-camera composition at 240 × 416, including the original BF16 round-trip.
-- Actions and states are absolute dual-arm EE16: `[xyz, qwxyz, gripper] × 2`.
-- The released normalization and 35 text contexts are verified against their original hashes.
-- The split retains 3,466 training and 34 official held-out episodes.
-
-`data/native-manifest.json` contains expected episode hashes. `data/selected-panel.json` points to the unchanged panel with 30,000 fitting windows and 1,119 monitoring windows. Fitting, monitoring and audit episodes are disjoint. The panel's original `training_ready` field is historical metadata; training additionally verifies the subsequent visual-review and data-check receipts. It is not silently overwritten.
-
-## Selection method
-
-The preserved selector combines temporal coverage, motion-based candidates, frozen image/history features and episode quality checks, with task balancing and a seeded random component. It retains bounded, non-overlapping action windows per episode. The source records coarse visual review; it does not label every selected frame as a verified contact or success/failure event.
-
-Implementation entry points are `vpp2.full_mask.curation_v3` (inventory, candidates, select) and companion `curation_v3_*` modules. The exact released panel is the reproducible default. Regenerating a different panel creates a new experiment and requires new data/model checks rather than reusing historical approval receipts.
-
-Materialize the exact fitting and monitoring selections:
+Configure `data.source`, the preprocessing reader, output path and worker count in [`configs/research.json`](../configs/research.json). Use `--episodes` to select a sample, then inspect and run:
 
 ```bash
-python scripts/select_data.py --output /path/to/new-selected-windows --dry-run
-python scripts/select_data.py --output /path/to/new-selected-windows
+python -m bagel_robotics prepare-data --config configs/research.json --episodes 0 --dry-run
+python -m bagel_robotics prepare-data --config configs/research.json --episodes 0
 ```
 
-This checks the panel identity and split disjointness, and writes readable CSVs, complete JSONL rows and a selection receipt. It does not resample or change the selected windows.
+Omit `--episodes` to convert the full dataset. Set `paths.demonstrations` to the completed `data.output` directory before training.
+
+## Released panel
+
+The default panel contains **30,000 fitting windows and 1,119 monitoring windows across 35 tasks**. Fit, monitor and audit roles are disjoint by episode. The selector combines task balance, temporal coverage, motion, frozen image/history descriptors, episode quality and seeded random selection. Windows are bounded and non-overlapping within each episode.
+
+```bash
+python -m bagel_robotics select-data --config configs/research.json --dry-run
+python -m bagel_robotics select-data --config configs/research.json
+```
+
+The default command validates and materializes the exact released panel as readable window lists and a receipt. It does not rerun the selection algorithm. The implementation under [`data_selection/`](../src/bagel_robotics/data_selection) includes candidate generation, frozen-feature extraction, episode quality and final selection.
+
+Resampling, changing an episode split or changing normalization creates a new experiment with new checks. Hold the selected window budget and training schedule fixed when comparing selection methods.

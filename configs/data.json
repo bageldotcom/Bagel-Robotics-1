@@ -1,0 +1,11 @@
+{
+  "panel_sha256": "bc6df13b64b5f96bbe17c64244240cc44a40d704babb70893f79c0f30d389680",
+  "manifest_sha256": "fbbeae4b8ccf12ac9bd843f51147f78045a1789ad765b9f0e3c24a37b6b2e01f",
+  "normalization_sha256": "2649d4e3ff3d6d400c9953b7c20c79541474f9c38a8a9916b9caacecd8578f16",
+  "conditioning_revision": "e35f01fbcf5131ba95ea43af247ce34fb6baeb7c",
+  "dataset_repo": "RoboDojo-Benchmark/RoboDojo",
+  "dataset_revision": "cefcfbbf2497103fe46b99039dbd381976fe4a42",
+  "reader_repo": "https://github.com/roboterax/video-prediction-policy-2.git",
+  "reader_revision": "72c17acf022494ff63617be86079bb92e92f5bf8",
+  "initial_masks_sha256": "6c1f0d9aedacccf47f118b0c4dec69f6af673d1df5981bde9b19eb33fb233d33"
+}

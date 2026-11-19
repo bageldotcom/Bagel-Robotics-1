@@ -1,0 +1,20 @@
+name: CPU package checks
+on: [push, pull_request]
+jobs:
+  reference:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.10', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install --upgrade pip build
+      - run: python -m build
+      - run: python -m pip install dist/*.whl
+      - run: python scripts/check_repo.py
+      - run: python -m unittest discover -s tests -p test_reference.py -v
+      - name: Installed interface outside the checkout
+        run: cd /tmp && python -m bagel_robotics --help

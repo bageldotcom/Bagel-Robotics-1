@@ -1,8 +1,0 @@
-{
-  "passed": true,
-  "checkpoint_update": 1000,
-  "video_parameters": 12468409664,
-  "tensors": 1303,
-  "all_shapes_match": true,
-  "validation": "Actual checkpoint tensor inventory and shapes match the released compact loader on the meta device; no GPU inference"
-}

@@ -1,8 +1,0 @@
-{
-  "historical_checkpoint250_available": false,
-  "historical_validation": "/data3/praveen/experiments/vpp2-selected-mask-recovery-curated30k-20261101/recovery/diagnostics/native_000250.json",
-  "paused_replay_root": "/data3/praveen/experiments/vpp2-recovery250-faithful-replay-20261102",
-  "protected_from_child_retention": true,
-  "used_as_training_initialization": false,
-  "validation_sha256": "71306f667cba71f9d9a5838ae3d9f015fc93a62096e4207d95a50ed26ebcd721"
-}
