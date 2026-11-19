@@ -1,6 +1,6 @@
 <h1 align="center">Bagel-Robotics-1</h1>
 
-<p align="center"><strong>Data-efficient adaptive pruning for compact world-action models</strong></p>
+<p align="center"><strong>DEAP: Data-Efficient Adaptive Pruning for compact world-action models</strong></p>
 
 <p align="center">
   <a href="#quick-start">🚀 Quick start</a> ·
