@@ -1,0 +1,27 @@
+{
+  "schema": "bagel-reference-v1",
+  "workspace": "../local/workspace",
+  "paths": {
+    "demonstrations": null,
+    "base_model": null,
+    "encoders": null,
+    "initial_rankings": null,
+    "compact_model": null,
+    "resume": null
+  },
+  "data": {
+    "source": null,
+    "reader": null,
+    "output": "../local/demonstrations",
+    "selection_output": "../local/selection",
+    "workers": 4,
+    "threads": 1,
+    "min_free_gib": 256
+  },
+  "execution": {
+    "engine": "native",
+    "python": null,
+    "image": null
+  },
+  "recipe_overrides": {}
+}

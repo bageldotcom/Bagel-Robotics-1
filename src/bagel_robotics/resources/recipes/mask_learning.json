@@ -1,0 +1,171 @@
+{
+  "curation": {
+    "audit_episodes_per_task": 8,
+    "audit_locked": true,
+    "auto_expand": false,
+    "base_windows_per_episode": 4,
+    "candidate_stride": 8,
+    "max_windows_per_episode": 16,
+    "min_selection_episodes_per_task": 83,
+    "monitor_episodes_per_task": 8,
+    "monitor_windows_per_task": 32,
+    "quality": {
+      "action_latent": 32,
+      "check_every": 200,
+      "learning_rate": 0.001,
+      "max_updates": 2400,
+      "method": "deminf_inspired_episode_tiebreaker",
+      "minimum_rank_correlation": 0.8,
+      "neighbors": [
+        5,
+        6,
+        7
+      ],
+      "obs_latent": 64,
+      "patience": 4,
+      "repeats": 4
+    },
+    "random_fraction": 0.2,
+    "require_model_probe": true,
+    "require_visual_review": true,
+    "schema": "robodojo-curated-calibration-v3",
+    "seed": 100008,
+    "target_total": 30000,
+    "target_windows_per_task": null,
+    "vision": {
+      "batch_size": 32,
+      "sha256": "983f1562536e84ff750a1576fb08e54de751dbf2e17c0d8a4a13704341fdcd3d",
+      "weights": null
+    },
+    "visual_backend": "frozen_convnext_spatial_history_v1",
+    "visual_descriptor_scope": "frozen pretrained spatial image features with nine native history slots; not verified contact or memory-cue labels"
+  },
+  "execution": {
+    "cached_norm_flags": true,
+    "calibration_micro_batch": 2,
+    "deduplicate_conditioning_reads": true,
+    "fill_uninitialized_memory": true,
+    "mixed_attention_checkpointing": false,
+    "skip_nograd_checkpointing": true,
+    "teacher_storage": "sharded"
+  },
+  "geometry": {
+    "ffn": 13824,
+    "ffn_floor": 4096,
+    "head_dim": 128,
+    "head_floor": 8,
+    "heads": 40,
+    "hidden": 5120,
+    "hidden_floor": 4864,
+    "layers": 40,
+    "pack": 128
+  },
+  "initial_preferred": {
+    "cross_scores": 32,
+    "ffn_scores": 9728,
+    "hidden_scores": 4864
+  },
+  "native_inference": {
+    "history_stride": 25,
+    "horizon": 32,
+    "rand_device": "cpu",
+    "replan": 24,
+    "seed": 1,
+    "shift": 1.0,
+    "steps": 10
+  },
+  "normalization_sha256": "2649d4e3ff3d6d400c9953b7c20c79541474f9c38a8a9916b9caacecd8578f16",
+  "original_video_parameters": 16394878784,
+  "recovery": {
+    "checkpoint_every": 250,
+    "final_lr_fraction": 0.1,
+    "hold_updates": 250,
+    "learning_rate": 1e-06,
+    "sample_mode": "selected_windows",
+    "schedule_updates": 2399,
+    "updates": 1000,
+    "validation_every": 50,
+    "warmup_updates": 0
+  },
+  "reliability": {
+    "floor": 1e-08,
+    "margin_fraction": 0.01,
+    "method": "relative_student_advantage_with_baseline_component_veto"
+  },
+  "schema": "bagel-method-v1",
+  "seed": 100008,
+  "size_coefficient": {
+    "first_update": 193,
+    "initial_value": 0.011596363996894921,
+    "invalid_measurement": "checkpoint_and_stop",
+    "last_regular_update": 200,
+    "last_replacement_update": 232,
+    "pressure_multiplier": 2.0,
+    "pressure_ramp": 250,
+    "pressure_start": 1251,
+    "ramp_updates": 100,
+    "resolved_update": 200,
+    "samples_per_family": 8,
+    "target_gradient_fraction": 0.1,
+    "upper_cap": 1.0
+  },
+  "stage": "mask",
+  "train": {
+    "action_gt_weight": 1.0,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "checkpoint_every": 250,
+    "count_budget_weight": 0.0,
+    "final_lr_fraction": 0.1,
+    "flow_monitor_every": 500,
+    "frozen_action": true,
+    "frozen_video": false,
+    "global_batch": 256,
+    "gradient_clip": 1.0,
+    "kv_layers": [
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "kv_weight": 0.0,
+    "mask_lr": 0.01,
+    "mask_weight_decay": 0.0,
+    "max_updates": 3000,
+    "micro_batch": 4,
+    "minimum_updates": 2000,
+    "native_windows_per_task": 4,
+    "teacher_action_weight": 0.0,
+    "teacher_video_weight": 0.05,
+    "validation_every": 250,
+    "video_lr": 1e-06,
+    "video_weight_decay": 0.01,
+    "warmup_updates": 50,
+    "world_size": 8
+  },
+  "validation": {
+    "bf16_action_video_relative_tolerance": 0.01,
+    "fp32_relative_tolerance": 2e-05
+  },
+  "wandb": {
+    "enabled": false
+  }
+}

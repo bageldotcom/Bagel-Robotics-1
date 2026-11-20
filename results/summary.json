@@ -1,0 +1,53 @@
+{
+  "model": "Bagel-Robotics-1",
+  "scope": "Official RoboDojo-Sim leaderboard, excluding the Agent track",
+  "source_url": "https://robodojo-benchmark.com/leaderboard?bench=sim",
+  "as_of": "2026-11-20",
+  "metrics": {
+    "overall": {
+      "partial_score_per_100": 38.65,
+      "success_percent": 31.91,
+      "partial_score_rank": 3
+    },
+    "average_without_open": {
+      "partial_score_per_100": 47.33,
+      "success_percent": 39.05
+    },
+    "generalization": {
+      "partial_score_per_100": 35.52,
+      "success_percent": 28.56
+    },
+    "generalization_standard": {
+      "partial_score_per_100": 52.45,
+      "success_percent": 46.44,
+      "partial_score_rank": 2,
+      "success_rank": 1,
+      "success_rank_tied": true
+    },
+    "generalization_random": {
+      "partial_score_per_100": 18.59,
+      "success_percent": 10.67
+    },
+    "precision": {
+      "partial_score_per_100": 42.65,
+      "success_percent": 35.42
+    },
+    "long_horizon": {
+      "partial_score_per_100": 53.94,
+      "success_percent": 35.33
+    },
+    "memory": {
+      "partial_score_per_100": 57.21,
+      "success_percent": 56.89,
+      "partial_score_rank": 2
+    },
+    "open": {
+      "partial_score_per_100": 3.93,
+      "success_percent": 3.33
+    }
+  },
+  "aggregation": {
+    "overall": "Equal weighting of Generalization, Precision, Long-Horizon, Memory and Open",
+    "average_without_open": "Equal weighting of Generalization, Precision, Long-Horizon and Memory"
+  }
+}

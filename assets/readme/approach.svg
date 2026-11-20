@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="280" viewBox="0 0 1120 280" role="img" aria-labelledby="title desc">
+<title id="title">Bagel-Robotics-1 approach</title><desc id="desc">Select informative demonstration segments, learn which components to keep, physically prune the video expert, and recover action quality. Inference predicts 32 actions, executes 16, and blends successive predictions.</desc>
+<rect width="1120" height="280" rx="18" fill="#f5f7fb"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="30" y="38" font-size="13" letter-spacing="1.7" font-weight="700" fill="#52617b">BAGEL-ROBOTICS-1 · FROM SELECTED DATA TO A COMPACT POLICY</text>
+<g fill="#ffffff" stroke="#dbe2ed"><rect x="30" y="62" width="244" height="136" rx="12"/><rect x="302" y="62" width="244" height="136" rx="12"/><rect x="574" y="62" width="244" height="136" rx="12"/><rect x="846" y="62" width="244" height="136" rx="12"/></g>
+<g font-size="14" font-weight="700"><text x="48" y="89" fill="#3166b8">01 · DATA SELECTION</text><text x="320" y="89" fill="#7b53b7">02 · MASK LEARNING</text><text x="592" y="89" fill="#ab6b17">03 · PHYSICAL PRUNING</text><text x="864" y="89" fill="#21745a">04 · RECOVERY</text></g>
+<g fill="#18263c" font-size="19" font-weight="700"><text x="48" y="120">Choose useful moments</text><text x="320" y="120">Learn what to keep</text><text x="592" y="120">Build smaller tensors</text><text x="864" y="120">Recover action quality</text></g>
+<g fill="#52617b" font-size="14"><text x="48" y="150">Informative segments across</text><text x="48" y="170">robot demonstrations</text><text x="320" y="150">Adaptive selection of features,</text><text x="320" y="170">FFN units and attention heads</text><text x="592" y="150">Compact video expert with</text><text x="592" y="170">matching architecture and weights</text><text x="864" y="150">Train the compact video expert;</text><text x="864" y="170">keep the action expert fixed</text></g>
+<g fill="#7b8ba5" font-size="23"><text x="279" y="139">→</text><text x="551" y="139">→</text><text x="823" y="139">→</text></g>
+<rect x="30" y="218" width="1060" height="40" rx="9" fill="#e6edf9"/>
+<text x="560" y="244" text-anchor="middle" font-size="16" fill="#254a80">Observe → Predict 32 actions → Blend predictions 90/10 → Execute 16 actions → Observe again</text>
+</g></svg>

@@ -1,0 +1,16 @@
+{
+  "action_format": "vpp2_wan21_action_v1",
+  "accepted_action_formats": ["fastwam_wan21_action_v1"],
+  "namespace_aliases": ["fastwam.", "robodojo_joint2b.", "bagel_cp1000."],
+  "target_parts": {
+    "fastwam": "vpp2",
+    "FastWAM": "VPP2",
+    "fastwam_processor": "vpp2_processor",
+    "FastWAMProcessor": "VPP2Processor",
+    "create_fastwam_wan21_14b": "create_vpp2_wan21_14b"
+  },
+  "environment_aliases": {
+    "bundle": ["BAGEL_BUNDLE", "BAGEL_CP1000_BUNDLE"],
+    "wan_root": ["BAGEL_WAN_ROOT", "BAGEL_CP1000_WAN_ROOT"]
+  }
+}
