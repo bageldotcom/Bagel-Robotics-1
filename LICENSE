@@ -1,0 +1,71 @@
+MIT License
+
+Bagel-Robotics-1 original contributions:
+Copyright (c) 2026 The Bagel-Robotics-1 Authors
+
+Third-party model architecture implementation components from VPP2:
+Copyright (c) 2026 The FastWAM Authors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+Except for third-party code and files that retain their original license
+headers, this repository is released under the MIT License.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Third-party component notices
+----------------------------
+
+The VPP2 notice above applies to retained model implementation and associated
+runtime, processing and utility components.
+Source: https://github.com/roboterax/video-prediction-policy-2
+
+Wan2.1 / DiffSynth-derived video backbone, VAE and encoder components are
+licensed under Apache-2.0; see licenses/Apache-2.0.txt.
+Copyright 2024-2025 The Alibaba Wan Team Authors. All rights reserved.
+Copyright [2023] [Zhongjie Duan].
+Sources: https://github.com/Wan-Video/Wan2.1
+         https://github.com/modelscope/DiffSynth-Studio
+
+The XPolicyLab deployment interface and adapted helpers are licensed under
+Apache-2.0; see licenses/Apache-2.0.txt.
+Source: https://github.com/XPolicyLab/XPolicyLab
+
+Retained Wan image-encoder and text-cleaning portions derive from OpenAI CLIP
+and OpenCLIP. The MIT permission and warranty terms above apply to these
+portions with the following copyright notices:
+Copyright (c) 2021 OpenAI
+Copyright (c) 2012-2021 Gabriel Ilharco, Mitchell Wortsman,
+Nicholas Carlini, Rohan Taori, Achal Dave, Vaishaal Shankar,
+John Miller, Hongseok Namkoong, Hannaneh Hajishirzi, Ali Farhadi,
+Ludwig Schmidt
+Sources: https://github.com/openai/CLIP
+         https://github.com/mlfoundations/open_clip
+
+Retained Wan text-encoder portions derive from Transformers T5, under
+Apache-2.0; see licenses/Apache-2.0.txt.
+Copyright 2018 Mesh TensorFlow authors, T5 Authors and HuggingFace Inc. team.
+Source: https://github.com/huggingface/transformers/tree/main/src/transformers/models/t5
+
+The retained text-canonicalization helper derives from Big Vision through
+OpenCLIP, under Apache-2.0; see licenses/Apache-2.0.txt.
+Copyright 2022 Big Vision Authors.
+Source: https://github.com/google-research/big_vision/blob/53f18caf27a9419231bbf08d3388b07671616d3d/big_vision/evaluators/proj/image_text/prompt_engineering.py
+
+Source attribution and modification notes appear in the applicable model files.
+Separately installed packages, simulator assets, model weights and datasets
+retain their own distribution terms.
