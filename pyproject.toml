@@ -5,13 +5,20 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "bagel-robotics"
 version = "0.2.0"
-description = "Data selection, adaptive structured pruning and recovery for world-action models"
+description = "Bagel Labs’ world-action model for bimanual robot manipulation"
 authors = [{name = "The Bagel-Robotics-1 Authors"}]
-readme = "README.md"
+readme = "README.pypi.md"
 license = "MIT AND Apache-2.0"
 license-files = ["LICENSE", "licenses/*"]
 requires-python = ">=3.10"
 dependencies = []
+
+[project.urls]
+Homepage = "https://www.bagel.com/"
+Repository = "https://github.com/bageldotcom/Bagel-Robotics-1"
+Documentation = "https://github.com/bageldotcom/Bagel-Robotics-1#quick-start"
+"Model weights" = "https://huggingface.co/bageldotcom/Bagel-Robotics-1"
+"Model release" = "https://blog.bagel.com/p/bagel-robotics-1"
 
 [project.scripts]
 bagel-robotics = "bagel_robotics.cli:main"
